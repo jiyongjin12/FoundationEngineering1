@@ -130,7 +130,6 @@ GameObject:
   - component: {fileID: 291746504}
   - component: {fileID: 291746507}
   - component: {fileID: 291746506}
-  - component: {fileID: 291746508}
   m_Layer: 5
   m_Name: backGround
   m_TagString: Untagged
@@ -196,31 +195,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291746503}
   m_CullTransparentMesh: 1
---- !u!114 &291746508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 291746503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51eccbe99b123d945898f9ffb626cb00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SDataList:
-  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
-  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
-  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
-  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
-  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
-  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
-  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
-  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
-  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
-  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
-  stageButton: {fileID: 4805852635104008536, guid: 5ee8b532e0e96c046ac61491f41d01e0, type: 3}
-  SpawnButtonPos: {fileID: 1663126108}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,6 +462,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 415345434}
+  - component: {fileID: 415345435}
   m_Layer: 5
   m_Name: Level
   m_TagString: Untagged
@@ -515,6 +490,31 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &415345435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415345433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51eccbe99b123d945898f9ffb626cb00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SDataList:
+  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
+  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
+  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
+  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
+  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
+  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
+  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
+  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
+  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
+  - {fileID: 11400000, guid: 6c17fd9fe8ec8d945b622c69903a439e, type: 2}
+  stageButton: {fileID: 6998057608731058212, guid: 3d9d30787a2409a41a67f8eeb950166b, type: 3}
+  SpawnButtonPos: {fileID: 1663126108}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
