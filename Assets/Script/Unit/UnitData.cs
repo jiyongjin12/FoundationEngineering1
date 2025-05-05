@@ -10,4 +10,6 @@ public class UnitData : ScriptableObject
     public float Speed;
     public float AttackSpeed;
     public float AttackRange;
+
+    public Sprite ButtonImage;
 }

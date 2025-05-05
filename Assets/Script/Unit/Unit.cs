@@ -74,7 +74,6 @@ public class Unit : MonoBehaviour
         }
         else
         {
-            Debug.Log("Check");
             // 사정거리에 없으면 전투 상태 종료
             inCombat = false;
             targetUnit = null;

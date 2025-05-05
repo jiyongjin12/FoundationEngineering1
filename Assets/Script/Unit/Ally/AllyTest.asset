@@ -18,3 +18,4 @@ MonoBehaviour:
   Speed: 5
   AttackSpeed: 0.5
   AttackRange: 1.5
+  ButtonImage: {fileID: 0}

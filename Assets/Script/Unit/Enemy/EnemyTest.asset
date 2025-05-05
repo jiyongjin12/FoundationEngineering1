@@ -15,6 +15,7 @@ MonoBehaviour:
   Faction: 1
   Damage: 25
   Hp: 150
-  Speed: 3
+  Speed: 0
   AttackSpeed: 2.5
   AttackRange: 12
+  ButtonImage: {fileID: 0}
