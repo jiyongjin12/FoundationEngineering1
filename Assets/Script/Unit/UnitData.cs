@@ -3,6 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Unit/UnitData")]
 public class UnitData : ScriptableObject
 {
+    [Header("Unit 정보")]
     public int Faction; // 아군 = 0 적군 = 1
 
     public float Damage;
@@ -11,5 +12,8 @@ public class UnitData : ScriptableObject
     public float AttackSpeed;
     public float AttackRange;
 
+    public float CoolDownTime;
+
+    [Header("버튼 UI")]
     public Sprite ButtonImage;
 }

@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
-public class MyDeck : MonoBehaviour 
+public class UnitSpawnManager : MonoBehaviour 
 {
     [Header("Costom Unit")]
     public UnitData[] Custom = new UnitData[10];
@@ -15,9 +16,11 @@ public class MyDeck : MonoBehaviour
     public Transform UnitSpawnPos;
     public GameObject Unit;
 
+    private Button[] deckButtons;
 
     private void Start()
     {
+        deckButtons = new Button[ButtonCount];
         StartButtonSetting();
     }
 
@@ -36,17 +39,16 @@ public class MyDeck : MonoBehaviour
                 img.sprite = Custom[i].ButtonImage;
             }
 
+            deckButtons[i] = btn;
+
             // 버튼 클릭 이벤트 등록
             int index = i; // 클로저 문제 방지
-            btn.onClick.AddListener(() => SpawnUnit(index));
+            btn.onClick.AddListener(() => OnDeckButtonClicked(index));
         }
     }
 
     void SpawnUnit(int index)
     {
-        if (index < 0 || index >= Custom.Length || Custom[index] == null)
-            return;
-
         GameObject unitObj = Instantiate(Unit, UnitSpawnPos.position, Quaternion.identity); // 생성
 
         // 생성될 오브젝트에 데이터 할당
@@ -54,4 +56,25 @@ public class MyDeck : MonoBehaviour
         unit.unitData = Custom[index];
     }
 
+
+    void OnDeckButtonClicked(int index)
+    {
+        // 유효성 검사 및 CoolDown 중인지 확인
+        if (index < 0 || index >= Custom.Length || Custom[index] == null)
+            return;
+
+        // 스폰
+        SpawnUnit(index);
+
+        // 버튼 비활성화 및 쿨다운 시작
+        deckButtons[index].interactable = false;
+        StartCoroutine(CooldownRoutine(index));
+    }
+
+    IEnumerator CooldownRoutine(int index)
+    {
+        float cd = Custom[index].CoolDownTime;
+        yield return new WaitForSeconds(cd);
+        deckButtons[index].interactable = true;
+    }
 }
