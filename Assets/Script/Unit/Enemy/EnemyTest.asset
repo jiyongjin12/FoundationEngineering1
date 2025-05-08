@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: EnemyTest
   m_EditorClassIdentifier: 
   Faction: 1
+  name: e
   Damage: 25
   Hp: 150
-  Speed: 0
+  Speed: 2
   AttackSpeed: 2.5
   AttackRange: 12
+  CoolDownTime: 0
   ButtonImage: {fileID: 0}

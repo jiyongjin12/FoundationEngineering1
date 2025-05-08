@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: AllyTest
   m_EditorClassIdentifier: 
   Faction: 0
+  name: a
   Damage: 5
   Hp: 200
   Speed: 5
