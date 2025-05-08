@@ -6,6 +6,8 @@ public class UnitData : ScriptableObject
     [Header("Unit 정보")]
     public int Faction; // 아군 = 0 적군 = 1
 
+    public string name;
+
     public float Damage;
     public float Hp;
     public float Speed;

@@ -82,10 +82,7 @@ public class Unit : MonoBehaviour
 
     void Attack()
     {
-        if (targetUnit == null)
-        {
-            inCombat = false;
-        }
+        if (targetUnit == null) inCombat = false;
 
         attackTimer += Time.deltaTime;
         if (attackTimer >= unitData.AttackSpeed)
