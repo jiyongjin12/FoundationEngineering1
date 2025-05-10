@@ -9,8 +9,8 @@ public class EnemyTower : MonoBehaviour
 
     [Header("Setting")]
     public float HP;
+    public Health HP_Tower;
 
-    [SerializeField] private float CurrentHp;
     [SerializeField] private EnemySpawn_Array[] Spawns;
     [SerializeField] private GameObject Enemy_body;
     [SerializeField] private Transform EnemySpawnPos;
@@ -20,7 +20,7 @@ public class EnemyTower : MonoBehaviour
 
     private void Awake()
     {
-        CurrentHp = HP;
+        HP_Tower.HP = HP;
 
         // UnitData 딕셔너리 초기화
         unitLookup = new Dictionary<string, UnitData>(allEnemyUnits.Length);
@@ -45,9 +45,9 @@ public class EnemyTower : MonoBehaviour
         var cfg = Spawns[index];
         float prevThreshold = (index > 0) ? Spawns[index - 1].HP_Status : 100f;
 
-        while (CurrentHp > 0f)
+        while (HP_Tower.currentHP > 0f)
         {
-            float hpPercent = CurrentHp / HP * 100f;
+            float hpPercent = HP_Tower.currentHP / HP * 100f;
             bool inRange = false;
 
             if (index == 0)
@@ -63,7 +63,7 @@ public class EnemyTower : MonoBehaviour
 
             if (inRange)
             {
-                yield return new WaitForSeconds(cfg.Second);
+                yield return new WaitForSeconds(cfg.SpawnTime);
                 foreach (var unitName in cfg.E_name)
                     TrySpawnUnit(unitName);
             }
@@ -90,13 +90,4 @@ public class EnemyTower : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float damage)
-    {
-        CurrentHp -= damage;
-        if (CurrentHp <= 0f)
-        {
-            Debug.Log("Enemy Tower Destroyed");
-            Destroy(gameObject);
-        }
-    }
 }

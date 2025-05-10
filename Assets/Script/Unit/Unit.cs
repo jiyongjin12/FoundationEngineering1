@@ -11,12 +11,11 @@ public class Unit : MonoBehaviour
     //public float AttackRange;
 
     public UnitData unitData;
-
-    public float currentHp = 0;
+    public Health HP_unit;
 
     private string targetTag;
     private bool inCombat = false;
-    private Unit targetUnit;
+    private Health targetUnit;
     private float attackTimer = 0f;
 
     private Vector3 Direction;
@@ -25,7 +24,7 @@ public class Unit : MonoBehaviour
     {
         targetTag = (unitData.Faction == 0) ? "Enemy" : "Ally"; // 공격 목표 지정
 
-        currentHp = unitData.Hp;
+        HP_unit.HP = unitData.Hp;
         attackTimer = 0f;
     }
 
@@ -67,7 +66,7 @@ public class Unit : MonoBehaviour
                 if (!inCombat)
                 {
                     inCombat = true;
-                    targetUnit = hit.collider.GetComponent<Unit>();
+                    targetUnit = hit.collider.GetComponent<Health>();
                 }
             }
             
@@ -90,21 +89,6 @@ public class Unit : MonoBehaviour
             targetUnit.TakeDamage(unitData.Damage);
             attackTimer = 0f;
         }
-    }
-
-    public void TakeDamage(float amount)
-    {
-        currentHp -= amount;
-        if (currentHp <= 0f)
-        {
-            Die();
-        }
-    }
-
-    void Die()
-    {
-        Debug.Log("Death");
-        Destroy(gameObject);
     }
 
     // 사정거리 시각화

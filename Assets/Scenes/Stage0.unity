@@ -583,6 +583,7 @@ GameObject:
   - component: {fileID: 1084823565}
   - component: {fileID: 1084823564}
   - component: {fileID: 1084823563}
+  - component: {fileID: 1084823568}
   m_Layer: 0
   m_Name: EnemyTower
   m_TagString: Enemy
@@ -605,10 +606,14 @@ MonoBehaviour:
   allEnemyUnits:
   - {fileID: 11400000, guid: dd873fe0dee63a04fb48344818dff9f9, type: 2}
   HP: 100
-  CurrentHp: 0
+  HP_Tower: {fileID: 1084823568}
   Spawns:
   - HP_Status: 70
-    Second: 100
+    SpawnTime: 10
+    E_name:
+    - e
+  - HP_Status: 50
+    SpawnTime: 1
     E_name:
     - e
   Enemy_body: {fileID: 8115385945721784818, guid: 040b1abd6d7b1a940b7c0a0a57bde5dc, type: 3}
@@ -703,6 +708,20 @@ Transform:
   - {fileID: 123681392}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1084823568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084823562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3cc89bcb04d7e458feb52b65243009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 0
+  currentHP: 0
 --- !u!1 &1365266405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,7 +1583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitData: {fileID: 11400000, guid: cdf9dc16c5c3c96429a4a4b672c89c55, type: 2}
-  currentHp: 0
+  HP_unit: {fileID: 0}
 --- !u!1 &9220578371303006266
 GameObject:
   m_ObjectHideFlags: 0
