@@ -20,7 +20,7 @@ public class EnemyTower : MonoBehaviour
 
     private void Awake()
     {
-        HP_Tower.HP = HP;
+        HP_Tower.currentHP = HP;
 
         // UnitData 딕셔너리 초기화
         unitLookup = new Dictionary<string, UnitData>(allEnemyUnits.Length);
@@ -66,6 +66,7 @@ public class EnemyTower : MonoBehaviour
                 yield return new WaitForSeconds(cfg.SpawnTime);
                 foreach (var unitName in cfg.E_name)
                     TrySpawnUnit(unitName);
+
             }
             else
             {
