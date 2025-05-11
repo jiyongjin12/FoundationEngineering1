@@ -609,7 +609,7 @@ MonoBehaviour:
   HP_Tower: {fileID: 1084823568}
   Spawns:
   - HP_Status: 70
-    SpawnTime: 10
+    SpawnTime: 3
     E_name:
     - e
   - HP_Status: 50
