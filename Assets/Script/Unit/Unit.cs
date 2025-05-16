@@ -55,27 +55,79 @@ public class Unit : MonoBehaviour
 
     void DetectTarget()
     {
-        RaycastHit hit;
+        #region 레이케스트-주석-관통x
+        //RaycastHit hit;
 
-        // 범위 탐지
-        if (Physics.Raycast(transform.position, Direction, out hit, unitData.AttackRange))
+        //// 범위 탐지
+        //if (Physics.Raycast(transform.position, Direction, out hit, unitData.AttackRange))
+        //{
+        //    if (hit.collider.CompareTag(targetTag))
+        //    {
+        //        // 타겟 발견, 전투 상태 전환
+        //        if (!inCombat)
+        //        {
+        //            inCombat = true;
+        //            targetUnit = hit.collider.GetComponent<Health>();
+        //        }
+        //    }
+
+        //}
+        //else
+        //{
+        //    // 사정거리에 없으면 전투 상태 종료
+        //    inCombat = false;
+        //    targetUnit = null;
+        //}
+        #endregion
+
+        float range = unitData.AttackRange;
+        Vector3 origin = transform.position;
+
+        // 1) 이미 타겟이 있으면 유효성 검사
+        if (targetUnit != null)
         {
-            if (hit.collider.CompareTag(targetTag))
+            Vector3 toTarget = targetUnit.transform.position - origin;
+            float dist = toTarget.magnitude;
+            float dot = Vector3.Dot(toTarget.normalized, Direction);
+            if (dist <= range && dot > 0)
             {
-                // 타겟 발견, 전투 상태 전환
-                if (!inCombat)
-                {
-                    inCombat = true;
-                    targetUnit = hit.collider.GetComponent<Health>();
-                }
+                inCombat = true;
+                return; // 기존 타겟 유지
             }
-            
+        }
+
+        // 2) 새 타겟 탐색
+        Collider[] hits = Physics.OverlapSphere(origin, range);
+        Health closest = null;
+        float minDist = float.MaxValue;
+
+        foreach (var col in hits)
+        {
+            if (!col.CompareTag(targetTag))
+                continue;
+
+            Vector3 toCol = col.transform.position - origin;
+            if (Vector3.Dot(toCol.normalized, Direction) <= 0)
+                continue; // 뒤 또는 옆 제외
+
+            float d = toCol.sqrMagnitude;
+            if (d < minDist)
+            {
+                // 가장 가까운 적 선택
+                minDist = d;
+                closest = col.GetComponent<Health>();
+            }
+        }
+
+        if (closest != null)
+        {
+            targetUnit = closest;
+            inCombat = true;
         }
         else
         {
-            // 사정거리에 없으면 전투 상태 종료
-            inCombat = false;
             targetUnit = null;
+            inCombat = false;
         }
     }
 
