@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Unit : MonoBehaviour
@@ -15,10 +16,12 @@ public class Unit : MonoBehaviour
 
     private string targetTag;
     private bool inCombat = false;
-    private Health targetUnit;
     private float attackTimer = 0f;
 
     private Vector3 Direction;
+
+    private Health targetUnit;
+    [SerializeField]private Unit targetUnit_unitcode; // 이거 굳이긴 한데 귀찮으니까
 
     void Start()
     {
@@ -83,7 +86,7 @@ public class Unit : MonoBehaviour
         float range = unitData.AttackRange;
         Vector3 origin = transform.position;
 
-        // 1) 이미 타겟이 있으면 유효성 검사
+        // 이미 타겟이 있으면 유효성 검사
         if (targetUnit != null)
         {
             Vector3 toTarget = targetUnit.transform.position - origin;
@@ -96,9 +99,10 @@ public class Unit : MonoBehaviour
             }
         }
 
-        // 2) 새 타겟 탐색
+        // 새 타겟 탐색
         Collider[] hits = Physics.OverlapSphere(origin, range);
-        Health closest = null;
+        Health closestHp = null;
+        //Unit closestUnit = null;
         float minDist = float.MaxValue;
 
         foreach (var col in hits)
@@ -115,18 +119,21 @@ public class Unit : MonoBehaviour
             {
                 // 가장 가까운 적 선택
                 minDist = d;
-                closest = col.GetComponent<Health>();
+                closestHp = col.GetComponent<Health>();
+                //closestUnit = col.GetComponent<Unit>();
             }
         }
 
-        if (closest != null)
+        if (closestHp != null)
         {
-            targetUnit = closest;
+            targetUnit = closestHp;
+            //targetUnit_unitcode = closestUnit;
             inCombat = true;
         }
         else
         {
             targetUnit = null;
+            //targetUnit_unitcode = null;
             inCombat = false;
         }
     }
