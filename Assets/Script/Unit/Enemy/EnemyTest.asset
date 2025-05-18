@@ -16,8 +16,9 @@ MonoBehaviour:
   name: e
   Damage: 25
   Hp: 150
-  Speed: 2
-  AttackSpeed: 2.5
+  Speed: 2.5
+  AttackSpeed: 1.2
   AttackRange: 12
   CoolDownTime: 0
   ButtonImage: {fileID: 0}
+  UnitSkill: {fileID: 11400000, guid: 60c9ec58c94e8704ea7a7de1e2ac591e, type: 2}

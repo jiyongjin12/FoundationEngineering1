@@ -1,27 +1,26 @@
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Unit : MonoBehaviour
 {
-    //public int Faction; // 아군 = 0 적군 = 1
-
-    //public float Damage;
-    //public float Hp;
-    //public float Speed;
-    //public float AttackSpeed;
-    //public float AttackRange;
-
     public UnitData unitData;
     public Health HP_unit;
 
+    public bool inCombat = false;
     private string targetTag;
-    private bool inCombat = false;
     private float attackTimer = 0f;
 
     private Vector3 Direction;
 
     private Health targetUnit;
-    [SerializeField]private Unit targetUnit_unitcode; // 이거 굳이긴 한데 귀찮으니까
+    //[SerializeField]
+    private UnitSkillData unitSkill;
+
+    #region 상태이상 값들
+    public float SlowSpeed = 1;
+    public bool StunCheck;
+    #endregion
 
     void Start()
     {
@@ -29,19 +28,28 @@ public class Unit : MonoBehaviour
 
         HP_unit.HP = unitData.Hp;
         attackTimer = 0f;
+
+        unitSkill = unitData.UnitSkill;
+
+
+        SlowSpeed = 1;
+        StunCheck = false;
     }
 
     void Update()
     {
         DetectTarget();// 공격범위 탐지
 
-        if (!inCombat)
+        if (!StunCheck)
         {
-            Move();
-        }
-        else
-        {
-            Attack();
+            if (!inCombat)
+            {
+                Move();
+            }
+            else
+            {
+                Attack();
+            }
         }
     }
 
@@ -53,7 +61,7 @@ public class Unit : MonoBehaviour
 
     void Move()
     {
-        transform.Translate(Direction * unitData.Speed * Time.deltaTime, Space.World);
+        transform.Translate(Direction * unitData.Speed * SlowSpeed * Time.deltaTime, Space.World);
     }
 
     void DetectTarget()
@@ -102,7 +110,6 @@ public class Unit : MonoBehaviour
         // 새 타겟 탐색
         Collider[] hits = Physics.OverlapSphere(origin, range);
         Health closestHp = null;
-        //Unit closestUnit = null;
         float minDist = float.MaxValue;
 
         foreach (var col in hits)
@@ -120,20 +127,17 @@ public class Unit : MonoBehaviour
                 // 가장 가까운 적 선택
                 minDist = d;
                 closestHp = col.GetComponent<Health>();
-                //closestUnit = col.GetComponent<Unit>();
             }
         }
 
         if (closestHp != null)
         {
             targetUnit = closestHp;
-            //targetUnit_unitcode = closestUnit;
             inCombat = true;
         }
         else
         {
             targetUnit = null;
-            //targetUnit_unitcode = null;
             inCombat = false;
         }
     }
@@ -145,9 +149,25 @@ public class Unit : MonoBehaviour
         attackTimer += Time.deltaTime;
         if (attackTimer >= unitData.AttackSpeed)
         {
-            targetUnit.TakeDamage(unitData.Damage);
+            UseSkill();
             attackTimer = 0f;
         }
+    }
+
+    void UseSkill()
+    {
+        // 물리 데미지 적용
+        targetUnit.TakeDamage(unitSkill.damage);
+
+        if (unitSkill.nockback)
+            StatusEffects.ApplyKnockback(targetUnit, Direction, unitSkill.nockbackStrength);
+        if (unitSkill.Slow)
+            StatusEffects.ApplySlow(targetUnit, unitSkill.slowRatio, unitSkill.slowDuration);
+        if (unitSkill.Stun)
+            StatusEffects.ApplyStun(targetUnit, unitSkill.stunDuration);
+
+
+        Debug.Log("공격");
     }
 
     // 사정거리 시각화
