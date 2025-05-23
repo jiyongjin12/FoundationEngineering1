@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a65181e3a5daab34bbc5f0b9a3ac6ee1, type: 3}
   m_Name: AllyTestSkill
   m_EditorClassIdentifier: 
-  rangeType: 0
+  RangeType: 1
+  Damage: 5
+  RangeAttackCheck: 1
+  RangeDiameter: 3
+  AttackCount: 10
+  UseSkillEffect: 0
+  ProcChance: 0
+  ProjectilePrefab: {fileID: 9046949950307811681, guid: 9e19f8d37e0323a4bb7a828cef4a32b3, type: 3}
+  ProjectileSpeed: 5
   Slow: 0
   Stun: 0
-  nockback: 0
-  slowRatio: 0
-  slowDuration: 0
-  stunDuration: 0.1
-  nockbackStrength: 1
-  damage: 5
+  Nockback: 0
+  SlowRatio: 0
+  SlowDuration: 0
+  StunDuration: 0
+  NockbackStrength: 0

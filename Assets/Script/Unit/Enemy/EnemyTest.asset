@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Faction: 1
   name: e
-  Damage: 25
   Hp: 150
   Speed: 2.5
-  AttackSpeed: 1.2
+  AttackSpeed: 2
   AttackRange: 12
+  Critical_probability: 0
+  Critical_damage: 0
   CoolDownTime: 0
   ButtonImage: {fileID: 0}
-  UnitSkill: {fileID: 11400000, guid: 60c9ec58c94e8704ea7a7de1e2ac591e, type: 2}
+  UnitDefaultSkill: {fileID: 11400000, guid: 60c9ec58c94e8704ea7a7de1e2ac591e, type: 2}
+  UnitEvolvedSkill: {fileID: 0}

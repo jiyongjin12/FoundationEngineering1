@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Unit : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class Unit : MonoBehaviour
     public Health HP_unit;
 
     public bool inCombat = false;
-    private string targetTag;
+    [HideInInspector] public string targetTag;
     private float attackTimer = 0f;
 
     private Vector3 Direction;
@@ -157,29 +158,54 @@ public class Unit : MonoBehaviour
     void UseSkill()
     {
         // 물리 데미지 적용
-        targetUnit.TakeDamage(unitSkill.Damage);
+        float finalDamage = unitSkill.Damage; // <ㅡ 여기에 치명타 부분 추가해야함
+        //targetUnit.TakeDamage(finalDamage);
 
-        // 확률 여부 확인
-        if (unitSkill.UseSkillEffect)
+        // 2) 원거리일 경우 투사체 발사, 근접은 즉시 효과 적용
+        if (unitSkill.RangeType == RangeType.Ranged && unitSkill.ProjectilePrefab != null)
         {
-            // 실패시 효과 미적용
-            if (Random.value <= unitSkill.ProcChance / 100)
-            {
-                ApplySkillEffect();
-                Debug.Log("효과 발동");
-            }
+            // 투사체 인스턴스화
+            var proj = Instantiate(unitSkill.ProjectilePrefab, transform.position, Quaternion.identity);
+
+            // 투사체 초기화
+            proj.GetComponent<SkillProjectile>().Initialize(
+                damage: finalDamage,
+                isArea: unitSkill.RangeAttackCheck,
+                areaRadius: unitSkill.RangeDiameter * 0.5f,
+                direction: (targetUnit.transform.position - transform.position).normalized,
+                speed: unitSkill.ProjectileSpeed,
+                attacker: this,
+                attackCount: unitSkill.AttackCount
+            );
         }
         else
         {
-            // 상시 효과 적용
-            ApplySkillEffect();
+            // 근접 혹은 투사체 없음 → 즉시 상태이상 효과만 적용
+            ApplySkillEffect(targetUnit, finalDamage);
         }
 
         //Debug.Log("공격");
     }
 
-    void ApplySkillEffect() // 상태효과
+    //void UseSkill()
+    //{
+    //    // 물리 데미지 적용
+    //    float finalDamage = unitSkill.Damage; // <ㅡ 여기에 치명타 부분 추가해야함
+    //    targetUnit.TakeDamage(finalDamage);
+
+    //    ApplySkillEffect();
+
+    //    //Debug.Log("공격");
+    //}
+
+    public void ApplySkillEffect(Health target, float damage) // 상태효과
     {
+        target.TakeDamage(damage);
+
+        if (unitSkill.UseSkillEffect && Random.value > unitSkill.ProcChance / 100) // 스킬 사용 확률
+            return;
+
+
         if (unitSkill.Nockback)
             StatusEffects.ApplyKnockback(targetUnit, Direction, unitSkill.NockbackStrength);
         if (unitSkill.Slow)
@@ -187,6 +213,7 @@ public class Unit : MonoBehaviour
         if (unitSkill.Stun)
             StatusEffects.ApplyStun(targetUnit, unitSkill.StunDuration);
     }
+
 
     // 사정거리 시각화
     void OnDrawGizmosSelected()
