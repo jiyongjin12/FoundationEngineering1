@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a65181e3a5daab34bbc5f0b9a3ac6ee1, type: 3}
   m_Name: EnemyTestSkill
   m_EditorClassIdentifier: 
-  rangeType: 0
+  RangeType: 1
+  Damage: 0
+  RangeAttackCheck: 0
+  RangeDiameter: 0
+  AttackCount: 0
+  UseSkillEffect: 0
+  ProcChance: 0
+  ProjectilePrefab: {fileID: 0}
+  ProjectileSpeed: 0
   Slow: 0
   Stun: 0
-  nockback: 0
-  slowRatio: 30
-  slowDuration: 5
-  stunDuration: 0.5
-  nockbackStrength: 0.5
-  damage: 10
+  Nockback: 0
+  SlowRatio: 0
+  SlowDuration: 0
+  StunDuration: 0
+  NockbackStrength: 0

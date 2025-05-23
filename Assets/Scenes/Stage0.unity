@@ -1683,6 +1683,7 @@ MonoBehaviour:
   unitData: {fileID: 11400000, guid: cdf9dc16c5c3c96429a4a4b672c89c55, type: 2}
   HP_unit: {fileID: 0}
   inCombat: 0
+  targetTag: 
   SlowSpeed: 0
   StunCheck: 0
 --- !u!1 &9220578371303006266

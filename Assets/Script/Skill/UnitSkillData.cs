@@ -16,7 +16,6 @@ public class UnitSkillData : ScriptableObject
     [Header("범위")]
     public bool RangeAttackCheck;        // 범위 공격인지 여부
     public float RangeDiameter;          // 범위 공격 지름
-    public int AttackCount;
 
     [Header("스킬 발동 확률")]
     public bool UseSkillEffect;          // 스킬 발동 확률을 사용할 것인지
@@ -25,6 +24,7 @@ public class UnitSkillData : ScriptableObject
     [Header("원거리 여부")]
     public GameObject ProjectilePrefab;  // 원거리 공격 시 던질 오브젝트
     public float ProjectileSpeed;        // 발사체 속도
+    public int AttackCount;
 
 
     [Space(20)]

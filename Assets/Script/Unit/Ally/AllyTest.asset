@@ -16,8 +16,11 @@ MonoBehaviour:
   name: a
   Hp: 200
   Speed: 4
-  AttackSpeed: 0.5
-  AttackRange: 1.5
+  AttackSpeed: 2
+  AttackRange: 12
+  Critical_probability: 0
+  Critical_damage: 0
   CoolDownTime: 0.5
   ButtonImage: {fileID: 0}
-  UnitSkill: {fileID: 11400000, guid: 78db54e5abe53c9448f080d9f6bd7af9, type: 2}
+  UnitDefaultSkill: {fileID: 11400000, guid: 78db54e5abe53c9448f080d9f6bd7af9, type: 2}
+  UnitEvolvedSkill: {fileID: 0}
