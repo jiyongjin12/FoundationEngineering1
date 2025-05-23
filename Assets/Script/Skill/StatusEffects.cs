@@ -49,7 +49,6 @@ public static class StatusEffects
         {
             rb.AddForce(direction.normalized * strength, ForceMode.Impulse);
         }
-        Debug.Log("넉백 확인");
     }
 
     private static IEnumerator nockbackCoroutine(Unit unit, Vector3 direction, float strength, float duration)

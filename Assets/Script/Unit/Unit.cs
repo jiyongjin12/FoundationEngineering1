@@ -18,8 +18,8 @@ public class Unit : MonoBehaviour
     private UnitSkillData unitSkill;
 
     #region 상태이상 값들
-    public float SlowSpeed = 1;
-    public bool StunCheck;
+    [HideInInspector] public float SlowSpeed = 1;
+    [HideInInspector] public bool StunCheck;
     #endregion
 
     void Start()
@@ -29,7 +29,7 @@ public class Unit : MonoBehaviour
         HP_unit.HP = unitData.Hp;
         attackTimer = 0f;
 
-        unitSkill = unitData.UnitSkill;
+        unitSkill = unitData.UnitDefaultSkill;
 
 
         SlowSpeed = 1;
@@ -157,17 +157,35 @@ public class Unit : MonoBehaviour
     void UseSkill()
     {
         // 물리 데미지 적용
-        targetUnit.TakeDamage(unitSkill.damage);
+        targetUnit.TakeDamage(unitSkill.Damage);
 
-        if (unitSkill.nockback)
-            StatusEffects.ApplyKnockback(targetUnit, Direction, unitSkill.nockbackStrength);
+        // 확률 여부 확인
+        if (unitSkill.UseSkillEffect)
+        {
+            // 실패시 효과 미적용
+            if (Random.value <= unitSkill.ProcChance / 100)
+            {
+                ApplySkillEffect();
+                Debug.Log("효과 발동");
+            }
+        }
+        else
+        {
+            // 상시 효과 적용
+            ApplySkillEffect();
+        }
+
+        //Debug.Log("공격");
+    }
+
+    void ApplySkillEffect() // 상태효과
+    {
+        if (unitSkill.Nockback)
+            StatusEffects.ApplyKnockback(targetUnit, Direction, unitSkill.NockbackStrength);
         if (unitSkill.Slow)
-            StatusEffects.ApplySlow(targetUnit, unitSkill.slowRatio, unitSkill.slowDuration);
+            StatusEffects.ApplySlow(targetUnit, unitSkill.SlowRatio, unitSkill.SlowDuration);
         if (unitSkill.Stun)
-            StatusEffects.ApplyStun(targetUnit, unitSkill.stunDuration);
-
-
-        Debug.Log("공격");
+            StatusEffects.ApplyStun(targetUnit, unitSkill.StunDuration);
     }
 
     // 사정거리 시각화
