@@ -29,18 +29,22 @@ public class UnitSkillData : ScriptableObject
 
     [Space(20)]
     [Header("상태 이상 세팅")]
-    public bool Slow;                   // 슬로우
-    public bool Stun;                   // 스턴
-    public bool Nockback;               // 넉백
+    public bool Slow;                            // 슬로우
+    public bool Stun;                            // 스턴
+    public bool Nockback;                        // 넉백
+    public bool AtkSpeedDown;                      // 공속다운
 
     [Header("슬로우")]
-    public float SlowRatio;             // %
-    public float SlowDuration;          // 지속시간
+    public float SlowRatio;                      // %
+    public float SlowDuration;                   // 지속시간
 
     [Header("스턴")]
-    public float StunDuration;          // 지속시간
+    public float StunDuration;                   // 지속시간
 
     [Header("넉백")]
-    public float NockbackStrength;      // 가하는 힘
-    //public float nockbackDuration;    // 지속시간?
+    public float NockbackStrength;               // 가하는 힘
+
+    [Header("공속다운")]
+    public float AtkSpeedDownRatio;           // %
+    public float AtkSpeedDownDuration;        // 지속시간
 }

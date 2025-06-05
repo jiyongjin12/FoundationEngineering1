@@ -24,7 +24,10 @@ MonoBehaviour:
   Slow: 0
   Stun: 0
   Nockback: 0
+  AtkSpeedDown: 1
   SlowRatio: 0
   SlowDuration: 0
   StunDuration: 0
   NockbackStrength: 0
+  AtkSpeedDownRatio: 0
+  AtkSpeedDownDuration: 3

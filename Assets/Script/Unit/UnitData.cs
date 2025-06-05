@@ -17,7 +17,7 @@ public class UnitData : ScriptableObject
     public float Critical_probability; // 치명타 확률
     public float Critical_damage; // 치명타 피해
 
-    public float CoolDownTime;
+    public float CoolDownTime; // 소환?
 
     [Header("버튼 UI")]
     public Sprite ButtonImage;
@@ -26,3 +26,4 @@ public class UnitData : ScriptableObject
     public UnitSkillData UnitDefaultSkill; // 진화 전 스킬
     public UnitSkillData UnitEvolvedSkill; // 진화 후 스킬
 }
+

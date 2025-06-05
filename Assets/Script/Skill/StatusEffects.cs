@@ -75,4 +75,29 @@ public static class StatusEffects
         // 원래 상태 복구
         unit.StunCheck = false;
     }
+
+
+    public static void ApplyAttackSpeedDown(Health targetHealth, float percent, float duration)
+    {
+        if (targetHealth.TryGetComponent<Unit>(out var unit))
+        {
+            if (unit.atkSpeedDownCoroutine != null)
+            {
+                unit.StopCoroutine(unit.atkSpeedDownCoroutine);
+            }
+
+            // 새 코루틴 시작 및 핸들 저장
+            unit.atkSpeedDownCoroutine = unit.StartCoroutine(AttackSpeedDownCoroutine(unit, percent, duration));
+        }
+    }
+
+    private static IEnumerator AttackSpeedDownCoroutine(Unit unit, float percent, float duration)
+    {
+        unit.AtkSpeedMultiplier = 1 + percent / 100f;
+
+        yield return new WaitForSeconds(duration);
+
+        unit.AtkSpeedMultiplier = 1f;
+        unit.atkSpeedDownCoroutine = null;
+    }
 }

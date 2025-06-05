@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
@@ -7,6 +8,8 @@ public class Unit : MonoBehaviour
 {
     public UnitData unitData;
     public Health HP_unit;
+
+    public float finalDamage;
 
     public bool inCombat = false;
     [HideInInspector] public string targetTag;
@@ -18,9 +21,15 @@ public class Unit : MonoBehaviour
     //[SerializeField]
     private UnitSkillData unitSkill;
 
-    #region 상태이상 값들
-    [HideInInspector] public float SlowSpeed = 1;
+    #region 상태이상 값들                                     
+    [HideInInspector] public float SlowSpeed = 1;          // 관련 이펙트들은 지정한 값이 아니라면 발동하게 해두면 편하겠구먼
     [HideInInspector] public bool StunCheck;
+    #endregion
+
+    #region 공속 감소 
+    public Coroutine atkSpeedDownCoroutine;
+    public float AtkSpeedMultiplier = 1;
+    public float FinalAtkTimer;
     #endregion
 
     void Start()
@@ -35,6 +44,7 @@ public class Unit : MonoBehaviour
 
         SlowSpeed = 1;
         StunCheck = false;
+        AtkSpeedMultiplier = 1;
     }
 
     void Update()
@@ -148,7 +158,8 @@ public class Unit : MonoBehaviour
         if (targetUnit == null) inCombat = false;
 
         attackTimer += Time.deltaTime;
-        if (attackTimer >= unitData.AttackSpeed)
+        FinalAtkTimer = unitData.AttackSpeed * AtkSpeedMultiplier;
+        if (attackTimer >= FinalAtkTimer)
         {
             UseSkill();
             attackTimer = 0f;
@@ -158,45 +169,70 @@ public class Unit : MonoBehaviour
     void UseSkill()
     {
         // 물리 데미지 적용
-        float finalDamage = unitSkill.Damage; // <ㅡ 여기에 치명타 부분 추가해야함
-        //targetUnit.TakeDamage(finalDamage);
+        finalDamage = unitSkill.Damage; // <ㅡ 여기에 치명타 부분 추가해야함
 
-        // 2) 원거리일 경우 투사체 발사, 근접은 즉시 효과 적용
-        if (unitSkill.RangeType == RangeType.Ranged && unitSkill.ProjectilePrefab != null)
+        // 2) 근거리 처리
+        if (unitSkill.RangeType == RangeType.Melee)
         {
-            // 투사체 인스턴스화
-            var proj = Instantiate(unitSkill.ProjectilePrefab, transform.position, Quaternion.identity);
+            // 2-1) 근거리 단일
+            if (!unitSkill.RangeAttackCheck)
+            {
+                ApplySkillEffect(targetUnit, finalDamage);
+            }
+            // 2-2) 근거리 범위
+            else
+            {
+                var targets = new List<Health>();
+                targets.Add(targetUnit);
 
-            // 투사체 초기화
-            proj.GetComponent<SkillProjectile>().Initialize(
-                damage: finalDamage,
-                isArea: unitSkill.RangeAttackCheck,
-                areaRadius: unitSkill.RangeDiameter * 0.5f,
-                direction: (targetUnit.transform.position - transform.position).normalized,
-                speed: unitSkill.ProjectileSpeed,
-                attacker: this,
-                attackCount: unitSkill.AttackCount
-            );
+                Collider[] hits = Physics.OverlapSphere(transform.position, unitData.AttackRange);
+                var extras = new List<Health>();
+                foreach (var hit in hits)
+                {
+                    if (!hit.CompareTag(targetTag)) continue;
+                    if (hit.gameObject == targetUnit.gameObject) continue;
+                    var h = hit.GetComponent<Health>();
+                    if (h != null) extras.Add(h);
+                }
+                extras.Sort((a, b) =>
+                    Vector3.SqrMagnitude(a.transform.position - targetUnit.transform.position)
+                        .CompareTo(Vector3.SqrMagnitude(b.transform.position - targetUnit.transform.position))
+                );
+                int needed = unitSkill.AttackCount - 1;
+                for (int i = 0; i < Mathf.Min(needed, extras.Count); i++)
+                    targets.Add(extras[i]);
+
+                foreach (var h in targets)
+                    ApplySkillEffect(h, finalDamage);
+            }
         }
-        else
+        // 3) 원거리 처리
+        else if (unitSkill.RangeType == RangeType.Ranged)
         {
-            // 근접 혹은 투사체 없음 → 즉시 상태이상 효과만 적용
-            ApplySkillEffect(targetUnit, finalDamage);
+            // 3-1) 투사체 미설정 시 단일 처리
+            if (unitSkill.ProjectilePrefab == null)
+            {
+                Debug.Log("No ProjectilePrefab");
+                ApplySkillEffect(targetUnit, finalDamage);
+            }
+            // 투사체를 이용한 단일/범위 처리
+            else
+            {
+                var proj = Instantiate(unitSkill.ProjectilePrefab, transform.position, Quaternion.identity);
+                proj.GetComponent<SkillProjectile>().Initialize(
+                    damage: finalDamage,
+                    isArea: unitSkill.RangeAttackCheck,
+                    areaRadius: unitSkill.RangeDiameter * 0.5f,
+                    direction: (targetUnit.transform.position - transform.position).normalized,
+                    speed: unitSkill.ProjectileSpeed,
+                    attacker: this,
+                    attackCount: unitSkill.AttackCount
+                );
+            }
         }
 
         //Debug.Log("공격");
     }
-
-    //void UseSkill()
-    //{
-    //    // 물리 데미지 적용
-    //    float finalDamage = unitSkill.Damage; // <ㅡ 여기에 치명타 부분 추가해야함
-    //    targetUnit.TakeDamage(finalDamage);
-
-    //    ApplySkillEffect();
-
-    //    //Debug.Log("공격");
-    //}
 
     public void ApplySkillEffect(Health target, float damage) // 상태효과
     {
@@ -212,13 +248,26 @@ public class Unit : MonoBehaviour
             StatusEffects.ApplySlow(targetUnit, unitSkill.SlowRatio, unitSkill.SlowDuration);
         if (unitSkill.Stun)
             StatusEffects.ApplyStun(targetUnit, unitSkill.StunDuration);
+        if (unitSkill.AtkSpeedDown)
+            StatusEffects.ApplyAttackSpeedDown(targetUnit, unitSkill.AtkSpeedDownRatio, unitSkill.AtkSpeedDownDuration);
     }
 
 
     // 사정거리 시각화
     void OnDrawGizmosSelected()
     {
+        //Gizmos.color = Color.red;
+        //Gizmos.DrawLine(transform.position, transform.position + Direction * unitData.AttackRange);
+
+        if (unitSkill != null && unitSkill.RangeType == RangeType.Melee && unitSkill.RangeAttackCheck)
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireSphere(transform.position, unitData.AttackRange);
+        }
+
+        // 유닛 사정거리 시각화
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + Direction * unitData.AttackRange);
+        Gizmos.DrawWireSphere(transform.position, unitData.AttackRange);
     }
 }
