@@ -32,4 +32,5 @@ MonoBehaviour:
   NockbackStrength: 2
   AtkSpeedDownRatio: 0
   AtkSpeedDownDuration: 3
-  EffectRemovalRange: 1.17
+  EffectRemovalRange: 2
+  Unitcount: 1
