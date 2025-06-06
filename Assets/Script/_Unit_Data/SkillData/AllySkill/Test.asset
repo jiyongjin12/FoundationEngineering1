@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a65181e3a5daab34bbc5f0b9a3ac6ee1, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  RangeType: 0
+  Damage: 0
+  RangeAttackCheck: 0
+  RangeDiameter: 0
+  UseSkillEffect: 0
+  ProcChance: 0
+  ProjectilePrefab: {fileID: 9046949950307811681, guid: 9e19f8d37e0323a4bb7a828cef4a32b3, type: 3}
+  ProjectileSpeed: 0
+  AttackCount: 0
+  Slow: 0
+  Stun: 0
+  Nockback: 0
+  AtkSpeedDown: 0
+  ClearEffects: 0
+  SlowRatio: 0
+  SlowDuration: 0
+  StunDuration: 0
+  NockbackStrength: 0
+  AtkSpeedDownRatio: 0
+  AtkSpeedDownDuration: 0
+  EffectRemovalRange: 0

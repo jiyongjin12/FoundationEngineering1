@@ -24,6 +24,7 @@ public class Unit : MonoBehaviour
     #region 상태이상 값들                                     
     [HideInInspector] public float SlowSpeed = 1;          // 관련 이펙트들은 지정한 값이 아니라면 발동하게 해두면 편하겠구먼
     [HideInInspector] public bool StunCheck;
+    [HideInInspector] public bool NuckBack_Sutn = false;
     #endregion
 
     #region 공속 감소 
@@ -32,8 +33,13 @@ public class Unit : MonoBehaviour
     public float FinalAtkTimer;
     #endregion
 
+
+    public bool check;
+
     void Start()
     {
+        this.name = unitData.name;
+
         targetTag = (unitData.Faction == 0) ? "Enemy" : "Ally"; // 공격 목표 지정
 
         HP_unit.HP = unitData.Hp;
@@ -51,7 +57,7 @@ public class Unit : MonoBehaviour
     {
         DetectTarget();// 공격범위 탐지
 
-        if (!StunCheck)
+        if (!StunCheck && !NuckBack_Sutn)
         {
             if (!inCombat)
             {
@@ -62,6 +68,8 @@ public class Unit : MonoBehaviour
                 Attack();
             }
         }
+
+        check = HasAnyStatusEffect();
     }
 
     void FixedUpdate()
@@ -250,6 +258,31 @@ public class Unit : MonoBehaviour
             StatusEffects.ApplyStun(targetUnit, unitSkill.StunDuration);
         if (unitSkill.AtkSpeedDown)
             StatusEffects.ApplyAttackSpeedDown(targetUnit, unitSkill.AtkSpeedDownRatio, unitSkill.AtkSpeedDownDuration);
+        if (unitSkill.ClearEffects)
+            StatusEffects.TryCleanseNearbyAllies(this, unitSkill.EffectRemovalRange, unitSkill.Unitcount);
+    }
+
+    public bool HasAnyStatusEffect()  // 상태이상 확인
+    {
+        return atkSpeedDownCoroutine != null || SlowSpeed < 1f || StunCheck;
+    }
+
+    public void ClearAllStatusEffects()  // 상태이상 해제
+    {
+        // 공격 속도 감소 초기화
+        if (atkSpeedDownCoroutine != null)
+        {
+            StopCoroutine(atkSpeedDownCoroutine);
+            atkSpeedDownCoroutine = null;
+        }
+        AtkSpeedMultiplier = 1f;
+
+        // 슬로우 초기화
+        SlowSpeed = 1f;
+
+        // 스턴 해제
+        StunCheck = false;
+       
     }
 
 

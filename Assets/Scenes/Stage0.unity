@@ -667,13 +667,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allEnemyUnits:
   - {fileID: 11400000, guid: dd873fe0dee63a04fb48344818dff9f9, type: 2}
+  - {fileID: 11400000, guid: fcdc8a7698c8ddc4ba6fe31ae2d601b2, type: 2}
   HP: 100
   HP_Tower: {fileID: 1084823568}
   Spawns:
   - HP_Status: 70
     SpawnTime: 3
     E_name:
-    - e
+    - e2
   - HP_Status: 50
     SpawnTime: 100
     E_name:
@@ -1465,7 +1466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Custom:
   - {fileID: 11400000, guid: cdf9dc16c5c3c96429a4a4b672c89c55, type: 2}
-  - {fileID: 11400000, guid: cdf9dc16c5c3c96429a4a4b672c89c55, type: 2}
+  - {fileID: 11400000, guid: 4fe531446114f8542a66246f5283d489, type: 2}
   - {fileID: 11400000, guid: cdf9dc16c5c3c96429a4a4b672c89c55, type: 2}
   - {fileID: 11400000, guid: cdf9dc16c5c3c96429a4a4b672c89c55, type: 2}
   - {fileID: 0}
@@ -1682,10 +1683,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitData: {fileID: 11400000, guid: cdf9dc16c5c3c96429a4a4b672c89c55, type: 2}
   HP_unit: {fileID: 0}
+  finalDamage: 0
   inCombat: 0
   targetTag: 
   SlowSpeed: 0
   StunCheck: 0
+  NuckBack_Sutn: 0
+  AtkSpeedMultiplier: 1
+  FinalAtkTimer: 0
 --- !u!1 &9220578371303006266
 GameObject:
   m_ObjectHideFlags: 0

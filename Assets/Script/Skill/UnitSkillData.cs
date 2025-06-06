@@ -32,7 +32,10 @@ public class UnitSkillData : ScriptableObject
     public bool Slow;                            // 슬로우
     public bool Stun;                            // 스턴
     public bool Nockback;                        // 넉백
-    public bool AtkSpeedDown;                      // 공속다운
+    public bool AtkSpeedDown;                    // 공속다운
+
+    public bool ClearEffects;                    // 상태 이상 제거
+
 
     [Header("슬로우")]
     public float SlowRatio;                      // %
@@ -45,6 +48,10 @@ public class UnitSkillData : ScriptableObject
     public float NockbackStrength;               // 가하는 힘
 
     [Header("공속다운")]
-    public float AtkSpeedDownRatio;           // %
-    public float AtkSpeedDownDuration;        // 지속시간
+    public float AtkSpeedDownRatio;              // %
+    public float AtkSpeedDownDuration;           // 지속시간
+
+    [Header("상태이상 제거 범위")]
+    public float EffectRemovalRange;             // 범위
+    public int Unitcount;                        // 제거 수
 }

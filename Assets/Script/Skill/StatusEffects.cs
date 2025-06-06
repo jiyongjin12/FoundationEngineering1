@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public static class StatusEffects
 {
@@ -58,7 +59,7 @@ public static class StatusEffects
         Vector3 endPos = startPos + direction.normalized * strength;
 
         // 이동과 공격 비활성화
-        unit.StunCheck = true;
+        unit.NuckBack_Sutn = true;
 
         float timer = 0f;
         while (timer < duration)
@@ -73,7 +74,7 @@ public static class StatusEffects
         unit.transform.position = endPos;
 
         // 원래 상태 복구
-        unit.StunCheck = false;
+        unit.NuckBack_Sutn = false;
     }
 
 
@@ -99,5 +100,50 @@ public static class StatusEffects
 
         unit.AtkSpeedMultiplier = 1f;
         unit.atkSpeedDownCoroutine = null;
+    }
+
+    public static void TryCleanseNearbyAllies(Unit self, float radius, int count)
+    {
+        Collider[] hits = Physics.OverlapSphere(self.transform.position, radius);
+        List<Unit> affectedAllies = new List<Unit>();
+
+        foreach (var hit in hits)
+        {
+            if (hit.TryGetComponent<Unit>(out var unit))
+            {
+                if (unit == self) continue;
+                if (unit.CompareTag(self.tag) && unit.HasAnyStatusEffect())
+                {
+                    affectedAllies.Add(unit);
+                }
+            }
+        }
+
+        if (affectedAllies.Count == 0)
+        {
+            Debug.Log("주변에 상태이상 아군 없음, 자기 자신에게 해제 적용");
+            self.ClearAllStatusEffects();
+        }
+        else
+        {
+            int actualCount = Mathf.Min(count, affectedAllies.Count);
+            List<Unit> selectedTargets = new List<Unit>();
+
+            while (selectedTargets.Count < actualCount)
+            {
+                int index = Random.Range(0, affectedAllies.Count);
+                Unit chosen = affectedAllies[index];
+
+                if (!selectedTargets.Contains(chosen))
+                {
+                    selectedTargets.Add(chosen);
+                }
+            }
+
+            foreach (var unit in selectedTargets)
+            {
+                unit.ClearAllStatusEffects();
+            }
+        }
     }
 }
