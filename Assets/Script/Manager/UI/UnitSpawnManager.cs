@@ -14,7 +14,6 @@ public class UnitSpawnManager : MonoBehaviour
 
     [Header("Spawn")]
     public Transform UnitSpawnPos;
-    public GameObject Unit;
 
     private Button[] deckButtons;
 
@@ -49,11 +48,19 @@ public class UnitSpawnManager : MonoBehaviour
 
     void SpawnUnit(int index)
     {
-        GameObject unitObj = Instantiate(Unit, UnitSpawnPos.position, Quaternion.identity); // 생성
+        // Custom[index].UnitBody를 인스턴스화
+        GameObject bodyPrefab = Custom[index].UnitBody;
+        GameObject unitObj = Instantiate(bodyPrefab, UnitSpawnPos.position, Quaternion.identity);
 
-        // 생성될 오브젝트에 데이터 할당
-        Unit unit = unitObj.GetComponent<Unit>();
-        unit.unitData = Custom[index];
+        // 생성된 유닛 오브젝트에 Unit 컴포넌트가 있다면 데이터 할당
+        if (unitObj.TryGetComponent<Unit>(out var unit))
+        {
+            unit.unitData = Custom[index];
+        }
+        else
+        {
+            Debug.LogWarning($"[{bodyPrefab.name}]에 Unit 컴포넌트가 없습니다.");
+        }
     }
 
 

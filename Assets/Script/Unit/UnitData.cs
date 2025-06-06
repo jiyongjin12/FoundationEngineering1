@@ -19,6 +19,8 @@ public class UnitData : ScriptableObject
 
     public float CoolDownTime; // 소환?
 
+    public GameObject UnitBody;
+
     [Header("버튼 UI")]
     public Sprite ButtonImage;
 

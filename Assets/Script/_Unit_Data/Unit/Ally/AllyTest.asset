@@ -21,6 +21,7 @@ MonoBehaviour:
   Critical_probability: 0
   Critical_damage: 0
   CoolDownTime: 0.5
+  UnitBody: {fileID: 8115385945721784818, guid: 8e63d948158e0944a91e3a0f3656520b, type: 3}
   ButtonImage: {fileID: 0}
   UnitDefaultSkill: {fileID: 11400000, guid: 78db54e5abe53c9448f080d9f6bd7af9, type: 2}
   UnitEvolvedSkill: {fileID: 0}

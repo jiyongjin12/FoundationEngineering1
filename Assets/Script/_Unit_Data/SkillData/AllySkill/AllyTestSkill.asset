@@ -23,7 +23,7 @@ MonoBehaviour:
   AttackCount: 10
   Slow: 0
   Stun: 1
-  Nockback: 0
+  Nockback: 1
   AtkSpeedDown: 1
   ClearEffects: 1
   SlowRatio: 0
