@@ -179,15 +179,21 @@ public class Unit : MonoBehaviour
         // 물리 데미지 적용
         finalDamage = unitSkill.Damage; // <ㅡ 여기에 치명타 부분 추가해야함
 
-        // 2) 근거리 처리
+        if (Random.value < unitData.Critical_probability / 100f)
+        {
+            finalDamage *= unitData.Critical_damage / 100f;
+            Debug.Log("치명타!");
+        }
+
+        // 근거리 처리
         if (unitSkill.RangeType == RangeType.Melee)
         {
-            // 2-1) 근거리 단일
+            // 근거리 단일
             if (!unitSkill.RangeAttackCheck)
             {
                 ApplySkillEffect(targetUnit, finalDamage);
             }
-            // 2-2) 근거리 범위
+            // 근거리 범위
             else
             {
                 var targets = new List<Health>();
@@ -214,10 +220,10 @@ public class Unit : MonoBehaviour
                     ApplySkillEffect(h, finalDamage);
             }
         }
-        // 3) 원거리 처리
+        // 원거리 처리
         else if (unitSkill.RangeType == RangeType.Ranged)
         {
-            // 3-1) 투사체 미설정 시 단일 처리
+            // 투사체 미설정 시 단일 처리
             if (unitSkill.ProjectilePrefab == null)
             {
                 Debug.Log("No ProjectilePrefab");
