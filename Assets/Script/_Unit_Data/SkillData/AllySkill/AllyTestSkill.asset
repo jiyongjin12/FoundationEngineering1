@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a65181e3a5daab34bbc5f0b9a3ac6ee1, type: 3}
   m_Name: AllyTestSkill
   m_EditorClassIdentifier: 
-  RangeType: 1
+  RangeType: 0
   Damage: 5
   Critical_probability: 0
   Critical_damage: 0
@@ -28,7 +28,7 @@ MonoBehaviour:
   Nockback: 1
   AtkSpeedDown: 1
   ClearEffects: 1
-  SlowRatio: 50
+  SlowRatio: 3
   SlowDuration: 3
   StunDuration: 1
   NockbackStrength: 2

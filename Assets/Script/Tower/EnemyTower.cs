@@ -12,7 +12,7 @@ public class EnemyTower : MonoBehaviour
     public Health HP_Tower;
 
     [SerializeField] private EnemySpawn_Array[] Spawns;
-    [SerializeField] private GameObject Enemy_body;
+    //[SerializeField] private GameObject Enemy_body;
     [SerializeField] private Transform EnemySpawnPos;
 
     // 이름 → UnitData 빠른 조회용

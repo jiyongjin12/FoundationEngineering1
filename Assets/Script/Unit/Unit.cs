@@ -182,34 +182,38 @@ public class Unit : MonoBehaviour
             // 근거리 범위
             else
             {
-                var targets = new List<Health>();
-                targets.Add(targetUnit);
-
                 Collider[] hits = Physics.OverlapSphere(transform.position, unitData.AttackRange);
-                var extras = new List<Health>();
+                var candidates = new List<Health>();
+
+                // 태그 & 전방 필터링
                 foreach (var hit in hits)
                 {
                     bool isTarget = false;
                     foreach (var tag in targetTags)
                         if (hit.CompareTag(tag)) { isTarget = true; break; }
+                    if (!isTarget) continue;
 
-                    if (!isTarget || hit.gameObject == targetUnit.gameObject) 
-                        continue;
+                    Vector3 toHit = hit.transform.position - transform.position;
+                    if (Vector3.Dot(toHit.normalized, Direction) <= 0)
+                        continue; // 뒤/옆 제외
 
-                    var h = hit.GetComponent<Health>(); 
-                    if (h != null) 
-                        extras.Add(h);
+                    var h = hit.GetComponent<Health>();
+                    if (h != null)
+                        candidates.Add(h);
                 }
-                extras.Sort((a, b) =>
-                    Vector3.SqrMagnitude(a.transform.position - targetUnit.transform.position)
-                        .CompareTo(Vector3.SqrMagnitude(b.transform.position - targetUnit.transform.position))
-                );
-                int needed = unitSkill.AttackCount - 1;
-                for (int i = 0; i < Mathf.Min(needed, extras.Count); i++)
-                    targets.Add(extras[i]);
 
-                foreach (var h in targets)
-                    ApplySkillEffect(h, finalDamage);
+                // 거리순 정렬
+                candidates.Sort((a, b) =>
+                    Vector3.SqrMagnitude(a.transform.position - transform.position)
+                        .CompareTo(Vector3.SqrMagnitude(b.transform.position - transform.position))
+                );
+
+                // attackCount 만큼만 공격
+                int applyCount = Mathf.Min(unitSkill.AttackCount, candidates.Count);
+                for (int i = 0; i < applyCount; i++)
+                {
+                    ApplySkillEffect(candidates[i], finalDamage);
+                }
             }
         }
         // 원거리 처리
