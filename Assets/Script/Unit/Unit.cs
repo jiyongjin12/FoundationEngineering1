@@ -179,9 +179,9 @@ public class Unit : MonoBehaviour
         // 물리 데미지 적용
         finalDamage = unitSkill.Damage; // <ㅡ 여기에 치명타 부분 추가해야함
 
-        if (Random.value < unitData.Critical_probability / 100f)
+        if (Random.value < unitSkill.Critical_probability / 100f)
         {
-            finalDamage *= unitData.Critical_damage / 100f;
+            finalDamage *= unitSkill.Critical_damage / 100f;
             Debug.Log("치명타!");
         }
 

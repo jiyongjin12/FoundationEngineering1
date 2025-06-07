@@ -14,9 +14,6 @@ public class UnitData : ScriptableObject
     public float AttackSpeed;
     public float AttackRange;
 
-    public float Critical_probability; // 치명타 확률
-    public float Critical_damage; // 치명타 피해
-
     public float CoolDownTime; // 소환?
 
     public GameObject UnitBody;

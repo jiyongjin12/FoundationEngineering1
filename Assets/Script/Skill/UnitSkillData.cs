@@ -13,6 +13,9 @@ public class UnitSkillData : ScriptableObject
     [Header("딜")]
     public float Damage;
 
+    public float Critical_probability; // 치명타 확률
+    public float Critical_damage; // 치명타 피해
+
     [Header("범위")]
     public bool RangeAttackCheck;        // 범위 공격인지 여부
     public float RangeDiameter;          // 범위 공격 지름

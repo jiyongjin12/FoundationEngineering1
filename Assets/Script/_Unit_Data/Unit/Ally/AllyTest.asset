@@ -18,8 +18,6 @@ MonoBehaviour:
   Speed: 4
   AttackSpeed: 2
   AttackRange: 12
-  Critical_probability: 0
-  Critical_damage: 0
   CoolDownTime: 0.5
   UnitBody: {fileID: 8115385945721784818, guid: 8e63d948158e0944a91e3a0f3656520b, type: 3}
   ButtonImage: {fileID: 0}
