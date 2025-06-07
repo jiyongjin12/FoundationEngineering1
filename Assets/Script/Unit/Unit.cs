@@ -12,7 +12,7 @@ public class Unit : MonoBehaviour
     public float finalDamage;
 
     public bool inCombat = false;
-    [HideInInspector] public string targetTag;
+    [HideInInspector] public string[] targetTags;
     private float attackTimer = 0f;
 
     private Vector3 Direction;
@@ -40,7 +40,16 @@ public class Unit : MonoBehaviour
     {
         this.name = unitData.name;
 
-        targetTag = (unitData.Faction == 0) ? "Enemy" : "Ally"; // 공격 목표 지정
+        if (unitData.Faction == 1)
+        {
+            this.tag = "Enemy";
+            targetTags = new[] { "Ally", "Player" };
+        }   
+        else
+        {
+            this.tag = "Ally";
+            targetTags = new[] { "Enemy", "Tower" };
+        }
 
         HP_unit.HP = unitData.Hp;
         attackTimer = 0f;
@@ -85,31 +94,6 @@ public class Unit : MonoBehaviour
 
     void DetectTarget()
     {
-        #region 레이케스트-주석-관통x
-        //RaycastHit hit;
-
-        //// 범위 탐지
-        //if (Physics.Raycast(transform.position, Direction, out hit, unitData.AttackRange))
-        //{
-        //    if (hit.collider.CompareTag(targetTag))
-        //    {
-        //        // 타겟 발견, 전투 상태 전환
-        //        if (!inCombat)
-        //        {
-        //            inCombat = true;
-        //            targetUnit = hit.collider.GetComponent<Health>();
-        //        }
-        //    }
-
-        //}
-        //else
-        //{
-        //    // 사정거리에 없으면 전투 상태 종료
-        //    inCombat = false;
-        //    targetUnit = null;
-        //}
-        #endregion
-
         float range = unitData.AttackRange;
         Vector3 origin = transform.position;
 
@@ -133,8 +117,10 @@ public class Unit : MonoBehaviour
 
         foreach (var col in hits)
         {
-            if (!col.CompareTag(targetTag))
-                continue;
+            bool isTarget = false;
+            foreach (var tag in targetTags)
+                if (col.CompareTag(tag)) { isTarget = true; break; }
+            if (!isTarget) continue;
 
             Vector3 toCol = col.transform.position - origin;
             if (Vector3.Dot(toCol.normalized, Direction) <= 0)
@@ -203,10 +189,16 @@ public class Unit : MonoBehaviour
                 var extras = new List<Health>();
                 foreach (var hit in hits)
                 {
-                    if (!hit.CompareTag(targetTag)) continue;
-                    if (hit.gameObject == targetUnit.gameObject) continue;
-                    var h = hit.GetComponent<Health>();
-                    if (h != null) extras.Add(h);
+                    bool isTarget = false;
+                    foreach (var tag in targetTags)
+                        if (hit.CompareTag(tag)) { isTarget = true; break; }
+
+                    if (!isTarget || hit.gameObject == targetUnit.gameObject) 
+                        continue;
+
+                    var h = hit.GetComponent<Health>(); 
+                    if (h != null) 
+                        extras.Add(h);
                 }
                 extras.Sort((a, b) =>
                     Vector3.SqrMagnitude(a.transform.position - targetUnit.transform.position)
@@ -223,10 +215,9 @@ public class Unit : MonoBehaviour
         // 원거리 처리
         else if (unitSkill.RangeType == RangeType.Ranged)
         {
-            // 투사체 미설정 시 단일 처리
+            // 투사체 미설정 시 그냥 단일 처리
             if (unitSkill.ProjectilePrefab == null)
             {
-                Debug.Log("No ProjectilePrefab");
                 ApplySkillEffect(targetUnit, finalDamage);
             }
             // 투사체를 이용한 단일/범위 처리
@@ -244,26 +235,26 @@ public class Unit : MonoBehaviour
                 );
             }
         }
-
-        //Debug.Log("공격");
     }
 
     public void ApplySkillEffect(Health target, float damage) // 상태효과
     {
         target.TakeDamage(damage);
 
+        if (target.CompareTag("Player") || target.CompareTag("Tower")) // Player/Tower 태그 상태이상 없이 데미지만
+            return;
+
         if (unitSkill.UseSkillEffect && Random.value > unitSkill.ProcChance / 100) // 스킬 사용 확률
             return;
 
-
         if (unitSkill.Nockback)
-            StatusEffects.ApplyKnockback(targetUnit, Direction, unitSkill.NockbackStrength);
+            StatusEffects.ApplyKnockback(target, Direction, unitSkill.NockbackStrength);
         if (unitSkill.Slow)
-            StatusEffects.ApplySlow(targetUnit, unitSkill.SlowRatio, unitSkill.SlowDuration);
+            StatusEffects.ApplySlow(target, unitSkill.SlowRatio, unitSkill.SlowDuration);
         if (unitSkill.Stun)
-            StatusEffects.ApplyStun(targetUnit, unitSkill.StunDuration);
+            StatusEffects.ApplyStun(target, unitSkill.StunDuration);
         if (unitSkill.AtkSpeedDown)
-            StatusEffects.ApplyAttackSpeedDown(targetUnit, unitSkill.AtkSpeedDownRatio, unitSkill.AtkSpeedDownDuration);
+            StatusEffects.ApplyAttackSpeedDown(target, unitSkill.AtkSpeedDownRatio, unitSkill.AtkSpeedDownDuration);
         if (unitSkill.ClearEffects)
             StatusEffects.TryCleanseNearbyAllies(this, unitSkill.EffectRemovalRange, unitSkill.Unitcount);
     }
@@ -275,7 +266,6 @@ public class Unit : MonoBehaviour
 
     public void ClearAllStatusEffects()  // 상태이상 해제
     {
-        // 공격 속도 감소 초기화
         if (atkSpeedDownCoroutine != null)
         {
             StopCoroutine(atkSpeedDownCoroutine);
@@ -283,21 +273,14 @@ public class Unit : MonoBehaviour
         }
         AtkSpeedMultiplier = 1f;
 
-        // 슬로우 초기화
         SlowSpeed = 1f;
 
-        // 스턴 해제
         StunCheck = false;
        
     }
 
-
-    // 사정거리 시각화
     void OnDrawGizmosSelected()
     {
-        //Gizmos.color = Color.red;
-        //Gizmos.DrawLine(transform.position, transform.position + Direction * unitData.AttackRange);
-
         if (unitSkill != null && unitSkill.RangeType == RangeType.Melee && unitSkill.RangeAttackCheck)
         {
             Gizmos.color = Color.blue;

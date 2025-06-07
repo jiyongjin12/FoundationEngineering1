@@ -1,13 +1,16 @@
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
+    public PlayerData playerData;
+    public Health PlayerHp;
+
     Rigidbody rb;
-    public float Speed;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        PlayerHp.HP = playerData.MaxHealth;
     }
 
     void Update()
@@ -15,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         Vector3 inputDir = new Vector3(x,0,0);
 
-        rb.linearVelocity = inputDir * Speed; // ¹¹Áö ¹º°¡ ¹Ù²å´Âµð?
+        rb.linearVelocity = inputDir * playerData.MoveSpeed;
     }
 
     

@@ -31,64 +31,49 @@ public class EnemyTower : MonoBehaviour
         }
     }
 
-
     private void Start()
     {
         for (int i = 0; i < Spawns.Length; i++)
         {
-            StartCoroutine(SpawnRoutine(i));
+            for (int u = 0; u < Spawns[i].E_name.Length; u++)
+            {
+                string unitName = Spawns[i].E_name[u];
+                StartCoroutine(SpawnUnitLoop(i, unitName));
+            }
         }
     }
 
-    private IEnumerator SpawnRoutine(int index) // 어우 코드 더러워랑
+    private IEnumerator SpawnUnitLoop(int spIndex, string unitName)
     {
-        var cfg = Spawns[index];
-        float prevThreshold = (index > 0) ? Spawns[index - 1].HP_Status : 100f;
+        var cfg = Spawns[spIndex];
+        // 이전 HP 임계치는 여전히 참조
+        float prevThreshold = (spIndex > 0) ? Spawns[spIndex - 1].HP_Status : 100f;
 
         while (HP_Tower.currentHP > 0f)
         {
+            // 현재 체력 %
             float hpPercent = HP_Tower.currentHP / HP * 100f;
-            bool inRange = false;
+            bool inRange = (spIndex == 0)
+                ? (hpPercent <= prevThreshold && hpPercent >= cfg.HP_Status)
+                : (hpPercent < prevThreshold && hpPercent >= cfg.HP_Status);
 
-            if (index == 0)
+            if (inRange && unitLookup.TryGetValue(unitName, out var data))
             {
-                // maxHP 이하, cfg.HP_Status 이상
-                inRange = (hpPercent <= prevThreshold && hpPercent >= cfg.HP_Status);
+                // data에 정의된 min/max 로 랜덤 대기
+                float wait = Random.Range(data.MinSpawnTime, data.MaxSpawnTime);
+                Debug.Log($"[{unitName}] will spawn in {wait:F2}s");
+                yield return new WaitForSeconds(wait);
+
+                // 소환
+                var go = Instantiate(data.UnitBody, EnemySpawnPos.position, Quaternion.identity);
+                if (go.TryGetComponent<Unit>(out var unitComp))
+                    unitComp.unitData = data;
             }
             else
             {
-                // prevThreshold 미만, cfg.HP_Status 이상
-                inRange = (hpPercent < prevThreshold && hpPercent >= cfg.HP_Status);
-            }
-
-            if (inRange)
-            {
-                yield return new WaitForSeconds(cfg.SpawnTime);
-                foreach (var unitName in cfg.E_name)
-                    TrySpawnUnit(unitName);
-
-            }
-            else
-            {
+                // 범위 밖이거나 data 누락 시 매 프레임 대기
                 yield return null;
             }
         }
     }
-
-    private void TrySpawnUnit(string unitName)
-    {
-        if (!unitLookup.TryGetValue(unitName, out var data))
-        {
-            Debug.LogWarning($"UnitData not found for name '{unitName}'");
-            return;
-        }
-
-        // 적 유닛 생성
-        var go = Instantiate(Enemy_body, EnemySpawnPos.position, Quaternion.identity);
-        if (go.TryGetComponent<Unit>(out var unitComp))
-        {
-            unitComp.unitData = data;
-        }
-    }
-
 }

@@ -32,10 +32,8 @@ public static class StatusEffects
     private static IEnumerator StunCoroutine(Unit unit, float duration)
     {
         unit.StunCheck = true;
-        //unit.enabled = false;
         yield return new WaitForSeconds(duration);
         unit.StunCheck = false;
-        //unit.enabled = true;
         Debug.Log("스턴 확인");
     }
 

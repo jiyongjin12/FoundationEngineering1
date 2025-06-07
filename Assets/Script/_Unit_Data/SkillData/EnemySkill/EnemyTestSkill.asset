@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RangeType: 0
   Damage: 0
+  Critical_probability: 0
+  Critical_damage: 0
   RangeAttackCheck: 0
   RangeDiameter: 0
   UseSkillEffect: 0

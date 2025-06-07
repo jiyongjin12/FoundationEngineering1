@@ -14,23 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RangeType: 1
   Damage: 5
+  Critical_probability: 0
+  Critical_damage: 0
   RangeAttackCheck: 1
   RangeDiameter: 3
+  AttackCount: 5
   UseSkillEffect: 0
   ProcChance: 0
   ProjectilePrefab: {fileID: 9046949950307811681, guid: 9e19f8d37e0323a4bb7a828cef4a32b3, type: 3}
   ProjectileSpeed: 5
-  AttackCount: 10
-  Slow: 0
+  Slow: 1
   Stun: 1
   Nockback: 1
   AtkSpeedDown: 1
   ClearEffects: 1
-  SlowRatio: 0
-  SlowDuration: 0
+  SlowRatio: 50
+  SlowDuration: 3
   StunDuration: 1
   NockbackStrength: 2
-  AtkSpeedDownRatio: 0
+  AtkSpeedDownRatio: 10
   AtkSpeedDownDuration: 3
   EffectRemovalRange: 2
   Unitcount: 1
