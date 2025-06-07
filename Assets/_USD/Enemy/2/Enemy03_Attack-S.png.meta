@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 36d129ab7f814ad41bc6d39a12cdb70a
+guid: f0a641e51e1416d42884cd9921b6b055
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy05_Attack-S_0
+      name: Enemy03_Attack-S_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,14 +112,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43c3cea748ecf2141a35ed2861151af3
-      internalID: 1895659675
+      spriteID: 0a6c43c3609a5724ba38162ba65c5c42
+      internalID: -430558101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy05_Attack-S_1
+      name: Enemy03_Attack-S_1
       rect:
         serializedVersion: 2
         x: 128
@@ -134,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7dff46b93b32014ab18adb8a8fdf0a4
-      internalID: 1784713029
+      spriteID: e83fc9a971d4bde4ba6076aa42b53ed2
+      internalID: -1376208406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy05_Attack-S_2
+      name: Enemy03_Attack-S_2
       rect:
         serializedVersion: 2
         x: 256
@@ -156,30 +156,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0fae8071383484409560e4810ac0c2d
-      internalID: -1804280102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy05_Attack-S_3
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
-        height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4a4bf8c08e24f248a9d2fbbbe6eb250
-      internalID: -1295586635
+      spriteID: 04cfdd9cec5129d46823bd00f8d5e1c1
+      internalID: 893682047
       vertices: []
       indices: 
       edges: []
@@ -188,7 +166,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 0511c380af9ad554e82477b559113982
     internalID: 0
     vertices: []
     indices: 
@@ -198,10 +176,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Enemy05_Attack-S_0: 1895659675
-      Enemy05_Attack-S_1: 1784713029
-      Enemy05_Attack-S_2: -1804280102
-      Enemy05_Attack-S_3: -1295586635
+      Enemy03_Attack-S_0: -430558101
+      Enemy03_Attack-S_1: -1376208406
+      Enemy03_Attack-S_2: 893682047
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

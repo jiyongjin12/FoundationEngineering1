@@ -168,7 +168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &272815073
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -643,7 +643,6 @@ MonoBehaviour:
   - HP_Status: 0
     E_name:
     - e
-  Enemy_body: {fileID: 8115385945721784818, guid: 040b1abd6d7b1a940b7c0a0a57bde5dc, type: 3}
   EnemySpawnPos: {fileID: 123681392}
 --- !u!65 &1084823564
 BoxCollider:
@@ -1329,6 +1328,37 @@ MonoBehaviour:
   ButtonSpawnPos: {fileID: 753857265}
   ButtonCount: 10
   UnitSpawnPos: {fileID: 1910209999}
+--- !u!1 &2069173150
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2069173151}
+  m_Layer: 8
+  m_Name: Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2069173151
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069173150}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9213221211852816632}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1246547134553697214
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,7 +1418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3cc89bcb04d7e458feb52b65243009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 100
+  HP: 0
   currentHP: 0
 --- !u!54 &4246080371440398303
 Rigidbody:
@@ -1412,7 +1442,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
@@ -1546,6 +1576,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: ad2931b7f484cce45b62a62a0baf652f, type: 2}
   PlayerHp: {fileID: 4235375492130565026}
+  currentMana: 0
+  skillProjectilePrefab: {fileID: 2836623311021058967, guid: f4cb1306eae42bc4b9e7e2b0edd310ac, type: 3}
+  skillSpawnPoint: {fileID: 2069173151}
+  tier30: 0
+  tier70: 0
+  tier100: 0
 --- !u!136 &6642724221974093760
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1795,6 +1831,7 @@ Transform:
   m_Children:
   - {fileID: 8028887668541197084}
   - {fileID: 9059920523301692733}
+  - {fileID: 2069173151}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9220578371303006266

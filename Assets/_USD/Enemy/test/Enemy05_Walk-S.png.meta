@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 36d129ab7f814ad41bc6d39a12cdb70a
+guid: 4b47f35f18fbe4a4a9670c04ab6d2e87
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy05_Attack-S_0
+      name: Enemy05_Walk-S_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,14 +112,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43c3cea748ecf2141a35ed2861151af3
-      internalID: 1895659675
+      spriteID: 7289154ae3a8183459d1b73ceccbdbf1
+      internalID: 672791882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy05_Attack-S_1
+      name: Enemy05_Walk-S_1
       rect:
         serializedVersion: 2
         x: 128
@@ -134,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7dff46b93b32014ab18adb8a8fdf0a4
-      internalID: 1784713029
+      spriteID: db33f412fc9a1b54492fc23efe6ab77e
+      internalID: 452980269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy05_Attack-S_2
+      name: Enemy05_Walk-S_2
       rect:
         serializedVersion: 2
         x: 256
@@ -156,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0fae8071383484409560e4810ac0c2d
-      internalID: -1804280102
+      spriteID: 96d9745370b21ec4a98cf7041c2e6042
+      internalID: -598818383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy05_Attack-S_3
+      name: Enemy05_Walk-S_3
       rect:
         serializedVersion: 2
         x: 384
@@ -178,8 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4a4bf8c08e24f248a9d2fbbbe6eb250
-      internalID: -1295586635
+      spriteID: 7a6f4604b8e66bf4daca297bbd05feed
+      internalID: 2012749602
       vertices: []
       indices: 
       edges: []
@@ -198,10 +198,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Enemy05_Attack-S_0: 1895659675
-      Enemy05_Attack-S_1: 1784713029
-      Enemy05_Attack-S_2: -1804280102
-      Enemy05_Attack-S_3: -1295586635
+      Enemy05_Walk-S_0: 672791882
+      Enemy05_Walk-S_1: 452980269
+      Enemy05_Walk-S_2: -598818383
+      Enemy05_Walk-S_3: 2012749602
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

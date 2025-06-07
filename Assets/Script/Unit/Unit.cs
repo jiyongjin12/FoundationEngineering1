@@ -33,7 +33,6 @@ public class Unit : MonoBehaviour
     public float FinalAtkTimer;
     #endregion
 
-
     public bool check;
 
     void Start()
@@ -61,6 +60,7 @@ public class Unit : MonoBehaviour
         StunCheck = false;
         AtkSpeedMultiplier = 1;
     }
+
 
     void Update()
     {
@@ -155,7 +155,7 @@ public class Unit : MonoBehaviour
         FinalAtkTimer = unitData.AttackSpeed * AtkSpeedMultiplier;
         if (attackTimer >= FinalAtkTimer)
         {
-            UseSkill();
+            UseSkill();  // 여기에 에니메이션?
             attackTimer = 0f;
         }
     }
