@@ -166,7 +166,7 @@ MonoBehaviour:
   AtkSpeedMultiplier: 1
   FinalAtkTimer: 0
   check: 0
-  Animation: {fileID: 0}
+  Animation: {fileID: 5408909929639750120}
   KillingUnit: 0
   FinalRange: 0
 --- !u!114 &3629329139025047128
