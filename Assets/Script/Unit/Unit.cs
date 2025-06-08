@@ -13,7 +13,7 @@ public class Unit : MonoBehaviour
 
     public bool inCombat = false;
     [HideInInspector] public string[] targetTags;
-    private float attackTimer = 0f;
+    public float attackTimer = 0f;
 
     private Vector3 Direction;
 
@@ -34,6 +34,8 @@ public class Unit : MonoBehaviour
     #endregion
 
     public bool check;
+
+    public Animator Animation;
 
     // 보스
     public bool KillingUnit;
@@ -76,6 +78,7 @@ public class Unit : MonoBehaviour
             if (!inCombat)
             {
                 Move();
+                Animation.SetBool("IsAttack", false);
             }
             else
             {
@@ -160,12 +163,18 @@ public class Unit : MonoBehaviour
         FinalAtkTimer = unitData.AttackSpeed * AtkSpeedMultiplier;
         if (attackTimer >= FinalAtkTimer)
         {
-            UseSkill();  // 여기에 에니메이션?
-            attackTimer = 0f;
+            Animation.SetBool("IsAttack", true);
         }
     }
 
-    void UseSkill()
+    public void Attack_Anim()
+    {
+        UseSkill();  // 여기에 에니메이션?
+        attackTimer = 0f;
+        Animation.SetBool("IsAttack", false);
+    }
+
+    public void UseSkill()
     {
         // 물리 데미지 적용
         finalDamage = unitSkill.Damage; // <ㅡ 여기에 치명타 부분 추가해야함

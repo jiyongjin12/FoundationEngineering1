@@ -17,11 +17,15 @@ MonoBehaviour:
   Hp: 150
   Speed: 2
   AttackSpeed: 5
-  AttackRange: 2
-  UnitBody: {fileID: 8115385945721784818, guid: 8e63d948158e0944a91e3a0f3656520b, type: 3}
+  AttackRange: 3
+  OpenPrice: 0
+  LevelupPrice: 0
+  MaxLevel: 0
+  UnitBody: {fileID: 6121440897256809895, guid: 6485a2b5240ed47459078bfeb4380c3e, type: 3}
   ButtonImage: {fileID: 0}
   UnitDefaultSkill: {fileID: 11400000, guid: 60c9ec58c94e8704ea7a7de1e2ac591e, type: 2}
   UnitEvolvedSkill: {fileID: 0}
+  UnitAnimation: {fileID: 0}
   CoolDownTime: 0
-  MinSpawnTime: 100
-  MaxSpawnTime: 100
+  MinSpawnTime: 1
+  MaxSpawnTime: 4
