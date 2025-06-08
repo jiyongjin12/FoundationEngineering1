@@ -15,13 +15,15 @@ MonoBehaviour:
   Faction: 0
   name: b
   Hp: 1000
-  Speed: 0
-  AttackSpeed: 0
-  AttackRange: 0
-  Critical_probability: 0
-  Critical_damage: 0
-  CoolDownTime: 0
-  UnitBody: {fileID: 8115385945721784818, guid: 0b38f317c1f31a64bb31cb1bcb3fe0c9, type: 3}
+  Speed: 2.5
+  AttackSpeed: 2
+  AttackRange: 6
+  MaxLevel: 0
+  UnitBody: {fileID: 8450062133161072446, guid: fbd62da2433d88144b3fb1a619100739, type: 3}
   ButtonImage: {fileID: 0}
   UnitDefaultSkill: {fileID: 11400000, guid: 0532263d678b7474097ce7168f047e09, type: 2}
   UnitEvolvedSkill: {fileID: 0}
+  UnitAnimation: {fileID: 0}
+  CoolDownTime: 0
+  MinSpawnTime: 0
+  MaxSpawnTime: 0

@@ -109,6 +109,8 @@ MonoBehaviour:
   AtkSpeedMultiplier: 1
   FinalAtkTimer: 0
   check: 0
+  KillingUnit: 0
+  FinalRange: 0
 --- !u!114 &2673066145369562390
 MonoBehaviour:
   m_ObjectHideFlags: 0

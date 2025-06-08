@@ -82,7 +82,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
@@ -99,7 +99,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d7878e0cb19beb48a8ceb63b9094a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
+  playerData: {fileID: 0}
+  PlayerHp: {fileID: 0}
+  currentMana: 0
+  skillProjectilePrefab: {fileID: 0}
+  skillSpawnPoint: {fileID: 0}
+  tier30: 0
+  tier70: 0
+  tier100: 0
 --- !u!114 &6568639410950738275
 MonoBehaviour:
   m_ObjectHideFlags: 0

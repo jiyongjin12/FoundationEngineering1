@@ -17,6 +17,7 @@ MonoBehaviour:
   MaxMana: 100
   MaxHealth: 250
   NeedGold: 0
+  ManaRegenerationTime: 1
   MaxChargingTime: 5
   SpandManaCount: 10
   SkillDamage: 100

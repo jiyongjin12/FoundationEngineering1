@@ -60,6 +60,17 @@
       "source": "builtin",
       "dependencies": {}
     },
+    "com.unity.formats.usd": {
+      "version": "https://github.com/Unity-Technologies/usd-unity-sdk.git?path=package/com.unity.formats.usd#dev",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.timeline": "1.0.0",
+        "com.unity.modules.screencapture": "1.0.0",
+        "com.unity.modules.physics": "1.0.0"
+      },
+      "hash": "da7ff35eb8300236269eeec96b287faa2aa98395"
+    },
     "com.unity.ide.rider": {
       "version": "3.0.31",
       "depth": 0,

@@ -35,6 +35,10 @@ public class Unit : MonoBehaviour
 
     public bool check;
 
+    // 보스
+    public bool KillingUnit;
+    public float FinalRange = 0;
+
     void Start()
     {
         this.name = unitData.name;
@@ -59,6 +63,7 @@ public class Unit : MonoBehaviour
         SlowSpeed = 1;
         StunCheck = false;
         AtkSpeedMultiplier = 1;
+        FinalRange = 0;
     }
 
 
@@ -94,7 +99,7 @@ public class Unit : MonoBehaviour
 
     void DetectTarget()
     {
-        float range = unitData.AttackRange;
+        float range = unitData.AttackRange + FinalRange;
         Vector3 origin = transform.position;
 
         // 이미 타겟이 있으면 유효성 검사
@@ -244,6 +249,11 @@ public class Unit : MonoBehaviour
     public void ApplySkillEffect(Health target, float damage) // 상태효과
     {
         target.TakeDamage(damage);
+
+        if (target.currentHP <= 0f)
+        {
+            KillingUnit = true;
+        }
 
         if (target.CompareTag("Player") || target.CompareTag("Tower")) // Player/Tower 태그 상태이상 없이 데미지만
             return;
