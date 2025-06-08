@@ -17,6 +17,9 @@ public class Player : MonoBehaviour
     private float chargeTime = 0f;
     public bool tier30, tier70, tier100;
 
+    public Animator PlayerMove;
+    public SpriteRenderer PlayerBody;
+
     void Awake()
     {
         PlayerHp.HP = playerData.MaxHealth;
@@ -44,6 +47,15 @@ public class Player : MonoBehaviour
         Vector3 inputDir = new Vector3(x, 0, 0);
 
         rb.linearVelocity = inputDir * playerData.MoveSpeed;
+
+        bool isMoving = !Mathf.Approximately(x, 0f);
+        PlayerMove.SetBool("IsWork", isMoving);
+
+        // 좌우 플립
+        if (isMoving)
+        {
+            PlayerBody.flipX = x < 0f;
+        }
     }
 
     private void HandleSkillCharge()
