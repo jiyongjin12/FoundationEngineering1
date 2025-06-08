@@ -16,7 +16,7 @@ MonoBehaviour:
   name: e
   Hp: 150
   Speed: 2
-  AttackSpeed: 5
+  AttackSpeed: 1
   AttackRange: 3
   OpenPrice: 0
   LevelupPrice: 0
