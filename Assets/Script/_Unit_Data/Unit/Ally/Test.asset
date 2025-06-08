@@ -19,7 +19,7 @@ MonoBehaviour:
   AttackSpeed: 2
   AttackRange: 6
   MaxLevel: 0
-  UnitBody: {fileID: 8450062133161072446, guid: fbd62da2433d88144b3fb1a619100739, type: 3}
+  UnitBody: {fileID: 7859137704600683458, guid: 0756b65944875244781a94e0b0f19707, type: 3}
   ButtonImage: {fileID: 0}
   UnitDefaultSkill: {fileID: 11400000, guid: 0532263d678b7474097ce7168f047e09, type: 2}
   UnitEvolvedSkill: {fileID: 0}

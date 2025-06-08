@@ -13,6 +13,9 @@ public class UnitData : ScriptableObject
     public float AttackSpeed;
     public float AttackRange;
 
+    public int OpenPrice;
+    public int LevelupPrice;
+
     [Header("레벨")]
     public float MaxLevel;
 

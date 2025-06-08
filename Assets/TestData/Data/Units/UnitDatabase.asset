@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e5db556582bbc045859ada004856312, type: 3}
+  m_Name: UnitDatabase
+  m_EditorClassIdentifier: 
+  units:
+  - ID: Unit_Rat
+    Name: Rat
+    Faction: 0
+    OpenPrice: 300
+    LevelupPrice: 150
+    MaxLevel: 20
+    NeedMana: 1
+    Hp: 1
+    AttackSpeed: 1
+    AttackRange: 1
+    Speed: 1
+    UnitDefaultSkill: Skill_Unit_Rat_1
+    UnitEvolvedSkill: Skill_Unit_Rat_2
+    CooldownTime: 3
+  - ID: Unit_Cat
+    Name: Cat
+    Faction: 0
+    OpenPrice: 300
+    LevelupPrice: 150
+    MaxLevel: 20
+    NeedMana: 1
+    Hp: 1
+    AttackSpeed: 1
+    AttackRange: 1
+    Speed: 1
+    UnitDefaultSkill: Skill_Unit_Cat_1
+    UnitEvolvedSkill: Skill_Unit_Cat_2
+    CooldownTime: 3
+  - ID: Unit_Rabbit
+    Name: Rabbit
+    Faction: 0
+    OpenPrice: 300
+    LevelupPrice: 150
+    MaxLevel: 20
+    NeedMana: 1
+    Hp: 1
+    AttackSpeed: 1
+    AttackRange: 1
+    Speed: 1
+    UnitDefaultSkill: Skill_Unit_Rabbit_1
+    UnitEvolvedSkill: Skill_Unit_Rabbit_2
+    CooldownTime: 5
+  - ID: Unit_Monkey
+    Name: Monkey
+    Faction: 0
+    OpenPrice: 300
+    LevelupPrice: 150
+    MaxLevel: 20
+    NeedMana: 1
+    Hp: 1
+    AttackSpeed: 1
+    AttackRange: 1
+    Speed: 1
+    UnitDefaultSkill: Skill_Unit_Monkey_1
+    UnitEvolvedSkill: Skill_Unit_Monkey_2
+    CooldownTime: 5
+  - ID: Unit_Jangseung
+    Name: Jangseung
+    Faction: 0
+    OpenPrice: 300
+    LevelupPrice: 150
+    MaxLevel: 20
+    NeedMana: 1
+    Hp: 1
+    AttackSpeed: 1
+    AttackRange: 1
+    Speed: 1
+    UnitDefaultSkill: 
+    UnitEvolvedSkill: 
+    CooldownTime: 7
+  - ID: Unit_Dokkaebi
+    Name: Dokkaebi
+    Faction: 0
+    OpenPrice: 300
+    LevelupPrice: 150
+    MaxLevel: 20
+    NeedMana: 1
+    Hp: 1
+    AttackSpeed: 1
+    AttackRange: 1
+    Speed: 1
+    UnitDefaultSkill: Skill_Unit_Dokkaebi_1
+    UnitEvolvedSkill: Skill_Unit_Dokkaebi_2
+    CooldownTime: 7
+  - ID: Unit_WindGod
+    Name: WindGod
+    Faction: 0
+    OpenPrice: 300
+    LevelupPrice: 150
+    MaxLevel: 20
+    NeedMana: 1
+    Hp: 1
+    AttackSpeed: 1
+    AttackRange: 1
+    Speed: 1
+    UnitDefaultSkill: Skill_Unit_WindGod_1
+    UnitEvolvedSkill: Skill_Unit_WindGod_2
+    CooldownTime: 9
+  - ID: Unit_Haetae
+    Name: Haetae
+    Faction: 0
+    OpenPrice: 300
+    LevelupPrice: 150
+    MaxLevel: 20
+    NeedMana: 1
+    Hp: 1
+    AttackSpeed: 1
+    AttackRange: 1
+    Speed: 1
+    UnitDefaultSkill: Skill_Unit_Haetae_1
+    UnitEvolvedSkill: Skill_Unit_Haetae_2
+    CooldownTime: 9
+  - ID: Unit_Dragon
+    Name: Dragon
+    Faction: 0
+    OpenPrice: 300
+    LevelupPrice: 150
+    MaxLevel: 20
+    NeedMana: 1
+    Hp: 1
+    AttackSpeed: 1
+    AttackRange: 1
+    Speed: 1
+    UnitDefaultSkill: Skill_Unit_Dragon_1
+    UnitEvolvedSkill: Skill_Unit_Dragon_2
+    CooldownTime: 12
+  - ID: Unit_RedBird
+    Name: RedBird
+    Faction: 0
+    OpenPrice: 300
+    LevelupPrice: 150
+    MaxLevel: 20
+    NeedMana: 1
+    Hp: 1
+    AttackSpeed: 1
+    AttackRange: 1
+    Speed: 1
+    UnitDefaultSkill: Skill_Unit_RedBird_1
+    UnitEvolvedSkill: Skill_Unit_RedBird_2
+    CooldownTime: 12

@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Test
   m_EditorClassIdentifier: 
   RangeType: 0
-  Damage: 50
+  Damage: 500
   Critical_probability: 70
-  Critical_damage: 100
-  RangeAttackCheck: 0
-  RangeDiameter: 0
-  AttackCount: 0
+  Critical_damage: 500
+  RangeAttackCheck: 1
+  RangeDiameter: 2
+  AttackCount: 10
   UseSkillEffect: 0
   ProcChance: 0
   ProjectilePrefab: {fileID: 9046949950307811681, guid: 9e19f8d37e0323a4bb7a828cef4a32b3, type: 3}
