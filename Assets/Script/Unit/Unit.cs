@@ -158,6 +158,7 @@ public class Unit : MonoBehaviour
     void Attack()
     {
         if (targetUnit == null) inCombat = false;
+        Animation.SetBool("IsAttack", false);
 
         attackTimer += Time.deltaTime;
         FinalAtkTimer = unitData.AttackSpeed * AtkSpeedMultiplier;
@@ -171,7 +172,7 @@ public class Unit : MonoBehaviour
     {
         UseSkill();  // 여기에 에니메이션?
         attackTimer = 0f;
-        Animation.SetBool("IsAttack", false);
+        //
     }
 
     public void UseSkill()
@@ -257,6 +258,11 @@ public class Unit : MonoBehaviour
 
     public void ApplySkillEffect(Health target, float damage) // 상태효과
     {
+        if (target == null)
+        {
+            return;
+        }
+
         target.TakeDamage(damage);
 
         if (target.currentHP <= 0f)
