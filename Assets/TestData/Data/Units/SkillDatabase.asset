@@ -613,3 +613,75 @@ MonoBehaviour:
     AtkSpeedDownDuration: 0
     EffectRemovalRange: 0
     Unitcount: 0
+  - ID: Skill_Enemy_Fox_1
+    RangeType: Ranged
+    Damage: 30
+    RangeAttackCheck: 1
+    RangeDiameter: 3
+    UseSkillEffect: 1
+    ProcChance: 90
+    Critical_probability: 35
+    Critical_Damage: 50
+    ProjectilesSpeed: 10
+    AttackCount: 5
+    Slow: 0
+    Stun: 0
+    Nockback: 1
+    AtkSpeedDown: 0
+    ClearEffects: 0
+    SlowRatio: 0
+    SlowDuration: 0
+    StunDuration: 0
+    NockbackStrength: 3
+    AtkSpeedDownRatio: 0
+    AtkSpeedDownDuration: 0
+    EffectRemovalRange: 0
+    Unitcount: 0
+  - ID: Skill_Enemy_Jangsanbeom_1
+    RangeType: Melee
+    Damage: 30
+    RangeAttackCheck: 0
+    RangeDiameter: 0
+    UseSkillEffect: 0
+    ProcChance: 0
+    Critical_probability: 70
+    Critical_Damage: 50
+    ProjectilesSpeed: 0
+    AttackCount: 0
+    Slow: 0
+    Stun: 0
+    Nockback: 0
+    AtkSpeedDown: 0
+    ClearEffects: 0
+    SlowRatio: 0
+    SlowDuration: 0
+    StunDuration: 0
+    NockbackStrength: 0
+    AtkSpeedDownRatio: 0
+    AtkSpeedDownDuration: 0
+    EffectRemovalRange: 0
+    Unitcount: 0
+  - ID: Skill_Enemy_Bulgasari_1
+    RangeType: Melee
+    Damage: 30
+    RangeAttackCheck: 0
+    RangeDiameter: 0
+    UseSkillEffect: 0
+    ProcChance: 0
+    Critical_probability: 30
+    Critical_Damage: 50
+    ProjectilesSpeed: 0
+    AttackCount: 0
+    Slow: 0
+    Stun: 0
+    Nockback: 0
+    AtkSpeedDown: 0
+    ClearEffects: 0
+    SlowRatio: 0
+    SlowDuration: 0
+    StunDuration: 0
+    NockbackStrength: 0
+    AtkSpeedDownRatio: 0
+    AtkSpeedDownDuration: 0
+    EffectRemovalRange: 0
+    Unitcount: 0

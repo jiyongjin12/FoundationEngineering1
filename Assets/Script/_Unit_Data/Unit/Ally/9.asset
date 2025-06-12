@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4516daf072b3934d98f2d777a05c00c, type: 3}
+  m_Name: 9
+  m_EditorClassIdentifier: 
+  Faction: 0
+  name: Dragon
+  Hp: 200
+  Speed: 4
+  AttackSpeed: 1
+  AttackRange: 18
+  OpenPrice: 300
+  LevelupPrice: 150
+  MaxLevel: 20
+  UnitBody: {fileID: 1794864798637244818, guid: 7193edd5702bd6b4e90bf2c6a50d0802, type: 3}
+  ButtonImage: {fileID: 0}
+  UnitDefaultSkill: {fileID: 11400000, guid: a724917e39101bd449428e8aeee0331d, type: 2}
+  UnitEvolvedSkill: {fileID: 0}
+  UnitAnimation: {fileID: 0}
+  CoolDownTime: 2
+  MinSpawnTime: 0
+  MaxSpawnTime: 0

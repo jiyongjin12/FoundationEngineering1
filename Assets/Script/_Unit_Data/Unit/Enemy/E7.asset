@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4516daf072b3934d98f2d777a05c00c, type: 3}
+  m_Name: E7
+  m_EditorClassIdentifier: 
+  Faction: 1
+  name: BagOldMan
+  Hp: 100
+  Speed: 4
+  AttackSpeed: 1
+  AttackRange: 20
+  OpenPrice: 0
+  LevelupPrice: 0
+  MaxLevel: 0
+  UnitBody: {fileID: 532993621083179613, guid: e52091a97e0722e4bbdab556bcc9296f, type: 3}
+  ButtonImage: {fileID: 0}
+  UnitDefaultSkill: {fileID: 11400000, guid: 5ebd144b8e325d245b96aefa7e1dae5b, type: 2}
+  UnitEvolvedSkill: {fileID: 0}
+  UnitAnimation: {fileID: 0}
+  CoolDownTime: 0
+  MinSpawnTime: 3
+  MaxSpawnTime: 5

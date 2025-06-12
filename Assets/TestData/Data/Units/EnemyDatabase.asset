@@ -18,108 +18,98 @@ MonoBehaviour:
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 1
+    Hp: 100
     AttackSpeed: 1
-    AttackRange: 1
-    Speed: 1
-    MinSpawnTime: 3
-    MaxSpawnTime: 5
+    AttackRange: 7
+    Speed: 4
+    EnemyDefaultSkill: 
   - ID: Enemy_ChildGhost
     Name: ChildGhost
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 1
+    Hp: 100
     AttackSpeed: 1
-    AttackRange: 1
-    Speed: 1
-    MinSpawnTime: 3
-    MaxSpawnTime: 5
+    AttackRange: 3
+    Speed: 7
+    EnemyDefaultSkill: 
   - ID: Enemy_GhostWoman
     Name: GhostWoman
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 1
+    Hp: 100
     AttackSpeed: 1
-    AttackRange: 1
-    Speed: 1
-    MinSpawnTime: 3
-    MaxSpawnTime: 5
+    AttackRange: 14
+    Speed: 4
+    EnemyDefaultSkill: 
   - ID: Enemy_Guseunsae
     Name: Guseunsae
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 1
+    Hp: 100
     AttackSpeed: 1
-    AttackRange: 1
-    Speed: 1
-    MinSpawnTime: 3
-    MaxSpawnTime: 5
+    AttackRange: 15
+    Speed: 4
+    EnemyDefaultSkill: 
   - ID: Enemy_BeastMonster
     Name: BeastMonster
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 1
+    Hp: 100
     AttackSpeed: 1
-    AttackRange: 1
-    Speed: 1
-    MinSpawnTime: 3
-    MaxSpawnTime: 5
+    AttackRange: 10
+    Speed: 4
+    EnemyDefaultSkill: 
   - ID: Enemy_GoldPig
     Name: GoldPig
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 1
+    Hp: 100
     AttackSpeed: 1
-    AttackRange: 1
-    Speed: 1
-    MinSpawnTime: 3
-    MaxSpawnTime: 5
+    AttackRange: 12
+    Speed: 4
+    EnemyDefaultSkill: 
   - ID: Enemy_BagOldMan
     Name: BagOldMan
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 1
+    Hp: 100
     AttackSpeed: 1
-    AttackRange: 1
-    Speed: 1
-    MinSpawnTime: 3
-    MaxSpawnTime: 5
+    AttackRange: 20
+    Speed: 4
+    EnemyDefaultSkill: 
   - ID: Enemy_Fox
     Name: Fox
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 1
+    Hp: 100
     AttackSpeed: 1
-    AttackRange: 1
-    Speed: 1
-    MinSpawnTime: 3
-    MaxSpawnTime: 5
+    AttackRange: 20
+    Speed: 4
+    EnemyDefaultSkill: 
   - ID: Enemy_Jangsanbeom
     Name: Jangsanbeom
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 1
+    Hp: 100
     AttackSpeed: 1
-    AttackRange: 1
-    Speed: 1
-    MinSpawnTime: 3
-    MaxSpawnTime: 5
+    AttackRange: 15
+    Speed: 4
+    EnemyDefaultSkill: 
   - ID: Enemy_Bulgasari
     Name: Bulgasari
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 1
+    Hp: 100
     AttackSpeed: 1
-    AttackRange: 1
-    Speed: 1
-    MinSpawnTime: 3
-    MaxSpawnTime: 5
+    AttackRange: 15
+    Speed: 4
+    EnemyDefaultSkill: 

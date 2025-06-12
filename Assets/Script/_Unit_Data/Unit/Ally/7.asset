@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4516daf072b3934d98f2d777a05c00c, type: 3}
+  m_Name: 7
+  m_EditorClassIdentifier: 
+  Faction: 0
+  name: WindGod
+  Hp: 80
+  Speed: 4
+  AttackSpeed: 1
+  AttackRange: 15
+  OpenPrice: 300
+  LevelupPrice: 150
+  MaxLevel: 20
+  UnitBody: {fileID: 7239972416500399322, guid: 486ac3efef3c0b4449339fedb87409ce, type: 3}
+  ButtonImage: {fileID: 0}
+  UnitDefaultSkill: {fileID: 11400000, guid: 593521924566e96448d3926ce61450fb, type: 2}
+  UnitEvolvedSkill: {fileID: 0}
+  UnitAnimation: {fileID: 0}
+  CoolDownTime: 2
+  MinSpawnTime: 0
+  MaxSpawnTime: 0

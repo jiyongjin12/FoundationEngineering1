@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4516daf072b3934d98f2d777a05c00c, type: 3}
+  m_Name: 5
+  m_EditorClassIdentifier: 
+  Faction: 0
+  name: Jangseung
+  Hp: 300
+  Speed: 4
+  AttackSpeed: 1
+  AttackRange: 1
+  OpenPrice: 300
+  LevelupPrice: 150
+  MaxLevel: 20
+  UnitBody: {fileID: 2036527037167212759, guid: e35a9633a0155fe449973aa28201898f, type: 3}
+  ButtonImage: {fileID: 0}
+  UnitDefaultSkill: {fileID: 11400000, guid: 00ece438418c7ef4ebac59d65b0a2345, type: 2}
+  UnitEvolvedSkill: {fileID: 0}
+  UnitAnimation: {fileID: 0}
+  CoolDownTime: 2
+  MinSpawnTime: 0
+  MaxSpawnTime: 0

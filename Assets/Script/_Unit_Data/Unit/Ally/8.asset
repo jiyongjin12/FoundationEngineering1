@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4516daf072b3934d98f2d777a05c00c, type: 3}
+  m_Name: 8
+  m_EditorClassIdentifier: 
+  Faction: 0
+  name: Haetae
+  Hp: 250
+  Speed: 4
+  AttackSpeed: 1
+  AttackRange: 9
+  OpenPrice: 300
+  LevelupPrice: 150
+  MaxLevel: 20
+  UnitBody: {fileID: 8190589200799640399, guid: e92910f3e81a4e643831053f08cd2780, type: 3}
+  ButtonImage: {fileID: 0}
+  UnitDefaultSkill: {fileID: 11400000, guid: 06b5670186c960e49b6c4091ebe91485, type: 2}
+  UnitEvolvedSkill: {fileID: 0}
+  UnitAnimation: {fileID: 0}
+  CoolDownTime: 2
+  MinSpawnTime: 0
+  MaxSpawnTime: 0

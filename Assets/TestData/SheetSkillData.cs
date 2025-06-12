@@ -7,7 +7,7 @@ public class SheetSkillData
     public string ID;
     public string RangeType;
     public int Damage;
-    public int RangeAttackCheck;
+    public bool RangeAttackCheck;
     public int RangeDiameter;
     public bool UseSkillEffect;
     public float ProcChance;
@@ -18,8 +18,8 @@ public class SheetSkillData
     public bool Slow;
     public bool Stun;
     public bool Nockback;
-    public float AtkSpeedDown;
-    public float ClearEffects;
+    public bool AtkSpeedDown;
+    public bool ClearEffects;
     public float SlowRatio;
     public float SlowDuration;
     public float StunDuration;

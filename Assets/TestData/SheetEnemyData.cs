@@ -13,6 +13,5 @@ public class SheetEnemyData
     public float AttackSpeed;
     public float AttackRange;
     public float Speed;
-    public float MinSpawnTime;
-    public float MaxSpawnTime;
+    public string EnemyDefaultSkill;
 }

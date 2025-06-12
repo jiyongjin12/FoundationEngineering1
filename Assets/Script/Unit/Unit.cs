@@ -164,7 +164,8 @@ public class Unit : MonoBehaviour
         FinalAtkTimer = unitData.AttackSpeed * AtkSpeedMultiplier;
         if (attackTimer >= FinalAtkTimer)
         {
-            Animation.SetBool("IsAttack", true);
+            UseSkill();
+            //Animation.SetBool("IsAttack", true);
         }
     }
 
