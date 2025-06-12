@@ -164,8 +164,8 @@ public class Unit : MonoBehaviour
         FinalAtkTimer = unitData.AttackSpeed * AtkSpeedMultiplier;
         if (attackTimer >= FinalAtkTimer)
         {
-            UseSkill();
-            //Animation.SetBool("IsAttack", true);
+            //UseSkill();
+            Animation.SetBool("IsAttack", true);
         }
     }
 
@@ -173,7 +173,6 @@ public class Unit : MonoBehaviour
     {
         UseSkill();  // 여기에 에니메이션?
         attackTimer = 0f;
-        //
     }
 
     public void UseSkill()
