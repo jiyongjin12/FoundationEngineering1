@@ -31,7 +31,7 @@ MonoBehaviour:
   active: 1
   distance:
     m_OverrideState: 1
-    m_Value: 128
+    m_Value: 114
   baseHeight:
     m_OverrideState: 1
     m_Value: 0
@@ -39,8 +39,8 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 50
   enableGround:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
   groundHeight:
     m_OverrideState: 0
     m_Value: 0
@@ -55,13 +55,13 @@ MonoBehaviour:
     m_Value: 1
   mainLightAnisotropy:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.89
   mainLightScattering:
     m_OverrideState: 1
     m_Value: 0.15
   mainLightColorTint:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_Value: {r: 0.023696154, g: 0.028253905, b: 0.07075471, a: 1}
   enableAdditionalLightsContribution:
     m_OverrideState: 0
     m_Value: 0
