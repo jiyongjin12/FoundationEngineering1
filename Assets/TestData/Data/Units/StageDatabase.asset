@@ -12,4 +12,3311 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ab7a2759134b9b4c9bcbe541fb35cae, type: 3}
   m_Name: StageDatabase
   m_EditorClassIdentifier: 
-  stages: []
+  stages:
+  - ID: Stage_1_1
+    StageID: 1
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    - Enemy_Guseunsae
+    - Enemy_BeastMonster
+    - Enemy_GoldPig
+    - Enemy_BagOldMan
+    - Enemy_Fox
+    - Enemy_Jangsanbeom
+    - Enemy_Bulgasari
+    EnemyLevel: 0100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_1_2
+    StageID: 1
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_1_3
+    StageID: 1
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_2_1
+    StageID: 2
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_2_2
+    StageID: 2
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_2_3
+    StageID: 2
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_3_1
+    StageID: 3
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_3_2
+    StageID: 3
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_3_3
+    StageID: 3
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_4_1
+    StageID: 4
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_4_2
+    StageID: 4
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_4_3
+    StageID: 4
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_5_1
+    StageID: 5
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_5_2
+    StageID: 5
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_5_3
+    StageID: 5
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_6_1
+    StageID: 6
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_6_2
+    StageID: 6
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_6_3
+    StageID: 6
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_7_1
+    StageID: 7
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_7_2
+    StageID: 7
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_7_3
+    StageID: 7
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_8_1
+    StageID: 8
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_8_2
+    StageID: 8
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_8_3
+    StageID: 8
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_9_1
+    StageID: 9
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_9_2
+    StageID: 9
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_9_3
+    StageID: 9
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_10_1
+    StageID: 10
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_10_2
+    StageID: 10
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_10_3
+    StageID: 10
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_11_1
+    StageID: 11
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_11_2
+    StageID: 11
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_11_3
+    StageID: 11
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_12_1
+    StageID: 12
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_12_2
+    StageID: 12
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_12_3
+    StageID: 12
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_13_1
+    StageID: 13
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_13_2
+    StageID: 13
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_13_3
+    StageID: 13
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_14_1
+    StageID: 14
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_14_2
+    StageID: 14
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_14_3
+    StageID: 14
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_15_1
+    StageID: 15
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_15_2
+    StageID: 15
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_15_3
+    StageID: 15
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_16_1
+    StageID: 16
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_16_2
+    StageID: 16
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_16_3
+    StageID: 16
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_17_1
+    StageID: 17
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_17_2
+    StageID: 17
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_17_3
+    StageID: 17
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_18_1
+    StageID: 18
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_18_2
+    StageID: 18
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_18_3
+    StageID: 18
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_19_1
+    StageID: 19
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_19_2
+    StageID: 19
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_19_3
+    StageID: 19
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_20_1
+    StageID: 20
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_20_2
+    StageID: 20
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_20_3
+    StageID: 20
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_21_1
+    StageID: 21
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_21_2
+    StageID: 21
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_21_3
+    StageID: 21
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_22_1
+    StageID: 22
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_22_2
+    StageID: 22
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_22_3
+    StageID: 22
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_23_1
+    StageID: 23
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_23_2
+    StageID: 23
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_23_3
+    StageID: 23
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_24_1
+    StageID: 24
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_24_2
+    StageID: 24
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_24_3
+    StageID: 24
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_25_1
+    StageID: 25
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_25_2
+    StageID: 25
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_25_3
+    StageID: 25
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_26_1
+    StageID: 26
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_26_2
+    StageID: 26
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_26_3
+    StageID: 26
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_27_1
+    StageID: 27
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_27_2
+    StageID: 27
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_27_3
+    StageID: 27
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_28_1
+    StageID: 28
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_28_2
+    StageID: 28
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_28_3
+    StageID: 28
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_29_1
+    StageID: 29
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_29_2
+    StageID: 29
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_29_3
+    StageID: 29
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_30_1
+    StageID: 30
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_30_2
+    StageID: 30
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_30_3
+    StageID: 30
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_31_1
+    StageID: 31
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_31_2
+    StageID: 31
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_31_3
+    StageID: 31
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_32_1
+    StageID: 32
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_32_2
+    StageID: 32
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_32_3
+    StageID: 32
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_33_1
+    StageID: 33
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_33_2
+    StageID: 33
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_33_3
+    StageID: 33
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_34_1
+    StageID: 34
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_34_2
+    StageID: 34
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_34_3
+    StageID: 34
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_35_1
+    StageID: 35
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_35_2
+    StageID: 35
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_35_3
+    StageID: 35
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_36_1
+    StageID: 36
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_36_2
+    StageID: 36
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_36_3
+    StageID: 36
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_37_1
+    StageID: 37
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_37_2
+    StageID: 37
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_37_3
+    StageID: 37
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_38_1
+    StageID: 38
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_38_2
+    StageID: 38
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_38_3
+    StageID: 38
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_39_1
+    StageID: 39
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_39_2
+    StageID: 39
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_39_3
+    StageID: 39
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_40_1
+    StageID: 40
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_40_2
+    StageID: 40
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_40_3
+    StageID: 40
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_41_1
+    StageID: 41
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_41_2
+    StageID: 41
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_41_3
+    StageID: 41
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_42_1
+    StageID: 42
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_42_2
+    StageID: 42
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_42_3
+    StageID: 42
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_43_1
+    StageID: 43
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_43_2
+    StageID: 43
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_43_3
+    StageID: 43
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_44_1
+    StageID: 44
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_44_2
+    StageID: 44
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_44_3
+    StageID: 44
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_45_1
+    StageID: 45
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_45_2
+    StageID: 45
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_45_3
+    StageID: 45
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_46_1
+    StageID: 46
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_46_2
+    StageID: 46
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_46_3
+    StageID: 46
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_47_1
+    StageID: 47
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_47_2
+    StageID: 47
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_47_3
+    StageID: 47
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_48_1
+    StageID: 48
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_48_2
+    StageID: 48
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_48_3
+    StageID: 48
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_49_1
+    StageID: 49
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_49_2
+    StageID: 49
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_49_3
+    StageID: 49
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_50_1
+    StageID: 50
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_50_2
+    StageID: 50
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_50_3
+    StageID: 50
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_51_1
+    StageID: 51
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_51_2
+    StageID: 51
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_51_3
+    StageID: 51
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_52_1
+    StageID: 52
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_52_2
+    StageID: 52
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_52_3
+    StageID: 52
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_53_1
+    StageID: 53
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_53_2
+    StageID: 53
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_53_3
+    StageID: 53
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_54_1
+    StageID: 54
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_54_2
+    StageID: 54
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_54_3
+    StageID: 54
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_55_1
+    StageID: 55
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_55_2
+    StageID: 55
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_55_3
+    StageID: 55
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_56_1
+    StageID: 56
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_56_2
+    StageID: 56
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_56_3
+    StageID: 56
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_57_1
+    StageID: 57
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_57_2
+    StageID: 57
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_57_3
+    StageID: 57
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_58_1
+    StageID: 58
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_58_2
+    StageID: 58
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_58_3
+    StageID: 58
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_59_1
+    StageID: 59
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_59_2
+    StageID: 59
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_59_3
+    StageID: 59
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_60_1
+    StageID: 60
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_60_2
+    StageID: 60
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_60_3
+    StageID: 60
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_61_1
+    StageID: 61
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_61_2
+    StageID: 61
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_61_3
+    StageID: 61
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_62_1
+    StageID: 62
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_62_2
+    StageID: 62
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_62_3
+    StageID: 62
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_63_1
+    StageID: 63
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_63_2
+    StageID: 63
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_63_3
+    StageID: 63
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_64_1
+    StageID: 64
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_64_2
+    StageID: 64
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_64_3
+    StageID: 64
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_65_1
+    StageID: 65
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_65_2
+    StageID: 65
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_65_3
+    StageID: 65
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_66_1
+    StageID: 66
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_66_2
+    StageID: 66
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_66_3
+    StageID: 66
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_67_1
+    StageID: 67
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_67_2
+    StageID: 67
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_67_3
+    StageID: 67
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_68_1
+    StageID: 68
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_68_2
+    StageID: 68
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_68_3
+    StageID: 68
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_69_1
+    StageID: 69
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_69_2
+    StageID: 69
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_69_3
+    StageID: 69
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_70_1
+    StageID: 70
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_70_2
+    StageID: 70
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_70_3
+    StageID: 70
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_71_1
+    StageID: 71
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_71_2
+    StageID: 71
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_71_3
+    StageID: 71
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_72_1
+    StageID: 72
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_72_2
+    StageID: 72
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_72_3
+    StageID: 72
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_73_1
+    StageID: 73
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_73_2
+    StageID: 73
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_73_3
+    StageID: 73
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_74_1
+    StageID: 74
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_74_2
+    StageID: 74
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_74_3
+    StageID: 74
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_75_1
+    StageID: 75
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_75_2
+    StageID: 75
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_75_3
+    StageID: 75
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_76_1
+    StageID: 76
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_76_2
+    StageID: 76
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_76_3
+    StageID: 76
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_77_1
+    StageID: 77
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_77_2
+    StageID: 77
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_77_3
+    StageID: 77
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_78_1
+    StageID: 78
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_78_2
+    StageID: 78
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_78_3
+    StageID: 78
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_79_1
+    StageID: 79
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_79_2
+    StageID: 79
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_79_3
+    StageID: 79
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_80_1
+    StageID: 80
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_80_2
+    StageID: 80
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_80_3
+    StageID: 80
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_81_1
+    StageID: 81
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_81_2
+    StageID: 81
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_81_3
+    StageID: 81
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_82_1
+    StageID: 82
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_82_2
+    StageID: 82
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_82_3
+    StageID: 82
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_83_1
+    StageID: 83
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_83_2
+    StageID: 83
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_83_3
+    StageID: 83
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_84_1
+    StageID: 84
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_84_2
+    StageID: 84
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_84_3
+    StageID: 84
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_85_1
+    StageID: 85
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_85_2
+    StageID: 85
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_85_3
+    StageID: 85
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_86_1
+    StageID: 86
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_86_2
+    StageID: 86
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_86_3
+    StageID: 86
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_87_1
+    StageID: 87
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_87_2
+    StageID: 87
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_87_3
+    StageID: 87
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_88_1
+    StageID: 88
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_88_2
+    StageID: 88
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_88_3
+    StageID: 88
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_89_1
+    StageID: 89
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_89_2
+    StageID: 89
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_89_3
+    StageID: 89
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_90_1
+    StageID: 90
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_90_2
+    StageID: 90
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_90_3
+    StageID: 90
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_91_1
+    StageID: 91
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_91_2
+    StageID: 91
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_91_3
+    StageID: 91
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_92_1
+    StageID: 92
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_92_2
+    StageID: 92
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_92_3
+    StageID: 92
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_93_1
+    StageID: 93
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_93_2
+    StageID: 93
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_93_3
+    StageID: 93
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_94_1
+    StageID: 94
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_94_2
+    StageID: 94
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_94_3
+    StageID: 94
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_95_1
+    StageID: 95
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_95_2
+    StageID: 95
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_95_3
+    StageID: 95
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_96_1
+    StageID: 96
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_96_2
+    StageID: 96
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_96_3
+    StageID: 96
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_97_1
+    StageID: 97
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_97_2
+    StageID: 97
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_97_3
+    StageID: 97
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_98_1
+    StageID: 98
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_98_2
+    StageID: 98
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_98_3
+    StageID: 98
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_99_1
+    StageID: 99
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_99_2
+    StageID: 99
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_99_3
+    StageID: 99
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_100_1
+    StageID: 100
+    StageHealth: 500
+    HealthLevel: 1
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_100_2
+    StageID: 100
+    StageHealth: 300
+    HealthLevel: 2
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5
+  - ID: Stage_100_3
+    StageID: 100
+    StageHealth: 100
+    HealthLevel: 3
+    EnemyType:
+    - Enemy_HungryGhost
+    - Enemy_ChildGhost
+    - Enemy_GhostWoman
+    EnemyLevel: 010000000100000001000000
+    MinSpawnTime: 3
+    MaxSpawnTime: 5

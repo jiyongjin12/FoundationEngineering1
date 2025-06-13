@@ -51,15 +51,14 @@ public class Player : MonoBehaviour
         bool isMoving = !Mathf.Approximately(x, 0f);
         PlayerMove.SetBool("IsWork", isMoving);
 
-        // 좌우 플립
         Vector3 scale = PlayerBody.transform.localScale;
         if (!isMoving || x >= 0f)
         {
-            scale.x = 1f;  // 멈추거나 앞으로 갈 때
+            scale.x = 1f;
         }
         else if (x < 0f)
         {
-            scale.x = -1f; // 뒤로 (왼쪽) 이동 시
+            scale.x = -1f;
         }
         PlayerBody.transform.localScale = scale;
     }

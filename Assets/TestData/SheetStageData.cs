@@ -9,7 +9,9 @@ public class SheetStageData
     public int StageID;
     public int StageHealth;
     public int HealthLevel;
-    public List<string> EnemyType;    // ex. ["Enemy_HungryGhost", ...]
-    public List<int> EnemyLevel;   // ex. [1,1,1]
-    public float SummonTime;
+    public List<string> EnemyType;  
+    public List<int> EnemyLevel;   
+    //public float SummonTime;
+    public float MinSpawnTime;
+    public float MaxSpawnTime;
 }
