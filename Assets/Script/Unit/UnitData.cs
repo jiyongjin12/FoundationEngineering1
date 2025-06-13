@@ -28,7 +28,7 @@ public class UnitData : ScriptableObject
     public UnitSkillData UnitDefaultSkill; // 진화 전 스킬
     public UnitSkillData UnitEvolvedSkill; // 진화 후 스킬
 
-    public Animation UnitAnimation;
+    //public Animation UnitAnimation;
 
     [Header("아군 스폰 쿨타임")]
     public float CoolDownTime;

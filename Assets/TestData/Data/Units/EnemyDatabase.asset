@@ -22,7 +22,7 @@ MonoBehaviour:
     AttackSpeed: 1
     AttackRange: 7
     Speed: 4
-    EnemyDefaultSkill: 
+    EnemyDefaultSkill: Skill_Enemy_HungryGhost_1
   - ID: Enemy_ChildGhost
     Name: ChildGhost
     Faction: 1
@@ -32,7 +32,7 @@ MonoBehaviour:
     AttackSpeed: 1
     AttackRange: 3
     Speed: 7
-    EnemyDefaultSkill: 
+    EnemyDefaultSkill: Skill_Enemy_ChildGhost_1
   - ID: Enemy_GhostWoman
     Name: GhostWoman
     Faction: 1
@@ -42,7 +42,7 @@ MonoBehaviour:
     AttackSpeed: 1
     AttackRange: 14
     Speed: 4
-    EnemyDefaultSkill: 
+    EnemyDefaultSkill: Skill_Enemy_GhostWoman_1
   - ID: Enemy_Guseunsae
     Name: Guseunsae
     Faction: 1
@@ -52,7 +52,7 @@ MonoBehaviour:
     AttackSpeed: 1
     AttackRange: 15
     Speed: 4
-    EnemyDefaultSkill: 
+    EnemyDefaultSkill: Skill_Enemy_Guseunsae_1
   - ID: Enemy_BeastMonster
     Name: BeastMonster
     Faction: 1
@@ -62,7 +62,7 @@ MonoBehaviour:
     AttackSpeed: 1
     AttackRange: 10
     Speed: 4
-    EnemyDefaultSkill: 
+    EnemyDefaultSkill: Skill_Enemy_BeastMonster_1
   - ID: Enemy_GoldPig
     Name: GoldPig
     Faction: 1
@@ -72,7 +72,7 @@ MonoBehaviour:
     AttackSpeed: 1
     AttackRange: 12
     Speed: 4
-    EnemyDefaultSkill: 
+    EnemyDefaultSkill: Skill_Enemy_GoldPig_1
   - ID: Enemy_BagOldMan
     Name: BagOldMan
     Faction: 1
@@ -82,7 +82,7 @@ MonoBehaviour:
     AttackSpeed: 1
     AttackRange: 20
     Speed: 4
-    EnemyDefaultSkill: 
+    EnemyDefaultSkill: Skill_Enemy_BagOldMan_1
   - ID: Enemy_Fox
     Name: Fox
     Faction: 1
@@ -92,7 +92,7 @@ MonoBehaviour:
     AttackSpeed: 1
     AttackRange: 20
     Speed: 4
-    EnemyDefaultSkill: 
+    EnemyDefaultSkill: Skill_Enemy_Fox_1
   - ID: Enemy_Jangsanbeom
     Name: Jangsanbeom
     Faction: 1
@@ -102,7 +102,7 @@ MonoBehaviour:
     AttackSpeed: 1
     AttackRange: 15
     Speed: 4
-    EnemyDefaultSkill: 
+    EnemyDefaultSkill: Skill_Enemy_Jangsanbeom_1
   - ID: Enemy_Bulgasari
     Name: Bulgasari
     Faction: 1
@@ -112,4 +112,4 @@ MonoBehaviour:
     AttackSpeed: 1
     AttackRange: 15
     Speed: 4
-    EnemyDefaultSkill: 
+    EnemyDefaultSkill: Skill_Enemy_Bulgasari_1

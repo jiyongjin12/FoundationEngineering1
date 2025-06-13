@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using UnityEngine;
 
@@ -14,8 +15,6 @@ public class ConnectionSheetData : MonoBehaviour
     public SheetUnitDatabase SheetUnitData;
     public SheetSkillDatabase SheetSkillData;
 
-    [Header("Skill Assets")]
-    public UnitSkillData[] skillAssets;  // Inspector 에 UnitSkillData 에셋을 드래그
 
     void Awake()
     {
@@ -50,9 +49,9 @@ public class ConnectionSheetData : MonoBehaviour
             ud.AttackRange = sheet.AttackRange;
             ud.CoolDownTime = sheet.CooldownTime;
 
-            // 이제 sheet.UnitDefaultSkill 은 string ID
-            //ud.UnitDefaultSkill = FindSkillAsset(sheet.UnitDefaultSkill);
-            //ud.UnitEvolvedSkill = FindSkillAsset(sheet.UnitEvolvedSkill);
+            // 스킬 연결  내 생각이 맞다면 이게 되야함 
+            ud.UnitDefaultSkill = FindSkillAsset(sheet.UnitDefaultSkill);
+            ud.UnitEvolvedSkill = FindSkillAsset(sheet.UnitEvolvedSkill);
         }
     }
 
@@ -73,24 +72,10 @@ public class ConnectionSheetData : MonoBehaviour
             ud.AttackRange = sheet.AttackRange;
             ud.Speed = sheet.Speed;
 
-            //ud.UnitDefaultSkill = FindSkillAsset(sheet.EnemyDefaultSkill);
+            // 적 유닛 기본 스킬 연결
+            ud.UnitDefaultSkill = FindSkillAsset(sheet.EnemyDefaultSkill);
         }
     }
-
-    /// <summary>
-    /// skillAssets 배열에서 ID(또는 이름)으로 UnitSkillData를 찾아 반환
-    /// </summary>
-    UnitSkillData FindSkillAsset(string skillID)
-    {
-        if (string.IsNullOrEmpty(skillID))
-            return null;
-
-        var skill = skillAssets.FirstOrDefault(s => s != null && s.name == skillID);
-        if (skill == null)
-            Debug.LogWarning($"UnitSkillData '{skillID}' not found in skillAssets array.");
-        return skill;
-    }
-
 
     void LoadSkillData()
     {
@@ -104,10 +89,15 @@ public class ConnectionSheetData : MonoBehaviour
 
             // -- 숫자/불리언 필드만 채워넣기 (참조형은 건너뜁니다) --
 
-            //sd.RangeType = sheet.RangeType;
+            sd.ID = sheet.ID;
+
+            //sd.RangeType = sheet.RangeType; // string형식
+            if (Enum.TryParse(sheet.RangeType, out RangeType parsedRange))
+                sd.RangeType = parsedRange;
+
             sd.Damage = sheet.Damage;
             sd.Critical_probability = sheet.Critical_probability;
-            //sd.Critical_damage = sheet.Critical_damage;
+            sd.Critical_damage = sheet.Critical_Damage;
 
             sd.RangeAttackCheck = sheet.RangeAttackCheck;
             sd.RangeDiameter = sheet.RangeDiameter;
@@ -116,7 +106,8 @@ public class ConnectionSheetData : MonoBehaviour
             sd.UseSkillEffect = sheet.UseSkillEffect;
             sd.ProcChance = sheet.ProcChance;
 
-            // ProjectilePrefab, ProjectileSpeed는 건너뜀
+            // ProjectilePrefab는 건너뜀
+            sd.ProjectileSpeed = sheet.ProjectilesSpeed;
 
             sd.Slow = sheet.Slow;
             sd.SlowRatio = sheet.SlowRatio;
@@ -136,6 +127,14 @@ public class ConnectionSheetData : MonoBehaviour
             sd.EffectRemovalRange = sheet.EffectRemovalRange;
             sd.Unitcount = sheet.Unitcount;
         }
+    }
+
+    UnitSkillData FindSkillAsset(string id)
+    {
+        var skill = skillData.FirstOrDefault(s => s.ID == id);
+        if (skill == null)
+            Debug.LogWarning("ID 못찾음");
+        return skill;
     }
 
 }

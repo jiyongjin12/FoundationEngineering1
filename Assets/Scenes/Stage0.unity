@@ -1437,6 +1437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1997476270}
   - component: {fileID: 1997476271}
+  - component: {fileID: 1997476272}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1486,6 +1487,72 @@ MonoBehaviour:
   ButtonSpawnPos: {fileID: 753857265}
   ButtonCount: 10
   UnitSpawnPos: {fileID: 1910209999}
+--- !u!114 &1997476272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997476269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f3e6cc405d0cbd4e8a48a562281e64b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitData:
+  - {fileID: 11400000, guid: cdf9dc16c5c3c96429a4a4b672c89c55, type: 2}
+  - {fileID: 11400000, guid: fe3c09ef5d9375b4aa90f2595d6471ea, type: 2}
+  - {fileID: 11400000, guid: b1ee091a530c2f9478c2afd915d84025, type: 2}
+  - {fileID: 11400000, guid: c5cc27a1a25dde44cbc1bdf2d5d8f373, type: 2}
+  - {fileID: 11400000, guid: 5225e7a90ab6de34a9aab2940314b08d, type: 2}
+  - {fileID: 11400000, guid: a121df0d47b0811418e5d9a7dc0c1dda, type: 2}
+  - {fileID: 11400000, guid: 3b8c4f62f967b764c8a5dd75ad54c5dd, type: 2}
+  - {fileID: 11400000, guid: d519f7cefb025f64ea3de148508a7a11, type: 2}
+  - {fileID: 11400000, guid: ae647732824c9ec4abe3e1453d554225, type: 2}
+  - {fileID: 11400000, guid: 4fe531446114f8542a66246f5283d489, type: 2}
+  enemyData:
+  - {fileID: 11400000, guid: dd873fe0dee63a04fb48344818dff9f9, type: 2}
+  - {fileID: 11400000, guid: 7ebfa5cf82a90234085fbac07ca5881a, type: 2}
+  - {fileID: 11400000, guid: 22d784f72fc743b47968451e7c6ae252, type: 2}
+  - {fileID: 11400000, guid: 3fd9fb0a26c517441acf505a5e5d95e8, type: 2}
+  - {fileID: 11400000, guid: 84793d5a73e4a70479f647c4df595652, type: 2}
+  - {fileID: 11400000, guid: f5b798f9ac2a09346973b52c898f67f9, type: 2}
+  - {fileID: 11400000, guid: f65ade26198b4004d9351ff5537f7bc7, type: 2}
+  - {fileID: 11400000, guid: 37b25281f3d279845a1624314eafaaeb, type: 2}
+  - {fileID: 11400000, guid: 1aa095b3ef1cac3498140cdcf46f74e2, type: 2}
+  - {fileID: 11400000, guid: 4e3e92b88a9a50546879307fcb9addd3, type: 2}
+  skillData:
+  - {fileID: 11400000, guid: 78db54e5abe53c9448f080d9f6bd7af9, type: 2}
+  - {fileID: 11400000, guid: a840f63989fc14d4d9b3ee55014440e4, type: 2}
+  - {fileID: 11400000, guid: 49ee7dd383a4bc542ad74672f58c2d5a, type: 2}
+  - {fileID: 11400000, guid: a076d82ab2c670b4cb8decf04b96b874, type: 2}
+  - {fileID: 11400000, guid: 00ece438418c7ef4ebac59d65b0a2345, type: 2}
+  - {fileID: 11400000, guid: 234f27e125001dc498900edda130545d, type: 2}
+  - {fileID: 11400000, guid: 593521924566e96448d3926ce61450fb, type: 2}
+  - {fileID: 11400000, guid: 06b5670186c960e49b6c4091ebe91485, type: 2}
+  - {fileID: 11400000, guid: a724917e39101bd449428e8aeee0331d, type: 2}
+  - {fileID: 11400000, guid: eba90dc5d9481c545ab2a2fcf0ba687c, type: 2}
+  - {fileID: 11400000, guid: 2aa625998d905ae4a86499bebaf0d0f4, type: 2}
+  - {fileID: 11400000, guid: 8be5bf919bf468948868441351e58ffc, type: 2}
+  - {fileID: 11400000, guid: 9ae92e98c047d6c4a81443e3ec3552b3, type: 2}
+  - {fileID: 11400000, guid: 2714baa472892c04680acc9fc370d6ff, type: 2}
+  - {fileID: 11400000, guid: a95bcbc053749624b87d27261d9be382, type: 2}
+  - {fileID: 11400000, guid: 76dcb60deea560744b44bfa7b3f3a359, type: 2}
+  - {fileID: 11400000, guid: 7683c18fba0563a45ba48860ff148001, type: 2}
+  - {fileID: 11400000, guid: 4b60906d24e537c4c9834900b42b8ea1, type: 2}
+  - {fileID: 11400000, guid: 60c9ec58c94e8704ea7a7de1e2ac591e, type: 2}
+  - {fileID: 11400000, guid: 3f527ca9cdb631a4baf528ad85aa5c55, type: 2}
+  - {fileID: 11400000, guid: 7065f502203701445bbed2f40d1124d6, type: 2}
+  - {fileID: 11400000, guid: 5ebd144b8e325d245b96aefa7e1dae5b, type: 2}
+  - {fileID: 11400000, guid: 164adb82a7e7767478843cdfffc98b30, type: 2}
+  - {fileID: 11400000, guid: 208f6dab2d070234b94e435b8aa1ec76, type: 2}
+  - {fileID: 11400000, guid: 1fee6feed8b5d0247aab52dedb53371a, type: 2}
+  - {fileID: 11400000, guid: fa13c3b465faf4d4d91a87fc73a6dfe8, type: 2}
+  - {fileID: 11400000, guid: be477c6c06aa99642876f576103be097, type: 2}
+  - {fileID: 11400000, guid: 4100f8785a9f882448d8e7c32fbb3ba5, type: 2}
+  SheetEnemyData: {fileID: 11400000, guid: a62b64d613374224b90096c4fc0d4774, type: 2}
+  SheetUnitData: {fileID: 11400000, guid: 30a5f5de964c1584eab6fb93f20ac066, type: 2}
+  SheetSkillData: {fileID: 11400000, guid: ba67dbef5c1c911469ad70ac6ae409e4, type: 2}
 --- !u!1 &2045839236
 GameObject:
   m_ObjectHideFlags: 0

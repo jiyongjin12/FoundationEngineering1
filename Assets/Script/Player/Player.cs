@@ -52,10 +52,16 @@ public class Player : MonoBehaviour
         PlayerMove.SetBool("IsWork", isMoving);
 
         // 좌우 플립
-        if (isMoving)
+        Vector3 scale = PlayerBody.transform.localScale;
+        if (!isMoving || x >= 0f)
         {
-            PlayerBody.flipX = x < 0f;
+            scale.x = 1f;  // 멈추거나 앞으로 갈 때
         }
+        else if (x < 0f)
+        {
+            scale.x = -1f; // 뒤로 (왼쪽) 이동 시
+        }
+        PlayerBody.transform.localScale = scale;
     }
 
     private void HandleSkillCharge()

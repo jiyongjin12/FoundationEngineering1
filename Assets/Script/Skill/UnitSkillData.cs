@@ -8,6 +8,7 @@ public class UnitSkillData : ScriptableObject
     [Header("근접/원거리")]
     public RangeType RangeType;
 
+    public string ID;
 
     [Space (20)]
     [Header("딜")]

@@ -14,9 +14,9 @@ public class UnitEnemySkillImporterWindow : EditorWindow
     private const string ENEMY_DB_PATH = "Assets/TestData/Data/Units/EnemyDatabase.asset";
     private const string SKILL_DB_PATH = "Assets/TestData/Data/Units/SkillDatabase.asset";
 
-    private string unitCsvUrl = "https://docs.google.com/spreadsheets/d/e/.../pub?output=csv&gid=UNIT_GID";
-    private string enemyCsvUrl = "https://docs.google.com/spreadsheets/d/e/.../pub?output=csv&gid=ENEMY_GID";
-    private string skillCsvUrl = "https://docs.google.com/spreadsheets/d/e/.../pub?output=csv&gid=SKILL_GID";
+    private string unitCsvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSjt3Sg-0kCponFFLmQl6CkcSPQCq0G-h2znJC2kPsF4No4ju5eSaCzDIT8Bn8B-jK3M1CEN-rm7fV1/pub?gid=1999363975&single=true&output=csv";
+    private string enemyCsvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSjt3Sg-0kCponFFLmQl6CkcSPQCq0G-h2znJC2kPsF4No4ju5eSaCzDIT8Bn8B-jK3M1CEN-rm7fV1/pub?gid=1291526950&single=true&output=csv";
+    private string skillCsvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSjt3Sg-0kCponFFLmQl6CkcSPQCq0G-h2znJC2kPsF4No4ju5eSaCzDIT8Bn8B-jK3M1CEN-rm7fV1/pub?gid=97098862&single=true&output=csv";
 
     [MenuItem("Tools/Import Unit/Enemy/Skill CSV")]
     public static void ShowUnitEnemySkillWindow()
@@ -113,6 +113,7 @@ public class UnitEnemySkillImporterWindow : EditorWindow
             AttackSpeed = float.Parse(c[6]),
             AttackRange = float.Parse(c[7]),
             Speed = float.Parse(c[8]),
+            EnemyDefaultSkill = (c[9])
         };
     }
 
