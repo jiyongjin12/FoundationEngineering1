@@ -25,6 +25,7 @@ public class Unit : MonoBehaviour
     [HideInInspector] public float SlowSpeed = 1;          // 관련 이펙트들은 지정한 값이 아니라면 발동하게 해두면 편하겠구먼
     [HideInInspector] public bool StunCheck;
     [HideInInspector] public bool NuckBack_Sutn = false;
+    [HideInInspector] public bool CriticalCheck; // 크리티컬 체크
     #endregion
 
     #region 공속 감소 
@@ -182,8 +183,14 @@ public class Unit : MonoBehaviour
 
         if (Random.value < unitSkill.Critical_probability / 100f)
         {
-            finalDamage *= unitSkill.Critical_damage / 100f;
+            finalDamage = unitSkill.Critical_damage;
+            CameraShake.Instance.Shake(2, 0.5f);
+            CriticalCheck = true;
             Debug.Log("치명타!");
+        }
+        else
+        {
+            CriticalCheck = false;
         }
 
         // 근거리 처리
@@ -197,8 +204,11 @@ public class Unit : MonoBehaviour
             // 근거리 범위
             else
             {
+                Debug.Log(unitData.AttackRange);
                 Collider[] hits = Physics.OverlapSphere(transform.position, unitData.AttackRange);
                 var candidates = new List<Health>();
+
+                Debug.Log(hits);
 
                 // 태그 & 전방 필터링
                 foreach (var hit in hits)
@@ -264,7 +274,11 @@ public class Unit : MonoBehaviour
         }
 
         target.TakeDamage(damage);
-        UIManager.Instance.damageNumberPrefab.Spawn(target.transform.position, damage);
+
+        if (!CriticalCheck)
+            UIManager.Instance.damageNumberPrefab.Spawn(target.transform.position, damage);
+        else
+            UIManager.Instance.damageCriNumberPrefab.Spawn(target.transform.position, damage);
 
         if (target.currentHP <= 0f)
         {

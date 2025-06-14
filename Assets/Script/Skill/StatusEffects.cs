@@ -15,6 +15,7 @@ public static class StatusEffects
     private static IEnumerator SlowCoroutine(Unit unit, float ratio, float duration)
     {
         Debug.Log("슬로우 확인");
+        FXManager.Instance.PlayEffect("FX_Slow", unit.transform, duration);
         unit.SlowSpeed = ratio / 100;
         yield return new WaitForSeconds(duration);
         unit.SlowSpeed = 1;
@@ -31,6 +32,8 @@ public static class StatusEffects
 
     private static IEnumerator StunCoroutine(Unit unit, float duration)
     {
+        FXManager.Instance.PlayEffect("FX_Sturn", unit.transform, duration);
+
         unit.StunCheck = true;
         yield return new WaitForSeconds(duration);
         unit.StunCheck = false;
@@ -52,6 +55,8 @@ public static class StatusEffects
 
     private static IEnumerator nockbackCoroutine(Unit unit, Vector3 direction, float strength, float duration)
     {
+        FXManager.Instance.PlayEffect("FX_Knockback", unit.transform, duration);
+
         // 넉백 시작점·종료점 계산
         Vector3 startPos = unit.transform.position;
         Vector3 endPos = startPos + direction.normalized * strength;
@@ -92,6 +97,7 @@ public static class StatusEffects
 
     private static IEnumerator AttackSpeedDownCoroutine(Unit unit, float percent, float duration)
     {
+        FXManager.Instance.PlayEffect("FX_Slow", unit.transform, duration);
         unit.AtkSpeedMultiplier = 1 + percent / 100f;
 
         yield return new WaitForSeconds(duration);
@@ -102,6 +108,7 @@ public static class StatusEffects
 
     public static void TryCleanseNearbyAllies(Unit self, float radius, int count)
     {
+        radius = 200;
         Collider[] hits = Physics.OverlapSphere(self.transform.position, radius);
         List<Unit> affectedAllies = new List<Unit>();
 
@@ -140,6 +147,7 @@ public static class StatusEffects
 
             foreach (var unit in selectedTargets)
             {
+                FXManager.Instance.PlayEffect("FX_Clean", unit.transform);
                 unit.ClearAllStatusEffects();
             }
         }

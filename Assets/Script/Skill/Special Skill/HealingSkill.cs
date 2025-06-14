@@ -57,6 +57,8 @@ public class HealingSkill : MonoBehaviour
 
     private void HealUnit(Health targetHealth)
     {
+        FXManager.Instance.PlayEffect("FX_Heal", targetHealth.transform.transform);
+
         // Health 컴포넌트가 maxHP와 currentHP를 관리한다고 가정
         float maxHP = targetHealth.HP;
         float currentHP = targetHealth.currentHP;
