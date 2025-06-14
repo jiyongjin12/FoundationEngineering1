@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlayerData
   m_EditorClassIdentifier: 
   MaxLevel: 0
-  MoveSpeed: 5
+  MoveSpeed: 15
   MaxMana: 100
   MaxHealth: 250
   NeedGold: 0

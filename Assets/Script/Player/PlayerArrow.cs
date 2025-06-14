@@ -1,3 +1,4 @@
+using DamageNumbersPro;
 using UnityEngine;
 
 public class PlayerArrow : MonoBehaviour
@@ -24,8 +25,10 @@ public class PlayerArrow : MonoBehaviour
         {
             var h = other.GetComponent<Health>();
             if (h != null)
+            {
                 h.TakeDamage(damage);
-
+                UIManager.Instance.damageNumberPrefab.Spawn(other.transform.position, damage);
+            }
             Destroy(gameObject);
         }
     }

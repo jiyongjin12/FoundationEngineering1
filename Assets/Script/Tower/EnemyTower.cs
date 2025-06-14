@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyTower : MonoBehaviour
@@ -75,5 +77,11 @@ public class EnemyTower : MonoBehaviour
                 yield return null;
             }
         }
+    }
+
+    [ContextMenu("SawHwan")]
+    public void DebugSpawn()
+    {
+        StartCoroutine(SpawnUnitLoop(0, "HungryGhost"));
     }
 }
