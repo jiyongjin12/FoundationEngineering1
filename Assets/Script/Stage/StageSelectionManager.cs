@@ -123,41 +123,53 @@ public class StageSelectionManager : MonoBehaviour
     void UpdatePageViews()
     {
         if (pages == null || pages.Count == 0) return;
+
         int count = pages.Count;
-        int prev = Mathf.Max(currentPage - 1, 0);
-        int next = Mathf.Min(currentPage + 1, count - 1);
-        int[] indices = new int[] { prev, currentPage, next };
+
+        // 좌우 페이지 설정 (순환 구조로 인덱스 변경)
+        int prevIndex = currentPage - 1 < 0 ? pages.Count - 1 : currentPage - 1;
+        int nextIndex = currentPage + 1 >= pages.Count ? 0 : currentPage + 1;
+
+        int[] pageIndices = new int[] { prevIndex, currentPage, nextIndex };
+
         for (int i = 0; i < 3; i++)
-            PopulateContainer(pageContainers[i], pages[indices[i]]);
+        {
+            PopulateContainer(pageContainers[i], pages[pageIndices[i]]);
+        }
     }
 
     void PopulateContainer(RectTransform container, StagePage page)
     {
         var buttons = container.GetComponentsInChildren<Button>(true)
-            .Where(b => b.transform.parent == container)
-            .OrderBy(b => b.transform.GetSiblingIndex())
-            .ToArray();
+        .Where(b => b.transform.parent == container)
+        .OrderBy(b => b.transform.GetSiblingIndex())
+        .ToArray();
 
         for (int i = 0; i < buttons.Length; i++)
         {
             var btn = buttons[i];
             var tmp = btn.GetComponentInChildren<TMPro.TMP_Text>(true);
 
-            // 텍스트를 "currentPage-(i+1)" 로 설정
-            tmp.text = $"{currentPage + 1}-{i + 1}";
-
-            // 데이터 유무에 따라 활성/비활성
             if (i < page.StageGroups.Count)
             {
                 btn.interactable = true;
-                var wave = page.StageGroups[i];
+
+                var group = page.StageGroups[i];
+
+                // 여기서 PageIndex를 사용해야 정확함
+                tmp.text = string.Format("{0}-{1}", page.PageIndex + 1, i + 1);
+
                 btn.onClick.RemoveAllListeners();
-                btn.onClick.AddListener(() => OnStageSelected(wave));
+                btn.onClick.AddListener(() =>
+                {
+                    Debug.Log($"[StageSelection] Selected Wave -> Series:{group.StageSeries}, Waves:{group.Waves.Count}");
+                    StageLoadManager.Instance.SelectAndLoad(group, "Stage0");
+                });
             }
             else
             {
+                tmp.text = "";
                 btn.interactable = false;
-                btn.onClick.RemoveAllListeners();
             }
         }
     }
