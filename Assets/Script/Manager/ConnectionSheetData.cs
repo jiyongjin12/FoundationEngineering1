@@ -87,8 +87,6 @@ public class ConnectionSheetData : MonoBehaviour
             var sheet = sheets[i];
             var sd = skillData[i];
 
-            // -- 숫자/불리언 필드만 채워넣기 (참조형은 건너뜁니다) --
-
             sd.ID = sheet.ID;
 
             //sd.RangeType = sheet.RangeType; // string형식
