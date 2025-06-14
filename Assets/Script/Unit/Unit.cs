@@ -264,6 +264,7 @@ public class Unit : MonoBehaviour
         }
 
         target.TakeDamage(damage);
+        UIManager.Instance.damageNumberPrefab.Spawn(target.transform.position, damage);
 
         if (target.currentHP <= 0f)
         {
