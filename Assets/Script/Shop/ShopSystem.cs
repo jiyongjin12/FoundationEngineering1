@@ -19,7 +19,9 @@ public class ShopSystem : MonoBehaviour
 
     [Header("Popup UI Elements")]
     public GameObject detailPopup;
+    public TMP_Text nameText;
     public TMP_Text hpText;
+    public TMP_Text damageText;
     public TMP_Text levelText;
     public TMP_Text priceText;
     public Button buyButton;
@@ -72,9 +74,6 @@ public class ShopSystem : MonoBehaviour
             RefreshPopup();
     }
 
-    /// <summary>
-    /// 유닛 버튼 클릭 시 호출
-    /// </summary>
     void OnUnitButtonClicked(int index)
     {
         if (index < 0 || index >= unitDataList.Count)
@@ -88,9 +87,6 @@ public class ShopSystem : MonoBehaviour
         RefreshPopup();
     }
 
-    /// <summary>
-    /// 팝업에 선택된 유닛 정보 표시
-    /// </summary>
     void RefreshPopup()
     {
         if (selectedUnit == null)
@@ -102,8 +98,16 @@ public class ShopSystem : MonoBehaviour
         // HP
         if (hpText != null)
             hpText.text = selectedUnit.Hp.ToString();
+
+        // Damage
+        if (damageText != null && selectedUnit.UnitDefaultSkill != null)
+            damageText.text = selectedUnit.UnitDefaultSkill.Damage.ToString();
         else
-            Debug.LogError("ShopSystem: hpText가 할당되지 않음");
+            damageText.text = "0";
+
+        // Name
+        if (nameText != null)
+            nameText.text = selectedUnit.name.ToString();
 
         // Level
         int currLv = selectedUnit.CurrentLevel;
@@ -128,9 +132,6 @@ public class ShopSystem : MonoBehaviour
                 && MoneyManager.Instance.Coins >= price;
     }
 
-    /// <summary>
-    /// 구매/레벨업 버튼 클릭
-    /// </summary>
     void OnBuyClicked()
     {
         if (selectedUnit == null) return;
@@ -154,9 +155,6 @@ public class ShopSystem : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// 팝업 닫기 및 상점 종료 버튼 클릭
-    /// </summary>
     void ClosePopup()
     {
         isPopupOpen = false;
