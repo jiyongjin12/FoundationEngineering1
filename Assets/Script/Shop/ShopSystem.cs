@@ -30,6 +30,10 @@ public class ShopSystem : MonoBehaviour
     private UnitData selectedUnit;
     private bool isPopupOpen = false;
 
+    [Header("스테이지 정보")]
+    private StageGroup nextStageGroup;
+    private string nextSceneName;
+
     void Start()
     {
         // 버튼 동적 생성
@@ -155,10 +159,16 @@ public class ShopSystem : MonoBehaviour
         }
     }
 
+    public void OpenShopFor(StageGroup group, string sceneName)
+    {
+        nextStageGroup = group;
+        nextSceneName = sceneName;
+    }
+
     void ClosePopup()
     {
         isPopupOpen = false;
         detailPopup.SetActive(false);
-        SceneManager.LoadScene("StageSelect");
+        StageLoadManager.Instance.SelectAndLoad(nextStageGroup, nextSceneName);
     }
 }
