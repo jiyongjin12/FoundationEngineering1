@@ -7,19 +7,11 @@ public class UIManager : MonoBehaviour
 
     [Header("Deck Button")]
     public DamageNumber damageNumberPrefab;
+    public DamageNumber damageCriNumberPrefab;
+    public DamageNumber healNumberPrefab;
 
     private void Start()
     {
         Instance = this;
-    }
-
-    void Update()
-    {
-        //On leftclick.
-        if (Input.GetMouseButtonDown(0))
-        {
-            //Spawn new popup at transform.position with a random number between 0 and 100.
-            DamageNumber damageNumber = damageNumberPrefab.Spawn(transform.position, Random.Range(1, 100));
-        }
     }
 }
