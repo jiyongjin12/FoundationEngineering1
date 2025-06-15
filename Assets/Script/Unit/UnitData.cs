@@ -18,6 +18,7 @@ public class UnitData : ScriptableObject
 
     [Header("레벨")]
     public float MaxLevel;
+    public int CurrentLevel;
 
     public GameObject UnitBody;
 

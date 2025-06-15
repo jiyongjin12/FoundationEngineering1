@@ -21,11 +21,11 @@ MonoBehaviour:
   OpenPrice: 300
   LevelupPrice: 150
   MaxLevel: 20
+  CurrentLevel: 0
   UnitBody: {fileID: 6207609971608205405, guid: c315962ff74ba614cb9840ff07fb02dd, type: 3}
   ButtonImage: {fileID: 0}
-  UnitDefaultSkill: {fileID: 11400000, guid: a840f63989fc14d4d9b3ee55014440e4, type: 2}
-  UnitEvolvedSkill: {fileID: 0}
-  UnitAnimation: {fileID: 0}
+  UnitDefaultSkill: {fileID: 11400000, guid: 234f27e125001dc498900edda130545d, type: 2}
+  UnitEvolvedSkill: {fileID: 11400000, guid: 593521924566e96448d3926ce61450fb, type: 2}
   CoolDownTime: 2
   MinSpawnTime: 0
   MaxSpawnTime: 0
