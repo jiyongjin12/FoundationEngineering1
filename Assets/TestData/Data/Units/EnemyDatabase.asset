@@ -18,20 +18,20 @@ MonoBehaviour:
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 100
+    Hp: 120
     AttackSpeed: 1
-    AttackRange: 7
-    Speed: 4
+    AttackRange: 2
+    Speed: 3
     EnemyDefaultSkill: Skill_Enemy_HungryGhost_1
   - ID: Enemy_ChildGhost
     Name: ChildGhost
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 100
+    Hp: 70
     AttackSpeed: 1
     AttackRange: 3
-    Speed: 7
+    Speed: 5
     EnemyDefaultSkill: Skill_Enemy_ChildGhost_1
   - ID: Enemy_GhostWoman
     Name: GhostWoman
@@ -39,17 +39,17 @@ MonoBehaviour:
     StartLevel: 1
     MaxLevel: 20
     Hp: 100
-    AttackSpeed: 1
+    AttackSpeed: 0.7
     AttackRange: 14
-    Speed: 4
+    Speed: 2
     EnemyDefaultSkill: Skill_Enemy_GhostWoman_1
   - ID: Enemy_Guseunsae
     Name: Guseunsae
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 100
-    AttackSpeed: 1
+    Hp: 300
+    AttackSpeed: 1.3
     AttackRange: 15
     Speed: 4
     EnemyDefaultSkill: Skill_Enemy_Guseunsae_1
@@ -58,58 +58,58 @@ MonoBehaviour:
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 100
-    AttackSpeed: 1
+    Hp: 500
+    AttackSpeed: 0.8
     AttackRange: 10
-    Speed: 4
+    Speed: 2
     EnemyDefaultSkill: Skill_Enemy_BeastMonster_1
   - ID: Enemy_GoldPig
     Name: GoldPig
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 100
-    AttackSpeed: 1
+    Hp: 450
+    AttackSpeed: 0.6
     AttackRange: 12
-    Speed: 4
+    Speed: 2
     EnemyDefaultSkill: Skill_Enemy_GoldPig_1
   - ID: Enemy_BagOldMan
     Name: BagOldMan
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 100
-    AttackSpeed: 1
+    Hp: 400
+    AttackSpeed: 0.5
     AttackRange: 20
-    Speed: 4
+    Speed: 2
     EnemyDefaultSkill: Skill_Enemy_BagOldMan_1
   - ID: Enemy_Fox
     Name: Fox
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 100
-    AttackSpeed: 1
+    Hp: 3000
+    AttackSpeed: 0.5
     AttackRange: 20
-    Speed: 4
+    Speed: 2
     EnemyDefaultSkill: Skill_Enemy_Fox_1
   - ID: Enemy_Jangsanbeom
     Name: Jangsanbeom
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 100
-    AttackSpeed: 1
+    Hp: 3500
+    AttackSpeed: 1.7
     AttackRange: 15
-    Speed: 4
+    Speed: 5
     EnemyDefaultSkill: Skill_Enemy_Jangsanbeom_1
   - ID: Enemy_Bulgasari
     Name: Bulgasari
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 100
-    AttackSpeed: 1
+    Hp: 5000
+    AttackSpeed: 0.7
     AttackRange: 15
-    Speed: 4
+    Speed: 2
     EnemyDefaultSkill: Skill_Enemy_Bulgasari_1
