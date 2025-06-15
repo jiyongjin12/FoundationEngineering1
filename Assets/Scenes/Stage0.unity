@@ -752,6 +752,8 @@ MonoBehaviour:
     prefab: {fileID: 6161073395266268325, guid: cce9afa6be8dae643be15442b88eb103, type: 3}
   - key: FX_Clean
     prefab: {fileID: 3390790855698663037, guid: b46ee94992f45fa48b794da141d0483d, type: 3}
+  - key: FX_Ally_Clean
+    prefab: {fileID: 3390790855698663037, guid: b46ee94992f45fa48b794da141d0483d, type: 3}
 --- !u!4 &549030169
 Transform:
   m_ObjectHideFlags: 0
