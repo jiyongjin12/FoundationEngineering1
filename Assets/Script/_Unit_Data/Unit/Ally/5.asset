@@ -24,6 +24,8 @@ MonoBehaviour:
   CurrentLevel: 0
   UnitBody: {fileID: 2036527037167212759, guid: e35a9633a0155fe449973aa28201898f, type: 3}
   UnitImage: {fileID: 888897333, guid: 128027324cf076f4cbf994d1cf834308, type: 3}
+  UpgradeUnitImage: {fileID: 0}
+  SpawnUnitPoto: {fileID: 21300000, guid: e47d4ed0b8f68b64ca73fd0fe1ed63c9, type: 3}
   UnitDefaultSkill: {fileID: 0}
   UnitEvolvedSkill: {fileID: 0}
   CoolDownTime: 5
