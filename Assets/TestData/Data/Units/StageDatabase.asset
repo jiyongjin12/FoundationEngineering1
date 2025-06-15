@@ -20,15 +20,8 @@ MonoBehaviour:
       SubStageIndex: 1
       StageHealth: 500
       EnemyType:
-      - Enemy_HungryGhost
-      - Enemy_HungryGhost
-      - Enemy_ChildGhost
       - Enemy_GhostWoman
-      - Enemy_Guseunsae
-      - Enemy_BeastMonster
-      - Enemy_GoldPig
-      - Enemy_BagOldMan
-      EnemyLevel: 0100000001000000010000000100000001000000010000000100000001000000
+      EnemyLevel: 01000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_1_2

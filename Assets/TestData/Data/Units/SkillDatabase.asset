@@ -20,7 +20,7 @@ MonoBehaviour:
     RangeDiameter: 0
     UseSkillEffect: 0
     ProcChance: 0
-    Critical_probability: 30
+    Critical_probability: 10
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
     RangeDiameter: 0
     UseSkillEffect: 1
     ProcChance: 30
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
     RangeDiameter: 0
     UseSkillEffect: 0
     ProcChance: 0
-    Critical_probability: 70
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -92,7 +92,7 @@ MonoBehaviour:
     RangeDiameter: 3
     UseSkillEffect: 1
     ProcChance: 35
-    Critical_probability: 70
+    Critical_probability: 30
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -116,7 +116,7 @@ MonoBehaviour:
     RangeDiameter: 0
     UseSkillEffect: 0
     ProcChance: 0
-    Critical_probability: 30
+    Critical_probability: 50
     Critical_Damage: 50
     ProjectilesSpeed: 10
     AttackCount: 2
@@ -140,7 +140,7 @@ MonoBehaviour:
     RangeDiameter: 3
     UseSkillEffect: 0
     ProcChance: 0
-    Critical_probability: 30
+    Critical_probability: 60
     Critical_Damage: 50
     ProjectilesSpeed: 10
     AttackCount: 3
@@ -164,7 +164,7 @@ MonoBehaviour:
     RangeDiameter: 3
     UseSkillEffect: 1
     ProcChance: 50
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 10
     AttackCount: 3
@@ -188,7 +188,7 @@ MonoBehaviour:
     RangeDiameter: 3
     UseSkillEffect: 1
     ProcChance: 50
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 10
     AttackCount: 4
@@ -212,7 +212,7 @@ MonoBehaviour:
     RangeDiameter: 0
     UseSkillEffect: 1
     ProcChance: 50
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -236,7 +236,7 @@ MonoBehaviour:
     RangeDiameter: 0
     UseSkillEffect: 1
     ProcChance: 50
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -260,7 +260,7 @@ MonoBehaviour:
     RangeDiameter: 0
     UseSkillEffect: 1
     ProcChance: 60
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 10
     AttackCount: 1
@@ -284,7 +284,7 @@ MonoBehaviour:
     RangeDiameter: 0
     UseSkillEffect: 1
     ProcChance: 60
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 10
     AttackCount: 1
@@ -308,7 +308,7 @@ MonoBehaviour:
     RangeDiameter: 0
     UseSkillEffect: 0
     ProcChance: 0
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -332,7 +332,7 @@ MonoBehaviour:
     RangeDiameter: 0
     UseSkillEffect: 1
     ProcChance: 50
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -404,7 +404,7 @@ MonoBehaviour:
     RangeDiameter: 17
     UseSkillEffect: 0
     ProcChance: 0
-    Critical_probability: 35
+    Critical_probability: 30
     Critical_Damage: 50
     ProjectilesSpeed: 10
     AttackCount: 1
@@ -428,7 +428,7 @@ MonoBehaviour:
     RangeDiameter: 17
     UseSkillEffect: 0
     ProcChance: 0
-    Critical_probability: 35
+    Critical_probability: 30
     Critical_Damage: 50
     ProjectilesSpeed: 10
     AttackCount: 2
@@ -451,8 +451,8 @@ MonoBehaviour:
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 1
-    ProcChance: 15
-    Critical_probability: 30
+    ProcChance: 5
+    Critical_probability: 10
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -476,7 +476,7 @@ MonoBehaviour:
     RangeDiameter: 3
     UseSkillEffect: 1
     ProcChance: 80
-    Critical_probability: 30
+    Critical_probability: 40
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 1
@@ -500,7 +500,7 @@ MonoBehaviour:
     RangeDiameter: 0
     UseSkillEffect: 1
     ProcChance: 40
-    Critical_probability: 40
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 10
     AttackCount: 1
@@ -548,7 +548,7 @@ MonoBehaviour:
     RangeDiameter: 0
     UseSkillEffect: 1
     ProcChance: 70
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -572,7 +572,7 @@ MonoBehaviour:
     RangeDiameter: 3
     UseSkillEffect: 1
     ProcChance: 40
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -596,7 +596,7 @@ MonoBehaviour:
     RangeDiameter: 3
     UseSkillEffect: 1
     ProcChance: 60
-    Critical_probability: 40
+    Critical_probability: 30
     Critical_Damage: 50
     ProjectilesSpeed: 10
     AttackCount: 4
@@ -619,8 +619,8 @@ MonoBehaviour:
     RangeAttackCheck: 1
     RangeDiameter: 3
     UseSkillEffect: 1
-    ProcChance: 90
-    Critical_probability: 35
+    ProcChance: 60
+    Critical_probability: 30
     Critical_Damage: 50
     ProjectilesSpeed: 10
     AttackCount: 5
@@ -644,7 +644,7 @@ MonoBehaviour:
     RangeDiameter: 0
     UseSkillEffect: 0
     ProcChance: 0
-    Critical_probability: 70
+    Critical_probability: 50
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
