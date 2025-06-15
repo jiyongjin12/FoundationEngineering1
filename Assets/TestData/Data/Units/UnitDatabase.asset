@@ -22,7 +22,7 @@ MonoBehaviour:
     NeedMana: 50
     Hp: 100
     AttackSpeed: 1
-    AttackRange: 4
+    AttackRange: 3
     Speed: 4
     UnitDefaultSkill: Skill_Unit_Rat_1
     UnitEvolvedSkill: Skill_Unit_Rat_2
@@ -50,7 +50,7 @@ MonoBehaviour:
     NeedMana: 100
     Hp: 90
     AttackSpeed: 0.4
-    AttackRange: 13
+    AttackRange: 3
     Speed: 2
     UnitDefaultSkill: Skill_Unit_Rabbit_1
     UnitEvolvedSkill: Skill_Unit_Rabbit_2
@@ -64,7 +64,7 @@ MonoBehaviour:
     NeedMana: 130
     Hp: 100
     AttackSpeed: 0.7
-    AttackRange: 17
+    AttackRange: 10
     Speed: 3
     UnitDefaultSkill: Skill_Unit_Monkey_1
     UnitEvolvedSkill: Skill_Unit_Monkey_2
@@ -106,7 +106,7 @@ MonoBehaviour:
     NeedMana: 220
     Hp: 80
     AttackSpeed: 0.4
-    AttackRange: 15
+    AttackRange: 14
     Speed: 2
     UnitDefaultSkill: Skill_Unit_WindGod_1
     UnitEvolvedSkill: Skill_Unit_WindGod_2
@@ -134,7 +134,7 @@ MonoBehaviour:
     NeedMana: 350
     Hp: 150
     AttackSpeed: 0.3
-    AttackRange: 18
+    AttackRange: 16
     Speed: 2
     UnitDefaultSkill: Skill_Unit_Dragon_1
     UnitEvolvedSkill: Skill_Unit_Dragon_2
@@ -148,7 +148,7 @@ MonoBehaviour:
     NeedMana: 500
     Hp: 180
     AttackSpeed: 1.6
-    AttackRange: 16
+    AttackRange: 13
     Speed: 4
     UnitDefaultSkill: Skill_Unit_RedBird_1
     UnitEvolvedSkill: Skill_Unit_RedBird_2
