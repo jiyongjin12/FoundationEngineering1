@@ -36,6 +36,10 @@ public class StageSelectionManager : MonoBehaviour
     private Vector2[] initialPositions = new Vector2[3];
     private bool isAnimating = false;
 
+    [Header("»óÁ¡")]
+    public GameObject ShopCanvas;
+    public ShopSystem Shop;
+
     void Awake()
     {
         if (stageGroupDatabase == null)
@@ -51,6 +55,7 @@ public class StageSelectionManager : MonoBehaviour
 
     void Start()
     {
+        ShopCanvas.SetActive(false);
         UpdateButtons();
         UpdatePageViews();
         prevButton.onClick.AddListener(OnPrevClicked);
@@ -163,7 +168,9 @@ public class StageSelectionManager : MonoBehaviour
                 btn.onClick.AddListener(() =>
                 {
                     Debug.Log($"[StageSelection] Selected Wave -> Series:{group.StageSeries}, Waves:{group.Waves.Count}");
-                    StageLoadManager.Instance.SelectAndLoad(group, "Stage0");
+                    //StageLoadManager.Instance.SelectAndLoad(group, "Stage0");
+                    ShopCanvas.SetActive(true);
+                    Shop.OpenShopFor(group, "Stage0");
                 });
             }
             else

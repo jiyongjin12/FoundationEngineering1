@@ -15,15 +15,16 @@ MonoBehaviour:
   Faction: 1
   name: GhostWoman
   Hp: 100
-  Speed: 4
-  AttackSpeed: 1
-  AttackRange: 14
+  Speed: 2
+  AttackSpeed: 0.7
+  AttackRange: 10
   OpenPrice: 0
   LevelupPrice: 0
   MaxLevel: 0
+  CurrentLevel: 0
   UnitBody: {fileID: 768126110223005034, guid: 29acd059eb01a0a498b4291b7b3b45d5, type: 3}
-  ButtonImage: {fileID: 0}
-  UnitDefaultSkill: {fileID: 11400000, guid: 208f6dab2d070234b94e435b8aa1ec76, type: 2}
+  UnitImage: {fileID: 0}
+  UnitDefaultSkill: {fileID: 11400000, guid: 7065f502203701445bbed2f40d1124d6, type: 2}
   UnitEvolvedSkill: {fileID: 0}
   CoolDownTime: 0
   MinSpawnTime: 3
