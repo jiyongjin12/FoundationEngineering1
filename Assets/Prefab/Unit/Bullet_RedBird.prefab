@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8810444639956007262}
   - component: {fileID: 3170383345433847386}
   m_Layer: 0
-  m_Name: Bullet_RedBurd
+  m_Name: Bullet_RedBird
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

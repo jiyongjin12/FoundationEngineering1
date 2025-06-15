@@ -281,6 +281,8 @@ public class Unit : MonoBehaviour
             UIManager.Instance.damageCriNumberPrefab.Spawn(target.transform.position, damage);
 
         ChangeColorEffect(target.gameObject, Color.red);
+        FXManager.Instance.PlayEffect("FX_Hit", target.gameObject.transform);
+        SkillEffect(target.gameObject);
 
         if (target.currentHP <= 0f)
         {
@@ -323,6 +325,18 @@ public class Unit : MonoBehaviour
 
         StunCheck = false;
        
+    }
+
+    // 특정 몹들 공격 이펙트
+    public void SkillEffect(GameObject target)
+    {
+        if (unitSkill == null) return;
+
+        if (unitData.name == "Cat")
+            FXManager.Instance.PlayLocalEffect("FX_Lightning", target.transform);
+
+        if (unitData.name == "ChildGhost")
+            FXManager.Instance.PlayEffect("FX_Bomb", target.transform);
     }
 
     // 히트 이펙트 or 힐 이펙트 or 상태이상 이펙트

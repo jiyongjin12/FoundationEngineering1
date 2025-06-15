@@ -22,6 +22,7 @@ public class Health : MonoBehaviour
     void Die()
     {
         Debug.Log("Death");
+        FXManager.Instance.PlayLocalEffect("FX_Death", gameObject.transform);
         Destroy(gameObject);
     }
 
