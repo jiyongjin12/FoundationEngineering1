@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: AllyTestSkill 9
   m_EditorClassIdentifier: 
   RangeType: 0
+  ID: 
   Damage: 5
   Critical_probability: 0
   Critical_damage: 0
@@ -21,7 +22,7 @@ MonoBehaviour:
   AttackCount: 5
   UseSkillEffect: 0
   ProcChance: 0
-  ProjectilePrefab: {fileID: 9046949950307811681, guid: 9e19f8d37e0323a4bb7a828cef4a32b3, type: 3}
+  ProjectilePrefab: {fileID: 9046949950307811681, guid: 1316d418c660f234bb11f35cb9df3139, type: 3}
   ProjectileSpeed: 5
   Slow: 1
   Stun: 1

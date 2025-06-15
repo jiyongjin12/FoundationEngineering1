@@ -183,7 +183,7 @@ public class Unit : MonoBehaviour
 
         if (Random.value < unitSkill.Critical_probability / 100f)
         {
-            finalDamage = unitSkill.Critical_damage;
+            finalDamage *= unitSkill.Critical_damage / 100 + 1;
             CameraShake.Instance.Shake(2, 0.5f);
             CriticalCheck = true;
             Debug.Log("치명타!");
