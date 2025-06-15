@@ -15,12 +15,12 @@ MonoBehaviour:
   skills:
   - ID: Skill_Unit_Rat_1
     RangeType: Melee
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 0
     ProcChance: 0
-    Critical_probability: 30
+    Critical_probability: 10
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -39,12 +39,12 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Rat_2
     RangeType: Melee
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 1
     ProcChance: 30
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -63,12 +63,12 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Cat_1
     RangeType: Melee
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 0
     ProcChance: 0
-    Critical_probability: 70
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -87,12 +87,12 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Cat_2
     RangeType: Melee
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 1
     RangeDiameter: 3
     UseSkillEffect: 1
     ProcChance: 35
-    Critical_probability: 70
+    Critical_probability: 30
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -111,12 +111,12 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Rabbit_1
     RangeType: Ranged
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 0
     ProcChance: 0
-    Critical_probability: 30
+    Critical_probability: 50
     Critical_Damage: 50
     ProjectilesSpeed: 10
     AttackCount: 2
@@ -135,12 +135,12 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Rabbit_2
     RangeType: Ranged
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 1
     RangeDiameter: 3
     UseSkillEffect: 0
     ProcChance: 0
-    Critical_probability: 30
+    Critical_probability: 60
     Critical_Damage: 50
     ProjectilesSpeed: 10
     AttackCount: 3
@@ -159,12 +159,12 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Monkey_1
     RangeType: Ranged
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 1
     RangeDiameter: 3
     UseSkillEffect: 1
     ProcChance: 50
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 10
     AttackCount: 3
@@ -183,12 +183,12 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Monkey_2
     RangeType: Ranged
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 1
     RangeDiameter: 3
     UseSkillEffect: 1
     ProcChance: 50
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 10
     AttackCount: 4
@@ -207,12 +207,12 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Dokkaebi_1
     RangeType: Melee
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 1
     ProcChance: 50
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -231,12 +231,12 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Dokkaebi_2
     RangeType: Melee
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 1
     ProcChance: 50
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -255,12 +255,12 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_WindGod_1
     RangeType: Ranged
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 1
     ProcChance: 60
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 10
     AttackCount: 1
@@ -279,12 +279,12 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_WindGod_2
     RangeType: Ranged
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 1
     ProcChance: 60
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 10
     AttackCount: 1
@@ -303,12 +303,12 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Haetae_1
     RangeType: Melee
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 0
     ProcChance: 0
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -327,12 +327,12 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Haetae_2
     RangeType: Melee
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 1
     ProcChance: 50
-    Critical_probability: 30
+    Critical_probability: 20
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -351,7 +351,7 @@ MonoBehaviour:
     Unitcount: 3
   - ID: Skill_Unit_Dragon_1
     RangeType: Ranged
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 1
     RangeDiameter: 3
     UseSkillEffect: 1
@@ -375,7 +375,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Dragon_2
     RangeType: Ranged
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 1
     RangeDiameter: 3
     UseSkillEffect: 1
@@ -399,12 +399,12 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_RedBird_1
     RangeType: Ranged
-    Damage: 30
-    RangeAttackCheck: 1
-    RangeDiameter: 3
+    Damage: 1
+    RangeAttackCheck: 0
+    RangeDiameter: 17
     UseSkillEffect: 0
     ProcChance: 0
-    Critical_probability: 35
+    Critical_probability: 30
     Critical_Damage: 50
     ProjectilesSpeed: 10
     AttackCount: 1
@@ -423,12 +423,12 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_RedBird_2
     RangeType: Ranged
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 1
-    RangeDiameter: 3
+    RangeDiameter: 17
     UseSkillEffect: 0
     ProcChance: 0
-    Critical_probability: 35
+    Critical_probability: 30
     Critical_Damage: 50
     ProjectilesSpeed: 10
     AttackCount: 2
@@ -447,7 +447,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_HungryGhost_1
     RangeType: Melee
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 1
@@ -471,7 +471,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_ChildGhost_1
     RangeType: Melee
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 1
     RangeDiameter: 3
     UseSkillEffect: 1
@@ -495,7 +495,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_GhostWoman_1
     RangeType: Ranged
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 1
@@ -519,7 +519,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_Guseunsae_1
     RangeType: Melee
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 0
@@ -543,7 +543,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_BeastMonster_1
     RangeType: Melee
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 1
@@ -567,7 +567,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_GoldPig_1
     RangeType: Melee
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 1
     RangeDiameter: 3
     UseSkillEffect: 1
@@ -591,7 +591,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_BagOldMan_1
     RangeType: Ranged
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 1
     RangeDiameter: 3
     UseSkillEffect: 1
@@ -615,11 +615,11 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_Fox_1
     RangeType: Ranged
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 1
     RangeDiameter: 3
     UseSkillEffect: 1
-    ProcChance: 90
+    ProcChance: 60
     Critical_probability: 35
     Critical_Damage: 50
     ProjectilesSpeed: 10
@@ -639,12 +639,12 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_Jangsanbeom_1
     RangeType: Melee
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 0
     ProcChance: 0
-    Critical_probability: 70
+    Critical_probability: 50
     Critical_Damage: 50
     ProjectilesSpeed: 0
     AttackCount: 0
@@ -663,7 +663,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_Bulgasari_1
     RangeType: Melee
-    Damage: 30
+    Damage: 1
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 0
