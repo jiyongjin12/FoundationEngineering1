@@ -16,7 +16,7 @@ MonoBehaviour:
   - ID: Unit_Rat
     Name: Rat
     Faction: 0
-    OpenPrice: 300
+    OpenPrice: 0
     LevelupPrice: 150
     MaxLevel: 20
     NeedMana: 50
@@ -44,7 +44,7 @@ MonoBehaviour:
   - ID: Unit_Rabbit
     Name: Rabbit
     Faction: 0
-    OpenPrice: 300
+    OpenPrice: 1000
     LevelupPrice: 150
     MaxLevel: 20
     NeedMana: 50
@@ -58,7 +58,7 @@ MonoBehaviour:
   - ID: Unit_Monkey
     Name: Monkey
     Faction: 0
-    OpenPrice: 300
+    OpenPrice: 1500
     LevelupPrice: 150
     MaxLevel: 20
     NeedMana: 50
@@ -72,7 +72,7 @@ MonoBehaviour:
   - ID: Unit_Jangseung
     Name: Jangseung
     Faction: 0
-    OpenPrice: 300
+    OpenPrice: 2000
     LevelupPrice: 150
     MaxLevel: 20
     NeedMana: 50
@@ -86,7 +86,7 @@ MonoBehaviour:
   - ID: Unit_Dokkaebi
     Name: Dokkaebi
     Faction: 0
-    OpenPrice: 300
+    OpenPrice: 2500
     LevelupPrice: 150
     MaxLevel: 20
     NeedMana: 50
@@ -100,7 +100,7 @@ MonoBehaviour:
   - ID: Unit_WindGod
     Name: WindGod
     Faction: 0
-    OpenPrice: 300
+    OpenPrice: 3000
     LevelupPrice: 150
     MaxLevel: 20
     NeedMana: 50
@@ -114,7 +114,7 @@ MonoBehaviour:
   - ID: Unit_Haetae
     Name: Haetae
     Faction: 0
-    OpenPrice: 300
+    OpenPrice: 3500
     LevelupPrice: 150
     MaxLevel: 20
     NeedMana: 50
@@ -128,7 +128,7 @@ MonoBehaviour:
   - ID: Unit_Dragon
     Name: Dragon
     Faction: 0
-    OpenPrice: 300
+    OpenPrice: 4000
     LevelupPrice: 150
     MaxLevel: 20
     NeedMana: 50
@@ -142,7 +142,7 @@ MonoBehaviour:
   - ID: Unit_RedBird
     Name: RedBird
     Faction: 0
-    OpenPrice: 300
+    OpenPrice: 5000
     LevelupPrice: 150
     MaxLevel: 20
     NeedMana: 50

@@ -21,27 +21,24 @@ MonoBehaviour:
       StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
+      - Enemy_HungryGhost
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       - Enemy_Guseunsae
       - Enemy_BeastMonster
       - Enemy_GoldPig
       - Enemy_BagOldMan
-      - Enemy_Fox
-      - Enemy_Jangsanbeom
-      - Enemy_Bulgasari
-      EnemyLevel: 0100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      EnemyLevel: 0100000001000000010000000100000001000000010000000100000001000000
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_1_2
       StageSeries: 1
       SubStageIndex: 2
       StageHealth: 300
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 0100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_1_3
@@ -63,11 +60,10 @@ MonoBehaviour:
       StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      EnemyLevel: 0100000001000000
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_2_2
       StageSeries: 2
       SubStageIndex: 2
@@ -85,7 +81,7 @@ MonoBehaviour:
       StageHealth: 100
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
       MinSpawnTime: 3
@@ -98,18 +94,17 @@ MonoBehaviour:
       StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      - Enemy_Guseunsae
+      EnemyLevel: 0100000001000000
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_3_2
       StageSeries: 3
       SubStageIndex: 2
       StageHealth: 300
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
       MinSpawnTime: 3
@@ -122,7 +117,8 @@ MonoBehaviour:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_Guseunsae
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 4
@@ -136,14 +132,14 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_4_2
       StageSeries: 4
       SubStageIndex: 2
       StageHealth: 300
       EnemyType:
-      - Enemy_HungryGhost
+      - BeastMonster
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
@@ -171,8 +167,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_5_2
       StageSeries: 5
       SubStageIndex: 2
@@ -206,8 +202,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_6_2
       StageSeries: 6
       SubStageIndex: 2
@@ -241,8 +237,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_7_2
       StageSeries: 7
       SubStageIndex: 2
@@ -276,8 +272,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_8_2
       StageSeries: 8
       SubStageIndex: 2
@@ -311,8 +307,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_9_2
       StageSeries: 9
       SubStageIndex: 2
@@ -346,8 +342,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_10_2
       StageSeries: 10
       SubStageIndex: 2
@@ -381,8 +377,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_11_2
       StageSeries: 11
       SubStageIndex: 2
@@ -416,8 +412,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_12_2
       StageSeries: 12
       SubStageIndex: 2
@@ -451,8 +447,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_13_2
       StageSeries: 13
       SubStageIndex: 2
@@ -486,8 +482,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_14_2
       StageSeries: 14
       SubStageIndex: 2
@@ -521,8 +517,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_15_2
       StageSeries: 15
       SubStageIndex: 2
@@ -556,8 +552,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_16_2
       StageSeries: 16
       SubStageIndex: 2
@@ -591,8 +587,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_17_2
       StageSeries: 17
       SubStageIndex: 2
@@ -626,8 +622,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_18_2
       StageSeries: 18
       SubStageIndex: 2
@@ -661,8 +657,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_19_2
       StageSeries: 19
       SubStageIndex: 2
@@ -696,8 +692,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_20_2
       StageSeries: 20
       SubStageIndex: 2
@@ -731,8 +727,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_21_2
       StageSeries: 21
       SubStageIndex: 2
@@ -766,8 +762,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_22_2
       StageSeries: 22
       SubStageIndex: 2
@@ -801,8 +797,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_23_2
       StageSeries: 23
       SubStageIndex: 2
@@ -836,8 +832,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_24_2
       StageSeries: 24
       SubStageIndex: 2
@@ -871,8 +867,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_25_2
       StageSeries: 25
       SubStageIndex: 2
@@ -906,8 +902,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_26_2
       StageSeries: 26
       SubStageIndex: 2
@@ -941,8 +937,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_27_2
       StageSeries: 27
       SubStageIndex: 2
@@ -976,8 +972,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_28_2
       StageSeries: 28
       SubStageIndex: 2
@@ -1011,8 +1007,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_29_2
       StageSeries: 29
       SubStageIndex: 2
@@ -1046,8 +1042,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_30_2
       StageSeries: 30
       SubStageIndex: 2
@@ -1081,8 +1077,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_31_2
       StageSeries: 31
       SubStageIndex: 2
@@ -1116,8 +1112,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_32_2
       StageSeries: 32
       SubStageIndex: 2
@@ -1151,8 +1147,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_33_2
       StageSeries: 33
       SubStageIndex: 2
@@ -1186,8 +1182,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_34_2
       StageSeries: 34
       SubStageIndex: 2
@@ -1221,8 +1217,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_35_2
       StageSeries: 35
       SubStageIndex: 2
@@ -1256,8 +1252,8 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
     - ID: Stage_36_2
       StageSeries: 36
       SubStageIndex: 2

@@ -33,11 +33,6 @@ public class UnitSpawnManager : MonoBehaviour
             Image img = btnObj.GetComponent<Image>();
             Button btn = btnObj.GetComponent<Button>();
 
-            if (i < Custom.Length && Custom[i] != null)
-            {
-                img.sprite = Custom[i].ButtonImage;
-            }
-
             deckButtons[i] = btn;
 
             // 버튼 클릭 이벤트 등록

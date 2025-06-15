@@ -186,9 +186,4 @@ public class StageSelectionManager : MonoBehaviour
         nextButton.gameObject.SetActive(active && currentPage < pages.Count - 1);
     }
 
-
-    void OnStageSelected(StageGroup group)
-    {
-        Debug.Log($"Selected Stage Group: {group.StageSeries}");
-    }
 }
