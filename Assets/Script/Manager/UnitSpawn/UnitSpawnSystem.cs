@@ -56,20 +56,31 @@ public class UnitSpawnSystem : MonoBehaviour
 
     void Update()
     {
-        // 키보드 입력 (1~0키)로도 스폰
+        // 키보드 입력 (1~9, 0키)로도 스폰
         for (int i = 0; i < spawnButtons.Count; i++)
         {
-            var ui = spawnButtons[i];
-            if (ui == null) continue;
-            KeyCode code = KeyCode.Alpha0 + ui.UseKeyCode;
+            // 0번 버튼 -> Alpha1, 1번 -> Alpha2, ..., 8번 -> Alpha9, 9번 -> Alpha0
+            KeyCode code = (i < 9)
+                ? KeyCode.Alpha1 + i
+                : KeyCode.Alpha0;
             if (Input.GetKeyDown(code))
                 OnSpawnButton(i);
         }
     }
 
-    /// <summary>
-    /// 해금된 유닛만 버튼 활성화
-    /// </summary>
+    //void Update()
+    //{
+    //    // 키보드 입력 (1~0키)로도 스폰
+    //    for (int i = 0; i < spawnButtons.Count; i++)
+    //    {
+    //        var ui = spawnButtons[i];
+    //        if (ui == null) continue;
+    //        KeyCode code = KeyCode.Alpha0 + ui.UseKeyCode;
+    //        if (Input.GetKeyDown(code))
+    //            OnSpawnButton(i);
+    //    }
+    //}
+
     void RefreshButtons()
     {
         for (int i = 0; i < _buttons.Length; i++)
@@ -79,9 +90,6 @@ public class UnitSpawnSystem : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// 버튼 또는 키 입력 시 호출
-    /// </summary>
     void OnSpawnButton(int index)
     {
         if (index < 0 || index >= customUnits.Length) return;
@@ -97,9 +105,6 @@ public class UnitSpawnSystem : MonoBehaviour
         StartCoroutine(CooldownRoutine(index, ud.CoolDownTime));
     }
 
-    /// <summary>
-    /// 버튼별 스폰 쿨다운 표시
-    /// </summary>
     IEnumerator CooldownRoutine(int idx, float duration)
     {
         var ui = spawnButtons[idx];

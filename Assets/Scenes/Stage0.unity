@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3732301130480811911, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9135bbce480c350488f354557eab3823, type: 3}
     - target: {fileID: 4930512176957501653, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -210,6 +214,10 @@ PrefabInstance:
     - target: {fileID: 4930512176957501653, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750707543405960328, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
+      propertyPath: m_text
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6969777867391997270, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_IsActive
@@ -248,6 +256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3732301130480811911, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 47dfbc2d3bdadc347b9c3db025b9cbc6, type: 3}
     - target: {fileID: 4930512176957501653, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -327,6 +339,10 @@ PrefabInstance:
     - target: {fileID: 4930512176957501653, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750707543405960328, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
+      propertyPath: m_text
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6969777867391997270, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_IsActive
@@ -365,6 +381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3732301130480811911, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a25f428e110f1fd4cbda515059e7e832, type: 3}
     - target: {fileID: 4930512176957501653, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -443,6 +463,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4930512176957501653, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750707543405960328, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
+      propertyPath: m_text
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6969777867391997270, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
@@ -818,6 +842,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3732301130480811911, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 95268e4157f1a1c46a74efd48ca047be, type: 3}
     - target: {fileID: 4930512176957501653, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -897,6 +925,10 @@ PrefabInstance:
     - target: {fileID: 4930512176957501653, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750707543405960328, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
+      propertyPath: m_text
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6969777867391997270, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_IsActive
@@ -1005,6 +1037,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3732301130480811911, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f85b3fcdac193564ea2efc73f2c0e17e, type: 3}
     - target: {fileID: 4930512176957501653, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1084,6 +1120,10 @@ PrefabInstance:
     - target: {fileID: 4930512176957501653, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750707543405960328, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
+      propertyPath: m_text
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6969777867391997270, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_IsActive
@@ -1122,6 +1162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3732301130480811911, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 81c8643b94f00ec488698c088d0d0a9a, type: 3}
     - target: {fileID: 4930512176957501653, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1201,6 +1245,10 @@ PrefabInstance:
     - target: {fileID: 4930512176957501653, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750707543405960328, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
+      propertyPath: m_text
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6969777867391997270, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_IsActive
@@ -3587,6 +3635,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3732301130480811911, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4dc7af0d68c31bd408a231c788762e28, type: 3}
     - target: {fileID: 4930512176957501653, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3666,6 +3718,10 @@ PrefabInstance:
     - target: {fileID: 4930512176957501653, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750707543405960328, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
+      propertyPath: m_text
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6969777867391997270, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_IsActive
@@ -4060,6 +4116,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3732301130480811911, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e47d4ed0b8f68b64ca73fd0fe1ed63c9, type: 3}
     - target: {fileID: 4930512176957501653, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4139,6 +4199,10 @@ PrefabInstance:
     - target: {fileID: 4930512176957501653, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750707543405960328, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
+      propertyPath: m_text
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6969777867391997270, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_IsActive
@@ -5310,6 +5374,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3732301130480811911, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1504d6bc32d4f0b4e9680e7f08705aef, type: 3}
     - target: {fileID: 4930512176957501653, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5389,6 +5457,10 @@ PrefabInstance:
     - target: {fileID: 4930512176957501653, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750707543405960328, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
+      propertyPath: m_text
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6969777867391997270, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_IsActive
@@ -6340,6 +6412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button
       objectReference: {fileID: 0}
+    - target: {fileID: 3732301130480811911, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 63373276f9b19d14c965e1a034ac0818, type: 3}
     - target: {fileID: 4930512176957501653, guid: 2c1300fa415dfca45bce282e0ad4000e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -9292,6 +9368,8 @@ MonoBehaviour:
   Animation: {fileID: 0}
   KillingUnit: 0
   FinalRange: 0
+  hpImage: {fileID: 0}
+  hpEffectImage: {fileID: 0}
 --- !u!4 &9025937325959694223
 Transform:
   m_ObjectHideFlags: 0
