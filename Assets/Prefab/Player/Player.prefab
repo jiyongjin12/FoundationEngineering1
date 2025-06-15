@@ -165,7 +165,7 @@ MonoBehaviour:
   playerData: {fileID: 11400000, guid: ad2931b7f484cce45b62a62a0baf652f, type: 2}
   PlayerHp: {fileID: 3761647530131594169}
   currentMana: 0
-  skillProjectilePrefab: {fileID: 2836623311021058967, guid: f4cb1306eae42bc4b9e7e2b0edd310ac, type: 3}
+  skillProjectilePrefab: {fileID: 9046949950307811681, guid: aaacfc326046cf54884f47bd8f32fef4, type: 3}
   skillSpawnPoint: {fileID: 5764060309339857205}
   tier30: 0
   tier70: 0
