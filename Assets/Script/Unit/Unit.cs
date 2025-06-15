@@ -1,6 +1,5 @@
+using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -35,6 +34,7 @@ public class Unit : MonoBehaviour
     #endregion
 
     public bool check;
+    private float currentFlashAmount;
 
     public Animator Animation;
 
@@ -280,6 +280,8 @@ public class Unit : MonoBehaviour
         else
             UIManager.Instance.damageCriNumberPrefab.Spawn(target.transform.position, damage);
 
+        ChangeColorEffect(target.gameObject, Color.red);
+
         if (target.currentHP <= 0f)
         {
             KillingUnit = true;
@@ -321,6 +323,34 @@ public class Unit : MonoBehaviour
 
         StunCheck = false;
        
+    }
+
+    // 히트 이펙트 or 힐 이펙트 or 상태이상 이펙트
+    public IEnumerator ChangeColorEffectApply(GameObject target, Color color, float duration)
+    {
+        if (currentFlashAmount > 0) yield return null; // 중복 실행 방지
+
+        Material material = target.GetComponentInChildren<SpriteRenderer>().material; // 코드 구데기인데 나중에 최적화
+
+        currentFlashAmount = 0f;
+        float elapsedTime = 0f;
+        material.SetColor("_MainColor", color);
+
+        while (elapsedTime < duration)
+        {
+            Debug.Log("히트" + currentFlashAmount);
+            elapsedTime += Time.deltaTime;
+
+            currentFlashAmount = Mathf.Lerp(1, 0, (elapsedTime / duration));
+            material.SetFloat("_ColorAmount", currentFlashAmount);
+
+            yield return null;
+        }
+    }
+
+    public void ChangeColorEffect(GameObject target, Color color, float duration = 0.25f)
+    {
+        StartCoroutine(ChangeColorEffectApply(target.gameObject, color, duration));
     }
 
     void OnDrawGizmosSelected()

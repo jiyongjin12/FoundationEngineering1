@@ -57,8 +57,6 @@ public class HealingSkill : MonoBehaviour
 
     private void HealUnit(Health targetHealth)
     {
-        FXManager.Instance.PlayEffect("FX_Heal", targetHealth.transform.transform);
-
         // Health 컴포넌트가 maxHP와 currentHP를 관리한다고 가정
         float maxHP = targetHealth.HP;
         float currentHP = targetHealth.currentHP;
@@ -66,6 +64,11 @@ public class HealingSkill : MonoBehaviour
 
         float newHP = Mathf.Min(currentHP + healAmount, maxHP);
         targetHealth.currentHP = newHP;
+
+        // 이펙트 효과
+        FXManager.Instance.PlayEffect("FX_Heal", targetHealth.transform.transform);
+        UIManager.Instance.healNumberPrefab.Spawn(targetHealth.transform.position, newHP);
+        targetHealth.GetComponent<Unit>().ChangeColorEffect(targetHealth.gameObject, Color.green);
     }
 
     // 디버그: 씬에서 범위를 시각적으로 확인하기 위한 기즈모
