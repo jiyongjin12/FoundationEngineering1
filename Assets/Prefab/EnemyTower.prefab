@@ -71,18 +71,9 @@ MonoBehaviour:
   allEnemyUnits:
   - {fileID: 11400000, guid: dd873fe0dee63a04fb48344818dff9f9, type: 2}
   - {fileID: 11400000, guid: fcdc8a7698c8ddc4ba6fe31ae2d601b2, type: 2}
-  HP: 100
+  HP: 0
   HP_Tower: {fileID: 2330218101305114770}
-  Spawns:
-  - HP_Status: 70
-    E_name:
-    - e
-  - HP_Status: 50
-    E_name:
-    - e
-  - HP_Status: 0
-    E_name:
-    - e
+  Spawns: []
   EnemySpawnPos: {fileID: 4130875794324437082}
 --- !u!114 &2330218101305114770
 MonoBehaviour:

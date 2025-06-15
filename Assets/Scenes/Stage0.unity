@@ -1600,7 +1600,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1224450139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2545,7 +2545,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997476269}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f3e6cc405d0cbd4e8a48a562281e64b, type: 3}
   m_Name: 
@@ -3955,6 +3955,10 @@ PrefabInstance:
       value: EnemyTower
       objectReference: {fileID: 0}
     - target: {fileID: 8576137814182634988, guid: dd390b06bb670cf4ebbf6172a8d04fef, type: 3}
+      propertyPath: Spawns.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576137814182634988, guid: dd390b06bb670cf4ebbf6172a8d04fef, type: 3}
       propertyPath: allEnemyUnits.Array.size
       value: 10
       objectReference: {fileID: 0}
@@ -3998,6 +4002,10 @@ PrefabInstance:
       propertyPath: 'allEnemyUnits.Array.data[9]'
       value: 
       objectReference: {fileID: 11400000, guid: 4e3e92b88a9a50546879307fcb9addd3, type: 2}
+    - target: {fileID: 8576137814182634988, guid: dd390b06bb670cf4ebbf6172a8d04fef, type: 3}
+      propertyPath: 'Spawns.Array.data[0].E_name.Array.data[0]'
+      value: BeastMonster
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

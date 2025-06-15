@@ -23,9 +23,8 @@ MonoBehaviour:
   MaxLevel: 0
   UnitBody: {fileID: 6121440897256809895, guid: 6485a2b5240ed47459078bfeb4380c3e, type: 3}
   ButtonImage: {fileID: 0}
-  UnitDefaultSkill: {fileID: 11400000, guid: 3f527ca9cdb631a4baf528ad85aa5c55, type: 2}
+  UnitDefaultSkill: {fileID: 0}
   UnitEvolvedSkill: {fileID: 0}
-  UnitAnimation: {fileID: 0}
   CoolDownTime: 0
   MinSpawnTime: 3
   MaxSpawnTime: 5

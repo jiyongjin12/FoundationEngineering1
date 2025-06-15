@@ -6,82 +6,132 @@ using UnityEngine;
 
 public class EnemyTower : MonoBehaviour
 {
-    [Header("Enemy")]
+    [Header("Enemy Units (UnitData.name must match suffix, ID format: Enemy_<name>)")]
     public UnitData[] allEnemyUnits;
 
-    [Header("Setting")]
-    public float HP;
+    [Header("Tower Health Component")]
     public Health HP_Tower;
 
-    [SerializeField] private EnemySpawn_Array[] Spawns;
-    //[SerializeField] private GameObject Enemy_body;
-    [SerializeField] private Transform EnemySpawnPos;
+    [Header("Spawn Position")]
+    public Transform EnemySpawnPos;
 
-    // 이름 → UnitData 빠른 조회용
     private Dictionary<string, UnitData> unitLookup;
+    private List<SheetStageData> waveDataList;
+    private HashSet<int> triggeredWaves = new HashSet<int>();
 
-    private void Awake()
+    void Awake()
     {
-        HP_Tower.currentHP = HP;
+        Debug.Log("EnemyTower.Awake: Initializing lookup and stage data");
 
-        // UnitData 딕셔너리 초기화
-        unitLookup = new Dictionary<string, UnitData>(allEnemyUnits.Length);
-        foreach (var data in allEnemyUnits)
+        // Build lookup: key = "Enemy_" + UnitData.name
+        unitLookup = new Dictionary<string, UnitData>();
+        foreach (var ud in allEnemyUnits)
         {
-            if (data != null && !string.IsNullOrEmpty(data.name) && !unitLookup.ContainsKey(data.name))
-                unitLookup.Add(data.name, data);
+            if (ud == null || string.IsNullOrEmpty(ud.name)) continue;
+            string key = "Enemy_" + ud.name;
+            unitLookup[key] = ud;
+            Debug.Log($"Lookup added: '{key}' -> UnitData '{ud.name}'");
         }
+        Debug.Log($"Total lookup entries: {unitLookup.Count}");
+
+        // Load stage waves
+        var group = StageLoadManager.Instance.SelectedGroup;
+        if (group == null || group.Waves == null)
+        {
+            Debug.LogError("EnemyTower: No StageGroup loaded!"); enabled = false; return;
+        }
+        waveDataList = group.Waves;
+        Debug.Log($"Loaded StageGroup: series {group.StageSeries}, total waves = {waveDataList.Count}");
+
+        // HP setup
+        HP_Tower.HP = waveDataList[0].StageHealth;
+        HP_Tower.currentHP = HP_Tower.HP;
+        Debug.Log($"EnemyTower: HP set to {HP_Tower.HP}");
     }
 
-    private void Start()
+    void Start()
     {
-        for (int i = 0; i < Spawns.Length; i++)
+        // Begin wave check loop
+        StartCoroutine(WaveCheckLoop());
+    }
+
+    private IEnumerator WaveCheckLoop()
+    {
+        while (HP_Tower.currentHP > 0f)
         {
-            for (int u = 0; u < Spawns[i].E_name.Length; u++)
+            float currHP = HP_Tower.currentHP;
+            for (int i = 0; i < waveDataList.Count; i++)
             {
-                string unitName = Spawns[i].E_name[u];
-                StartCoroutine(SpawnUnitLoop(i, unitName));
+                if (triggeredWaves.Contains(i)) continue;
+                var wave = waveDataList[i];
+                if (currHP <= wave.StageHealth)
+                {
+                    Debug.Log($"[Wave {i}] Triggered at HP={currHP:F1} ≤ {wave.StageHealth}");
+                    triggeredWaves.Add(i);
+                    // Start individual spawn loops
+                    foreach (var enemyID in wave.EnemyType)
+                    {
+                        Debug.Log($"[Wave {i}] Preparing SpawnLoop for ID='{enemyID}'");
+                        StartCoroutine(SpawnLoop(wave, enemyID));
+                    }
+                }
             }
+            yield return new WaitForSeconds(0.2f);
         }
     }
 
-    private IEnumerator SpawnUnitLoop(int spIndex, string unitName)
+    private IEnumerator SpawnLoop(SheetStageData wave, string enemyID)
     {
-        var cfg = Spawns[spIndex];
-        // 이전 HP 임계치는 여전히 참조
-        float prevThreshold = (spIndex > 0) ? Spawns[spIndex - 1].HP_Status : 100f;
+        // Determine thresholds
+        int idx = waveDataList.IndexOf(wave);
+        float prevThreshold = idx > 0 ? waveDataList[idx - 1].StageHealth : float.MaxValue;
+        float currThreshold = wave.StageHealth;
+        float minTime = wave.MinSpawnTime;
+        float maxTime = wave.MaxSpawnTime;
+
+        Debug.Log($"SpawnLoop for '{enemyID}' started (wave {idx}): range ({currThreshold}, {prevThreshold}]");
+
+        // Check UnitData lookup before looping
+        if (!unitLookup.ContainsKey(enemyID))
+        {
+            Debug.LogError($"SpawnLoop: Lookup missing key '{enemyID}'. Available keys: {string.Join(",", unitLookup.Keys)}");
+            yield break;
+        }
+        var data = unitLookup[enemyID];
 
         while (HP_Tower.currentHP > 0f)
         {
-            // 현재 체력 %
-            float hpPercent = HP_Tower.currentHP / HP * 100f;
-            bool inRange = (spIndex == 0)
-                ? (hpPercent <= prevThreshold && hpPercent >= cfg.HP_Status)
-                : (hpPercent < prevThreshold && hpPercent >= cfg.HP_Status);
+            float currHP = HP_Tower.currentHP;
+            bool inRange = currHP <= prevThreshold && currHP >= currThreshold;
+            Debug.Log($"SpawnLoop[{enemyID}]: currHP={currHP:F1}, inRange={inRange}");
 
-            if (inRange && unitLookup.TryGetValue(unitName, out var data))
+            if (inRange)
             {
-                // data에 정의된 min/max 로 랜덤 대기
-                float wait = Random.Range(data.MinSpawnTime, data.MaxSpawnTime);
-                Debug.Log($"[{unitName}] will spawn in {wait:F2}s");
+                float wait = Random.Range(minTime, maxTime);
+                Debug.Log($"[{enemyID}] waiting {wait:F2}s before spawn");
                 yield return new WaitForSeconds(wait);
 
-                // 소환
+                if (data.UnitBody == null)
+                {
+                    Debug.LogError($"SpawnLoop[{enemyID}]: UnitBody is null");
+                    yield break;
+                }
+
                 var go = Instantiate(data.UnitBody, EnemySpawnPos.position, Quaternion.identity);
-                if (go.TryGetComponent<Unit>(out var unitComp))
-                    unitComp.unitData = data;
+                if (go.TryGetComponent<Unit>(out var comp))
+                {
+                    comp.unitData = data;
+                    Debug.Log($"SpawnLoop[{enemyID}]: spawned");
+                }
+                else
+                {
+                    Debug.LogWarning($"SpawnLoop[{enemyID}]: spawned object missing Unit component");
+                }
             }
             else
             {
-                // 범위 밖이거나 data 누락 시 매 프레임 대기
                 yield return null;
             }
         }
-    }
-
-    [ContextMenu("SawHwan")]
-    public void DebugSpawn()
-    {
-        StartCoroutine(SpawnUnitLoop(0, "HungryGhost"));
     }
 }
