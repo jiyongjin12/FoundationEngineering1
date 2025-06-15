@@ -762,6 +762,10 @@ MonoBehaviour:
     prefab: {fileID: 6941791022924015300, guid: 0f265ef2de996c74fa2fc464eb656af8, type: 3}
   - key: FX_Lightning
     prefab: {fileID: 8954495518387333066, guid: fc8f2d15b23b0db4989ba22807eedfc6, type: 3}
+  - key: FX_WaterBomb
+    prefab: {fileID: 7162899501573114592, guid: ebe982da49e46d840b7c4dd3b608a685, type: 3}
+  - key: FX_ElectricBomb
+    prefab: {fileID: 4888670956226981301, guid: d463f1c887afa94409cad368c817f22a, type: 3}
 --- !u!4 &549030169
 Transform:
   m_ObjectHideFlags: 0
