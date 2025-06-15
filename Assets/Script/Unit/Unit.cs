@@ -336,7 +336,16 @@ public class Unit : MonoBehaviour
             FXManager.Instance.PlayLocalEffect("FX_Lightning", target.transform);
 
         if (unitData.name == "ChildGhost")
-            FXManager.Instance.PlayEffect("FX_Bomb", target.transform);
+            FXManager.Instance.PlayEffect("FX_Bomb", gameObject.transform);
+
+        if (unitData.name == "Monkey")
+            FXManager.Instance.PlayLocalEffect("FX_Bomb", target.transform);
+
+        if (unitData.name == "WindGod")
+            FXManager.Instance.PlayLocalEffect("FX_WaterBomb", target.transform);
+
+        if (unitData.name == "Dragon")
+            FXManager.Instance.PlayLocalEffect("FX_ElectricBomb", target.transform);
     }
 
     // 히트 이펙트 or 힐 이펙트 or 상태이상 이펙트

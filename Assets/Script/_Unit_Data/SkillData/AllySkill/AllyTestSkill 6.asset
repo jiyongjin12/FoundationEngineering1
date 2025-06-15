@@ -12,27 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a65181e3a5daab34bbc5f0b9a3ac6ee1, type: 3}
   m_Name: AllyTestSkill 6
   m_EditorClassIdentifier: 
-  RangeType: 0
-  Damage: 5
-  Critical_probability: 0
-  Critical_damage: 0
+  RangeType: 1
+  ID: Skill_Unit_Monkey_1
+  Damage: 1
+  Critical_probability: 20
+  Critical_damage: 50
   RangeAttackCheck: 1
-  RangeDiameter: 3
-  AttackCount: 5
-  UseSkillEffect: 0
-  ProcChance: 0
-  ProjectilePrefab: {fileID: 9046949950307811681, guid: 9e19f8d37e0323a4bb7a828cef4a32b3, type: 3}
-  ProjectileSpeed: 5
+  RangeDiameter: 10
+  AttackCount: 3
+  UseSkillEffect: 1
+  ProcChance: 50
+  ProjectilePrefab: {fileID: 9046949950307811681, guid: 16a1e094f5c64b8458263f34b3a7872c, type: 3}
+  ProjectileSpeed: 10
   Slow: 1
-  Stun: 1
+  Stun: 0
   Nockback: 1
-  AtkSpeedDown: 1
-  ClearEffects: 1
-  SlowRatio: 3
+  AtkSpeedDown: 0
+  ClearEffects: 0
+  SlowRatio: 30
   SlowDuration: 3
-  StunDuration: 1
-  NockbackStrength: 2
-  AtkSpeedDownRatio: 10
-  AtkSpeedDownDuration: 3
-  EffectRemovalRange: 2
-  Unitcount: 1
+  StunDuration: 0
+  NockbackStrength: 3
+  AtkSpeedDownRatio: 0
+  AtkSpeedDownDuration: 0
+  EffectRemovalRange: 0
+  Unitcount: 0
