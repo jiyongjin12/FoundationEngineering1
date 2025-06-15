@@ -18,16 +18,17 @@ MonoBehaviour:
     - ID: Stage_1_1
       StageSeries: 1
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
+      - Enemy_HungryGhost
       - Enemy_GhostWoman
-      EnemyLevel: 01000000
+      EnemyLevel: 0100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_1_2
       StageSeries: 1
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_GhostWoman
@@ -37,7 +38,7 @@ MonoBehaviour:
     - ID: Stage_1_3
       StageSeries: 1
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -50,7 +51,7 @@ MonoBehaviour:
     - ID: Stage_2_1
       StageSeries: 2
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_GhostWoman
@@ -60,7 +61,7 @@ MonoBehaviour:
     - ID: Stage_2_2
       StageSeries: 2
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -71,7 +72,7 @@ MonoBehaviour:
     - ID: Stage_2_3
       StageSeries: 2
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_Guseunsae
@@ -84,7 +85,7 @@ MonoBehaviour:
     - ID: Stage_3_1
       StageSeries: 3
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_Guseunsae
@@ -94,7 +95,7 @@ MonoBehaviour:
     - ID: Stage_3_2
       StageSeries: 3
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_Guseunsae
@@ -105,7 +106,7 @@ MonoBehaviour:
     - ID: Stage_3_3
       StageSeries: 3
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -119,7 +120,7 @@ MonoBehaviour:
     - ID: Stage_4_1
       StageSeries: 4
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -130,7 +131,7 @@ MonoBehaviour:
     - ID: Stage_4_2
       StageSeries: 4
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - BeastMonster
       - Enemy_ChildGhost
@@ -141,7 +142,7 @@ MonoBehaviour:
     - ID: Stage_4_3
       StageSeries: 4
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -154,7 +155,7 @@ MonoBehaviour:
     - ID: Stage_5_1
       StageSeries: 5
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -165,7 +166,7 @@ MonoBehaviour:
     - ID: Stage_5_2
       StageSeries: 5
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -176,7 +177,7 @@ MonoBehaviour:
     - ID: Stage_5_3
       StageSeries: 5
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -189,7 +190,7 @@ MonoBehaviour:
     - ID: Stage_6_1
       StageSeries: 6
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -200,7 +201,7 @@ MonoBehaviour:
     - ID: Stage_6_2
       StageSeries: 6
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -211,7 +212,7 @@ MonoBehaviour:
     - ID: Stage_6_3
       StageSeries: 6
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -224,7 +225,7 @@ MonoBehaviour:
     - ID: Stage_7_1
       StageSeries: 7
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -235,7 +236,7 @@ MonoBehaviour:
     - ID: Stage_7_2
       StageSeries: 7
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -246,7 +247,7 @@ MonoBehaviour:
     - ID: Stage_7_3
       StageSeries: 7
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -259,7 +260,7 @@ MonoBehaviour:
     - ID: Stage_8_1
       StageSeries: 8
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -270,7 +271,7 @@ MonoBehaviour:
     - ID: Stage_8_2
       StageSeries: 8
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -281,7 +282,7 @@ MonoBehaviour:
     - ID: Stage_8_3
       StageSeries: 8
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -294,7 +295,7 @@ MonoBehaviour:
     - ID: Stage_9_1
       StageSeries: 9
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -305,7 +306,7 @@ MonoBehaviour:
     - ID: Stage_9_2
       StageSeries: 9
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -316,7 +317,7 @@ MonoBehaviour:
     - ID: Stage_9_3
       StageSeries: 9
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -329,7 +330,7 @@ MonoBehaviour:
     - ID: Stage_10_1
       StageSeries: 10
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -340,7 +341,7 @@ MonoBehaviour:
     - ID: Stage_10_2
       StageSeries: 10
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -351,7 +352,7 @@ MonoBehaviour:
     - ID: Stage_10_3
       StageSeries: 10
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -364,7 +365,7 @@ MonoBehaviour:
     - ID: Stage_11_1
       StageSeries: 11
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -375,7 +376,7 @@ MonoBehaviour:
     - ID: Stage_11_2
       StageSeries: 11
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -386,7 +387,7 @@ MonoBehaviour:
     - ID: Stage_11_3
       StageSeries: 11
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -399,7 +400,7 @@ MonoBehaviour:
     - ID: Stage_12_1
       StageSeries: 12
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -410,7 +411,7 @@ MonoBehaviour:
     - ID: Stage_12_2
       StageSeries: 12
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -421,7 +422,7 @@ MonoBehaviour:
     - ID: Stage_12_3
       StageSeries: 12
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -434,7 +435,7 @@ MonoBehaviour:
     - ID: Stage_13_1
       StageSeries: 13
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -445,7 +446,7 @@ MonoBehaviour:
     - ID: Stage_13_2
       StageSeries: 13
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -456,7 +457,7 @@ MonoBehaviour:
     - ID: Stage_13_3
       StageSeries: 13
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -469,7 +470,7 @@ MonoBehaviour:
     - ID: Stage_14_1
       StageSeries: 14
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -480,7 +481,7 @@ MonoBehaviour:
     - ID: Stage_14_2
       StageSeries: 14
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -491,7 +492,7 @@ MonoBehaviour:
     - ID: Stage_14_3
       StageSeries: 14
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -504,7 +505,7 @@ MonoBehaviour:
     - ID: Stage_15_1
       StageSeries: 15
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -515,7 +516,7 @@ MonoBehaviour:
     - ID: Stage_15_2
       StageSeries: 15
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -526,7 +527,7 @@ MonoBehaviour:
     - ID: Stage_15_3
       StageSeries: 15
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -539,7 +540,7 @@ MonoBehaviour:
     - ID: Stage_16_1
       StageSeries: 16
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -550,7 +551,7 @@ MonoBehaviour:
     - ID: Stage_16_2
       StageSeries: 16
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -561,7 +562,7 @@ MonoBehaviour:
     - ID: Stage_16_3
       StageSeries: 16
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -574,7 +575,7 @@ MonoBehaviour:
     - ID: Stage_17_1
       StageSeries: 17
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -585,7 +586,7 @@ MonoBehaviour:
     - ID: Stage_17_2
       StageSeries: 17
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -596,7 +597,7 @@ MonoBehaviour:
     - ID: Stage_17_3
       StageSeries: 17
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -609,7 +610,7 @@ MonoBehaviour:
     - ID: Stage_18_1
       StageSeries: 18
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -620,7 +621,7 @@ MonoBehaviour:
     - ID: Stage_18_2
       StageSeries: 18
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -631,7 +632,7 @@ MonoBehaviour:
     - ID: Stage_18_3
       StageSeries: 18
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -644,7 +645,7 @@ MonoBehaviour:
     - ID: Stage_19_1
       StageSeries: 19
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -655,7 +656,7 @@ MonoBehaviour:
     - ID: Stage_19_2
       StageSeries: 19
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -666,7 +667,7 @@ MonoBehaviour:
     - ID: Stage_19_3
       StageSeries: 19
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -679,7 +680,7 @@ MonoBehaviour:
     - ID: Stage_20_1
       StageSeries: 20
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -690,7 +691,7 @@ MonoBehaviour:
     - ID: Stage_20_2
       StageSeries: 20
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -701,7 +702,7 @@ MonoBehaviour:
     - ID: Stage_20_3
       StageSeries: 20
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -714,7 +715,7 @@ MonoBehaviour:
     - ID: Stage_21_1
       StageSeries: 21
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -725,7 +726,7 @@ MonoBehaviour:
     - ID: Stage_21_2
       StageSeries: 21
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -736,7 +737,7 @@ MonoBehaviour:
     - ID: Stage_21_3
       StageSeries: 21
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -749,7 +750,7 @@ MonoBehaviour:
     - ID: Stage_22_1
       StageSeries: 22
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -760,7 +761,7 @@ MonoBehaviour:
     - ID: Stage_22_2
       StageSeries: 22
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -771,7 +772,7 @@ MonoBehaviour:
     - ID: Stage_22_3
       StageSeries: 22
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -784,7 +785,7 @@ MonoBehaviour:
     - ID: Stage_23_1
       StageSeries: 23
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -795,7 +796,7 @@ MonoBehaviour:
     - ID: Stage_23_2
       StageSeries: 23
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -806,7 +807,7 @@ MonoBehaviour:
     - ID: Stage_23_3
       StageSeries: 23
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -819,7 +820,7 @@ MonoBehaviour:
     - ID: Stage_24_1
       StageSeries: 24
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -830,7 +831,7 @@ MonoBehaviour:
     - ID: Stage_24_2
       StageSeries: 24
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -841,7 +842,7 @@ MonoBehaviour:
     - ID: Stage_24_3
       StageSeries: 24
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost

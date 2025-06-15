@@ -39,8 +39,8 @@ MonoBehaviour:
     StartLevel: 1
     MaxLevel: 20
     Hp: 100
-    AttackSpeed: 0.7
-    AttackRange: 10
+    AttackSpeed: 0.3
+    AttackRange: 16
     Speed: 2
     EnemyDefaultSkill: Skill_Enemy_GhostWoman_1
   - ID: Enemy_Guseunsae
@@ -50,7 +50,7 @@ MonoBehaviour:
     MaxLevel: 20
     Hp: 300
     AttackSpeed: 1.3
-    AttackRange: 15
+    AttackRange: 8
     Speed: 4
     EnemyDefaultSkill: Skill_Enemy_Guseunsae_1
   - ID: Enemy_BeastMonster
@@ -60,7 +60,7 @@ MonoBehaviour:
     MaxLevel: 20
     Hp: 500
     AttackSpeed: 0.8
-    AttackRange: 10
+    AttackRange: 2
     Speed: 2
     EnemyDefaultSkill: Skill_Enemy_BeastMonster_1
   - ID: Enemy_GoldPig
@@ -70,7 +70,7 @@ MonoBehaviour:
     MaxLevel: 20
     Hp: 450
     AttackSpeed: 0.6
-    AttackRange: 12
+    AttackRange: 3
     Speed: 2
     EnemyDefaultSkill: Skill_Enemy_GoldPig_1
   - ID: Enemy_BagOldMan
@@ -90,7 +90,7 @@ MonoBehaviour:
     MaxLevel: 20
     Hp: 3000
     AttackSpeed: 0.5
-    AttackRange: 20
+    AttackRange: 13
     Speed: 2
     EnemyDefaultSkill: Skill_Enemy_Fox_1
   - ID: Enemy_Jangsanbeom
@@ -100,7 +100,7 @@ MonoBehaviour:
     MaxLevel: 20
     Hp: 3500
     AttackSpeed: 1.7
-    AttackRange: 15
+    AttackRange: 3
     Speed: 5
     EnemyDefaultSkill: Skill_Enemy_Jangsanbeom_1
   - ID: Enemy_Bulgasari
@@ -110,6 +110,6 @@ MonoBehaviour:
     MaxLevel: 20
     Hp: 5000
     AttackSpeed: 0.7
-    AttackRange: 15
+    AttackRange: 3
     Speed: 2
     EnemyDefaultSkill: Skill_Enemy_Bulgasari_1

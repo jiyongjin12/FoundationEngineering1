@@ -754,6 +754,14 @@ MonoBehaviour:
     prefab: {fileID: 3390790855698663037, guid: b46ee94992f45fa48b794da141d0483d, type: 3}
   - key: FX_Ally_Clean
     prefab: {fileID: 3390790855698663037, guid: b46ee94992f45fa48b794da141d0483d, type: 3}
+  - key: FX_Hit
+    prefab: {fileID: 5923990154780456013, guid: 858cf6a5f770beb41a52a3cb475caf60, type: 3}
+  - key: FX_Death
+    prefab: {fileID: 2565617550198723021, guid: f3d37a728ba65c444917a62925e08f10, type: 3}
+  - key: FX_Bomb
+    prefab: {fileID: 6941791022924015300, guid: 0f265ef2de996c74fa2fc464eb656af8, type: 3}
+  - key: FX_Lightning
+    prefab: {fileID: 8954495518387333066, guid: fc8f2d15b23b0db4989ba22807eedfc6, type: 3}
 --- !u!4 &549030169
 Transform:
   m_ObjectHideFlags: 0

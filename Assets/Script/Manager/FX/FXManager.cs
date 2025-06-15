@@ -67,5 +67,23 @@ public class FXManager : MonoBehaviour
         }
     }
 
-    // 로컬좌표값으로 생성은 필요하면 따로 제작바람
+    public void PlayLocalEffect(string key, Transform transform, float destroyAfter = 2f, Vector3 localOffset = default)
+    {
+        if (effectDict == null || !effectDict.ContainsKey(key))
+        {
+            Debug.LogWarning($"EffectManager: 키 '{key}'에 해당하는 이펙트가 없습니다.");
+            return;
+        }
+
+        GameObject prefab = effectDict[key];
+        GameObject instance = Instantiate(prefab);
+        instance.transform.localPosition = transform.position;
+        instance.transform.localRotation = Quaternion.identity;
+        instance.transform.localScale = Vector3.one;
+
+        if (destroyAfter > 0)
+        {
+            Destroy(instance, destroyAfter);
+        }
+    }
 }
