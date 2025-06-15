@@ -15,17 +15,17 @@ MonoBehaviour:
   Faction: 0
   name: WindGod
   Hp: 80
-  Speed: 4
-  AttackSpeed: 1
-  AttackRange: 15
-  OpenPrice: 300
+  Speed: 2
+  AttackSpeed: 0.4
+  AttackRange: 14
+  OpenPrice: 3000
   LevelupPrice: 150
   MaxLevel: 20
+  CurrentLevel: 0
   UnitBody: {fileID: 7239972416500399322, guid: 486ac3efef3c0b4449339fedb87409ce, type: 3}
-  ButtonImage: {fileID: 0}
-  UnitDefaultSkill: {fileID: 11400000, guid: 593521924566e96448d3926ce61450fb, type: 2}
-  UnitEvolvedSkill: {fileID: 0}
-  UnitAnimation: {fileID: 0}
-  CoolDownTime: 2
+  UnitImage: {fileID: -1536299303, guid: ef43ed55443bd804fb5415e7fe36708f, type: 3}
+  UnitDefaultSkill: {fileID: 11400000, guid: 2aa625998d905ae4a86499bebaf0d0f4, type: 2}
+  UnitEvolvedSkill: {fileID: 11400000, guid: 8be5bf919bf468948868441351e58ffc, type: 2}
+  CoolDownTime: 9
   MinSpawnTime: 0
   MaxSpawnTime: 0

@@ -14,18 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Faction: 0
   name: RedBird
-  Hp: 200
+  Hp: 180
   Speed: 4
-  AttackSpeed: 1
-  AttackRange: 16
-  OpenPrice: 300
+  AttackSpeed: 1.6
+  AttackRange: 13
+  OpenPrice: 5000
   LevelupPrice: 150
   MaxLevel: 20
+  CurrentLevel: 0
   UnitBody: {fileID: 4626524323761309203, guid: 55cb6bb66d1facb4090839012a6c6c1c, type: 3}
-  ButtonImage: {fileID: 0}
-  UnitDefaultSkill: {fileID: 11400000, guid: eba90dc5d9481c545ab2a2fcf0ba687c, type: 2}
-  UnitEvolvedSkill: {fileID: 0}
-  UnitAnimation: {fileID: 0}
-  CoolDownTime: 2
+  UnitImage: {fileID: -846418892, guid: ecdc54a220991dd429d90ae366bab73f, type: 3}
+  UnitDefaultSkill: {fileID: 11400000, guid: 7683c18fba0563a45ba48860ff148001, type: 2}
+  UnitEvolvedSkill: {fileID: 11400000, guid: 4b60906d24e537c4c9834900b42b8ea1, type: 2}
+  CoolDownTime: 15
   MinSpawnTime: 0
   MaxSpawnTime: 0

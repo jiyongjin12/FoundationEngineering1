@@ -15,17 +15,17 @@ MonoBehaviour:
   Faction: 0
   name: Monkey
   Hp: 100
-  Speed: 4
-  AttackSpeed: 1
-  AttackRange: 17
-  OpenPrice: 300
+  Speed: 3
+  AttackSpeed: 0.7
+  AttackRange: 10
+  OpenPrice: 1500
   LevelupPrice: 150
   MaxLevel: 20
+  CurrentLevel: 0
   UnitBody: {fileID: 6022707599049103493, guid: b02d4502aff8390459fdecfb4f01f9ee, type: 3}
-  ButtonImage: {fileID: 0}
-  UnitDefaultSkill: {fileID: 11400000, guid: a076d82ab2c670b4cb8decf04b96b874, type: 2}
-  UnitEvolvedSkill: {fileID: 0}
-  UnitAnimation: {fileID: 0}
-  CoolDownTime: 2
+  UnitImage: {fileID: 397605345, guid: 162b8394600c74845ac1446258e058d0, type: 3}
+  UnitDefaultSkill: {fileID: 11400000, guid: 593521924566e96448d3926ce61450fb, type: 2}
+  UnitEvolvedSkill: {fileID: 11400000, guid: 06b5670186c960e49b6c4091ebe91485, type: 2}
+  CoolDownTime: 4
   MinSpawnTime: 0
   MaxSpawnTime: 0

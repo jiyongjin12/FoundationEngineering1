@@ -24,6 +24,7 @@ public class ShopSystem : MonoBehaviour
     public TMP_Text damageText;
     public TMP_Text levelText;
     public TMP_Text priceText;
+    public Image UnitImage;
     public Button buyButton;
     public Button closeButton;
 
@@ -119,6 +120,9 @@ public class ShopSystem : MonoBehaviour
             levelText.text = currLv.ToString();
         else
             Debug.LogError("ShopSystem: levelText가 할당되지 않음");
+
+        if (UnitImage != null)
+            UnitImage.sprite = selectedUnit.UnitImage;
 
         // Price
         int price = (currLv == 0)

@@ -17,13 +17,13 @@ MonoBehaviour:
   Hp: 100
   Speed: 4
   AttackSpeed: 1
-  AttackRange: 4
+  AttackRange: 3
   OpenPrice: 0
   LevelupPrice: 150
   MaxLevel: 20
   CurrentLevel: 0
   UnitBody: {fileID: 5133120953048064701, guid: 292c36b73f64a1f42b0c70b37f914a57, type: 3}
-  UnitImage: {fileID: 0}
+  UnitImage: {fileID: -651664284, guid: 123cdcadbcdefae4db8cfd70854fc5ed, type: 3}
   UnitDefaultSkill: {fileID: 11400000, guid: 78db54e5abe53c9448f080d9f6bd7af9, type: 2}
   UnitEvolvedSkill: {fileID: 11400000, guid: a840f63989fc14d4d9b3ee55014440e4, type: 2}
   CoolDownTime: 2

@@ -23,7 +23,7 @@ MonoBehaviour:
   MaxLevel: 20
   CurrentLevel: 0
   UnitBody: {fileID: 6207609971608205405, guid: c315962ff74ba614cb9840ff07fb02dd, type: 3}
-  UnitImage: {fileID: 0}
+  UnitImage: {fileID: 941996463, guid: b530a3d9f17670641876147a33239b44, type: 3}
   UnitDefaultSkill: {fileID: 11400000, guid: 49ee7dd383a4bc542ad74672f58c2d5a, type: 2}
   UnitEvolvedSkill: {fileID: 11400000, guid: a076d82ab2c670b4cb8decf04b96b874, type: 2}
   CoolDownTime: 2

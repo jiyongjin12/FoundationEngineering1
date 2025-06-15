@@ -14,18 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Faction: 0
   name: Haetae
-  Hp: 250
-  Speed: 4
+  Hp: 350
+  Speed: 3
   AttackSpeed: 1
   AttackRange: 9
-  OpenPrice: 300
+  OpenPrice: 3500
   LevelupPrice: 150
   MaxLevel: 20
+  CurrentLevel: 0
   UnitBody: {fileID: 8190589200799640399, guid: e92910f3e81a4e643831053f08cd2780, type: 3}
-  ButtonImage: {fileID: 0}
-  UnitDefaultSkill: {fileID: 11400000, guid: 06b5670186c960e49b6c4091ebe91485, type: 2}
-  UnitEvolvedSkill: {fileID: 0}
-  UnitAnimation: {fileID: 0}
-  CoolDownTime: 2
+  UnitImage: {fileID: -518371306, guid: f69f31e7065d9d54f8f1af3d5d0684bf, type: 3}
+  UnitDefaultSkill: {fileID: 11400000, guid: 9ae92e98c047d6c4a81443e3ec3552b3, type: 2}
+  UnitEvolvedSkill: {fileID: 11400000, guid: 2714baa472892c04680acc9fc370d6ff, type: 2}
+  CoolDownTime: 11
   MinSpawnTime: 0
   MaxSpawnTime: 0
