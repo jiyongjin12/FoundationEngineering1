@@ -138,7 +138,7 @@ public class Player : MonoBehaviour
         {
             yield return new WaitForSeconds(time);
             currentMana = Mathf.Min(currentMana + 1f, playerData.MaxMana);
-            Debug.Log($"Mana regenerated: {currentMana}/{playerData.MaxMana}");
+            //Debug.Log($"Mana regenerated: {currentMana}/{playerData.MaxMana}");
         }
     }
 }

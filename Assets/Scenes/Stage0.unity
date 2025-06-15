@@ -3571,6 +3571,50 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyTower
       objectReference: {fileID: 0}
+    - target: {fileID: 8576137814182634988, guid: dd390b06bb670cf4ebbf6172a8d04fef, type: 3}
+      propertyPath: allEnemyUnits.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576137814182634988, guid: dd390b06bb670cf4ebbf6172a8d04fef, type: 3}
+      propertyPath: 'allEnemyUnits.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: dd873fe0dee63a04fb48344818dff9f9, type: 2}
+    - target: {fileID: 8576137814182634988, guid: dd390b06bb670cf4ebbf6172a8d04fef, type: 3}
+      propertyPath: 'allEnemyUnits.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ebfa5cf82a90234085fbac07ca5881a, type: 2}
+    - target: {fileID: 8576137814182634988, guid: dd390b06bb670cf4ebbf6172a8d04fef, type: 3}
+      propertyPath: 'allEnemyUnits.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 22d784f72fc743b47968451e7c6ae252, type: 2}
+    - target: {fileID: 8576137814182634988, guid: dd390b06bb670cf4ebbf6172a8d04fef, type: 3}
+      propertyPath: 'allEnemyUnits.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 3fd9fb0a26c517441acf505a5e5d95e8, type: 2}
+    - target: {fileID: 8576137814182634988, guid: dd390b06bb670cf4ebbf6172a8d04fef, type: 3}
+      propertyPath: 'allEnemyUnits.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 84793d5a73e4a70479f647c4df595652, type: 2}
+    - target: {fileID: 8576137814182634988, guid: dd390b06bb670cf4ebbf6172a8d04fef, type: 3}
+      propertyPath: 'allEnemyUnits.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: f5b798f9ac2a09346973b52c898f67f9, type: 2}
+    - target: {fileID: 8576137814182634988, guid: dd390b06bb670cf4ebbf6172a8d04fef, type: 3}
+      propertyPath: 'allEnemyUnits.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: f65ade26198b4004d9351ff5537f7bc7, type: 2}
+    - target: {fileID: 8576137814182634988, guid: dd390b06bb670cf4ebbf6172a8d04fef, type: 3}
+      propertyPath: 'allEnemyUnits.Array.data[7]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 37b25281f3d279845a1624314eafaaeb, type: 2}
+    - target: {fileID: 8576137814182634988, guid: dd390b06bb670cf4ebbf6172a8d04fef, type: 3}
+      propertyPath: 'allEnemyUnits.Array.data[8]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 1aa095b3ef1cac3498140cdcf46f74e2, type: 2}
+    - target: {fileID: 8576137814182634988, guid: dd390b06bb670cf4ebbf6172a8d04fef, type: 3}
+      propertyPath: 'allEnemyUnits.Array.data[9]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 4e3e92b88a9a50546879307fcb9addd3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
