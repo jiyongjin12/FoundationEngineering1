@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
 
     public void Win()
     {
+        UIManager.Instance.Win_UI.gameObject.SetActive(true);
         Time.timeScale = 0f;
 
         UIManager.Instance.Win_UI.DOFade(1f, 1f)
@@ -52,6 +53,7 @@ public class GameManager : MonoBehaviour
 
     public void Lose()
     {
+        UIManager.Instance.Lose_UI.gameObject.SetActive(true);
         Time.timeScale = 0f;
 
         UIManager.Instance.Lose_UI.DOFade(1f, 1f)
