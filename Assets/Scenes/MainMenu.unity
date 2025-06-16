@@ -2893,7 +2893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80d45b990aa4e9840a31375093041c19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Coins: 1000
+  Coins: 2000
 --- !u!114 &499114784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3220,7 +3220,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552412604}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3230,7 +3230,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -275, y: -75}
+  m_AnchoredPosition: {x: -275, y: -76}
   m_SizeDelta: {x: 300, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &552412606
@@ -8840,6 +8840,7 @@ GameObject:
   - component: {fileID: 1631767874}
   - component: {fileID: 1631767873}
   - component: {fileID: 1631767872}
+  - component: {fileID: 1631767876}
   m_Layer: 5
   m_Name: CoinCanvas
   m_TagString: Untagged
@@ -8930,6 +8931,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1631767876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631767871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1ae60c4e3e3965459b662abe6d9c5da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinText: {fileID: 1519266318}
 --- !u!1 &1693238482
 GameObject:
   m_ObjectHideFlags: 0
