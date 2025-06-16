@@ -447,7 +447,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_HungryGhost_1
     RangeType: Melee
-    Damage: 30
+    Damage: 20
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 1
@@ -471,7 +471,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_ChildGhost_1
     RangeType: Melee
-    Damage: 50
+    Damage: 30
     RangeAttackCheck: 1
     RangeDiameter: 5
     UseSkillEffect: 1

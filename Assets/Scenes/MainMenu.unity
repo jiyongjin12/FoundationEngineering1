@@ -2893,7 +2893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80d45b990aa4e9840a31375093041c19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Coins: 2000
+  Coins: 1000000
 --- !u!114 &499114784
 MonoBehaviour:
   m_ObjectHideFlags: 0

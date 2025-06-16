@@ -1,4 +1,3 @@
-using DamageNumbersPro;
 using UnityEngine;
 
 public class PlayerArrow : MonoBehaviour

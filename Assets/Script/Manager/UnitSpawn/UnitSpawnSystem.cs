@@ -56,20 +56,32 @@ public class UnitSpawnSystem : MonoBehaviour
 
     void Update()
     {
-        // 키보드 입력 (1~0키)로도 스폰
         for (int i = 0; i < spawnButtons.Count; i++)
         {
-            var ui = spawnButtons[i];
-            if (ui == null) continue;
-            KeyCode code = KeyCode.Alpha0 + ui.UseKeyCode;
-            if (Input.GetKeyDown(code))
-                OnSpawnButton(i);
+            // 버튼이 아직 준비되지 않았거나, 쿨다운 중(interactable=false)이면 건너뛰기
+            if (_buttons == null  i >= _buttons.Length  _buttons[i] == null || !_buttons[i].interactable)
+        continue;
+
+        KeyCode key;
+        if (i < 9)
+        {
+            key = KeyCode.Alpha1 + i;   // 0→1, 1→2, ... , 8→9
+        }
+        else if (i == 9)
+        {
+            key = KeyCode.Alpha0;      // 9→0
+        }
+        else
+        {
+            continue;
+        }
+
+        if (Input.GetKeyDown(key))
+        {
+            OnSpawnButton(i);
         }
     }
-
-    /// <summary>
-    /// 해금된 유닛만 버튼 활성화
-    /// </summary>
+}
     void RefreshButtons()
     {
         for (int i = 0; i < _buttons.Length; i++)
@@ -79,9 +91,6 @@ public class UnitSpawnSystem : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// 버튼 또는 키 입력 시 호출
-    /// </summary>
     void OnSpawnButton(int index)
     {
         if (index < 0 || index >= customUnits.Length) return;
@@ -96,10 +105,6 @@ public class UnitSpawnSystem : MonoBehaviour
         // 버튼 쿨다운 시작
         StartCoroutine(CooldownRoutine(index, ud.CoolDownTime));
     }
-
-    /// <summary>
-    /// 버튼별 스폰 쿨다운 표시
-    /// </summary>
     IEnumerator CooldownRoutine(int idx, float duration)
     {
         var ui = spawnButtons[idx];

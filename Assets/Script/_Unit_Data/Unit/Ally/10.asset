@@ -19,7 +19,7 @@ MonoBehaviour:
   AttackSpeed: 1.6
   AttackRange: 13
   OpenPrice: 5000
-  LevelupPrice: 150
+  LevelupPrice: 3000
   MaxLevel: 20
   CurrentLevel: 0
   UnitBody: {fileID: 4626524323761309203, guid: 55cb6bb66d1facb4090839012a6c6c1c, type: 3}
