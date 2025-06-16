@@ -23,6 +23,12 @@ public class Health : MonoBehaviour
     {
         Debug.Log("Death");
         FXManager.Instance.PlayLocalEffect("FX_Death", gameObject.transform);
+
+        if (gameObject.name == "EnemyTower")
+            GameManager.Instance.Win();
+        if(gameObject.name == "Player")
+            GameManager.Instance.Lose();
+
         Destroy(gameObject);
     }
 

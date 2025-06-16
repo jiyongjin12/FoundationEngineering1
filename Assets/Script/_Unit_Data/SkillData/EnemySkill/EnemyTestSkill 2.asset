@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RangeType: 1
   ID: Skill_Enemy_GhostWoman_1
-  Damage: 30
-  Critical_probability: 40
+  Damage: 1
+  Critical_probability: 20
   Critical_damage: 50
   RangeAttackCheck: 0
-  RangeDiameter: 0
+  RangeDiameter: 16
   AttackCount: 1
   UseSkillEffect: 1
   ProcChance: 40
-  ProjectilePrefab: {fileID: 9046949950307811681, guid: 9e19f8d37e0323a4bb7a828cef4a32b3, type: 3}
+  ProjectilePrefab: {fileID: 9046949950307811681, guid: 4f36cef808506614392d054e41a15c96, type: 3}
   ProjectileSpeed: 10
   Slow: 1
   Stun: 0

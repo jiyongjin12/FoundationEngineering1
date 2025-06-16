@@ -14,18 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Faction: 0
   name: Dokkaebi
-  Hp: 150
-  Speed: 4
+  Hp: 200
+  Speed: 3
   AttackSpeed: 1
   AttackRange: 7
-  OpenPrice: 300
+  OpenPrice: 2500
   LevelupPrice: 150
   MaxLevel: 20
+  CurrentLevel: 0
   UnitBody: {fileID: 232182667548991584, guid: 20c5c3323e43dd041a076dd0014aed45, type: 3}
-  ButtonImage: {fileID: 0}
-  UnitDefaultSkill: {fileID: 11400000, guid: 234f27e125001dc498900edda130545d, type: 2}
-  UnitEvolvedSkill: {fileID: 0}
-  UnitAnimation: {fileID: 0}
-  CoolDownTime: 2
+  UnitImage: {fileID: 1124317371, guid: 83c9c2e48029a544aa341c0bafca4162, type: 3}
+  UpgradeUnitImage: {fileID: 0}
+  SpawnUnitPoto: {fileID: 21300000, guid: 4dc7af0d68c31bd408a231c788762e28, type: 3}
+  UnitDefaultSkill: {fileID: 11400000, guid: a724917e39101bd449428e8aeee0331d, type: 2}
+  UnitEvolvedSkill: {fileID: 11400000, guid: eba90dc5d9481c545ab2a2fcf0ba687c, type: 2}
+  CoolDownTime: 7
   MinSpawnTime: 0
   MaxSpawnTime: 0

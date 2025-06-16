@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Rendering;
 
 public class Unit : MonoBehaviour
@@ -41,6 +42,9 @@ public class Unit : MonoBehaviour
     // 보스
     public bool KillingUnit;
     public float FinalRange = 0;
+
+    [SerializeField] private Image hpImage;
+    [SerializeField] private Image hpEffectImage;
 
     void Start()
     {
@@ -94,6 +98,16 @@ public class Unit : MonoBehaviour
     {
         // Faction에 따른 이동 방향 설정
         Direction = (unitData.Faction == 0) ? Vector3.right : Vector3.left;
+
+        // HP바
+        if (hpImage != null)
+        {
+            hpImage.fillAmount = HP_unit.currentHP / HP_unit.HP;
+            if (hpEffectImage.fillAmount > hpImage.fillAmount)
+                hpEffectImage.fillAmount -= 0.05f;
+            else
+                hpEffectImage.fillAmount = hpImage.fillAmount;
+        }
     }
 
     void Move()
@@ -336,7 +350,16 @@ public class Unit : MonoBehaviour
             FXManager.Instance.PlayLocalEffect("FX_Lightning", target.transform);
 
         if (unitData.name == "ChildGhost")
-            FXManager.Instance.PlayEffect("FX_Bomb", target.transform);
+            FXManager.Instance.PlayEffect("FX_Bomb", gameObject.transform);
+
+        if (unitData.name == "Monkey")
+            FXManager.Instance.PlayLocalEffect("FX_Bomb", target.transform);
+
+        if (unitData.name == "WindGod")
+            FXManager.Instance.PlayLocalEffect("FX_WaterBomb", target.transform);
+
+        if (unitData.name == "Dragon")
+            FXManager.Instance.PlayLocalEffect("FX_ElectricBomb", target.transform);
     }
 
     // 히트 이펙트 or 힐 이펙트 or 상태이상 이펙트

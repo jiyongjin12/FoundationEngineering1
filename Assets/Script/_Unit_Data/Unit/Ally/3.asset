@@ -14,18 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Faction: 0
   name: Rabbit
-  Hp: 100
-  Speed: 4
-  AttackSpeed: 1
-  AttackRange: 13
-  OpenPrice: 300
-  LevelupPrice: 150
+  Hp: 90
+  Speed: 2
+  AttackSpeed: 0.4
+  AttackRange: 3
+  OpenPrice: 1000
+  LevelupPrice: 500
   MaxLevel: 20
+  CurrentLevel: 0
   UnitBody: {fileID: 3484130260791884038, guid: 449d0350a11561c4fa8fa26c676841e9, type: 3}
-  ButtonImage: {fileID: 0}
-  UnitDefaultSkill: {fileID: 11400000, guid: 49ee7dd383a4bc542ad74672f58c2d5a, type: 2}
-  UnitEvolvedSkill: {fileID: 0}
-  UnitAnimation: {fileID: 0}
-  CoolDownTime: 2
+  UnitImage: {fileID: -2083919146, guid: 101ab71db908aee439d2304b19891a03, type: 3}
+  UpgradeUnitImage: {fileID: 0}
+  SpawnUnitPoto: {fileID: 21300000, guid: 95268e4157f1a1c46a74efd48ca047be, type: 3}
+  UnitDefaultSkill: {fileID: 11400000, guid: 00ece438418c7ef4ebac59d65b0a2345, type: 2}
+  UnitEvolvedSkill: {fileID: 11400000, guid: 234f27e125001dc498900edda130545d, type: 2}
+  CoolDownTime: 3
   MinSpawnTime: 0
   MaxSpawnTime: 0

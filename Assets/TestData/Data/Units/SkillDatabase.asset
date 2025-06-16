@@ -15,7 +15,7 @@ MonoBehaviour:
   skills:
   - ID: Skill_Unit_Rat_1
     RangeType: Melee
-    Damage: 1
+    Damage: 20
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 0
@@ -39,7 +39,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Rat_2
     RangeType: Melee
-    Damage: 1
+    Damage: 120
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 1
@@ -63,7 +63,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Cat_1
     RangeType: Melee
-    Damage: 1
+    Damage: 35
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 0
@@ -87,7 +87,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Cat_2
     RangeType: Melee
-    Damage: 1
+    Damage: 200
     RangeAttackCheck: 1
     RangeDiameter: 16
     UseSkillEffect: 1
@@ -111,7 +111,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Rabbit_1
     RangeType: Ranged
-    Damage: 1
+    Damage: 25
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 0
@@ -135,9 +135,9 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Rabbit_2
     RangeType: Ranged
-    Damage: 1
+    Damage: 150
     RangeAttackCheck: 1
-    RangeDiameter: 6
+    RangeDiameter: 3
     UseSkillEffect: 0
     ProcChance: 0
     Critical_probability: 60
@@ -159,9 +159,9 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Monkey_1
     RangeType: Ranged
-    Damage: 1
+    Damage: 30
     RangeAttackCheck: 1
-    RangeDiameter: 12
+    RangeDiameter: 10
     UseSkillEffect: 1
     ProcChance: 50
     Critical_probability: 20
@@ -183,9 +183,9 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Monkey_2
     RangeType: Ranged
-    Damage: 1
+    Damage: 170
     RangeAttackCheck: 1
-    RangeDiameter: 12
+    RangeDiameter: 10
     UseSkillEffect: 1
     ProcChance: 50
     Critical_probability: 20
@@ -207,7 +207,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Dokkaebi_1
     RangeType: Melee
-    Damage: 1
+    Damage: 32
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 1
@@ -231,7 +231,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Dokkaebi_2
     RangeType: Melee
-    Damage: 1
+    Damage: 180
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 1
@@ -255,7 +255,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_WindGod_1
     RangeType: Ranged
-    Damage: 1
+    Damage: 50
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 1
@@ -279,7 +279,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_WindGod_2
     RangeType: Ranged
-    Damage: 1
+    Damage: 270
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 1
@@ -303,7 +303,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Haetae_1
     RangeType: Melee
-    Damage: 1
+    Damage: 40
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 0
@@ -327,7 +327,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Haetae_2
     RangeType: Melee
-    Damage: 1
+    Damage: 220
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 1
@@ -351,7 +351,7 @@ MonoBehaviour:
     Unitcount: 3
   - ID: Skill_Unit_Dragon_1
     RangeType: Ranged
-    Damage: 1
+    Damage: 70
     RangeAttackCheck: 1
     RangeDiameter: 16
     UseSkillEffect: 1
@@ -375,7 +375,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_Dragon_2
     RangeType: Ranged
-    Damage: 1
+    Damage: 400
     RangeAttackCheck: 1
     RangeDiameter: 16
     UseSkillEffect: 1
@@ -399,7 +399,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_RedBird_1
     RangeType: Ranged
-    Damage: 1
+    Damage: 100
     RangeAttackCheck: 0
     RangeDiameter: 13
     UseSkillEffect: 0
@@ -423,7 +423,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Unit_RedBird_2
     RangeType: Ranged
-    Damage: 1
+    Damage: 550
     RangeAttackCheck: 1
     RangeDiameter: 13
     UseSkillEffect: 0
@@ -447,7 +447,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_HungryGhost_1
     RangeType: Melee
-    Damage: 1
+    Damage: 30
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 1
@@ -471,7 +471,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_ChildGhost_1
     RangeType: Melee
-    Damage: 1
+    Damage: 50
     RangeAttackCheck: 1
     RangeDiameter: 5
     UseSkillEffect: 1
@@ -495,7 +495,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_GhostWoman_1
     RangeType: Ranged
-    Damage: 1
+    Damage: 25
     RangeAttackCheck: 0
     RangeDiameter: 16
     UseSkillEffect: 1
@@ -519,7 +519,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_Guseunsae_1
     RangeType: Melee
-    Damage: 1
+    Damage: 20
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 0
@@ -543,7 +543,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_BeastMonster_1
     RangeType: Melee
-    Damage: 1
+    Damage: 35
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 1
@@ -567,7 +567,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_GoldPig_1
     RangeType: Melee
-    Damage: 1
+    Damage: 30
     RangeAttackCheck: 1
     RangeDiameter: 3
     UseSkillEffect: 1
@@ -591,7 +591,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_BagOldMan_1
     RangeType: Ranged
-    Damage: 1
+    Damage: 50
     RangeAttackCheck: 1
     RangeDiameter: 20
     UseSkillEffect: 1
@@ -615,7 +615,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_Fox_1
     RangeType: Ranged
-    Damage: 1
+    Damage: 80
     RangeAttackCheck: 1
     RangeDiameter: 13
     UseSkillEffect: 1
@@ -639,7 +639,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_Jangsanbeom_1
     RangeType: Melee
-    Damage: 1
+    Damage: 45
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 0
@@ -663,7 +663,7 @@ MonoBehaviour:
     Unitcount: 0
   - ID: Skill_Enemy_Bulgasari_1
     RangeType: Melee
-    Damage: 1
+    Damage: 50
     RangeAttackCheck: 0
     RangeDiameter: 0
     UseSkillEffect: 0

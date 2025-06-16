@@ -24,6 +24,9 @@ public class UnitData : ScriptableObject
 
     [Header("상점 표시 UI")]
     public Sprite UnitImage;
+    public Sprite UpgradeUnitImage;
+
+    public Sprite SpawnUnitPoto;
 
     [Header("유닛 스킬_나중에 리스트? 형식으로 바꿀거임")]
     public UnitSkillData UnitDefaultSkill; // 진화 전 스킬

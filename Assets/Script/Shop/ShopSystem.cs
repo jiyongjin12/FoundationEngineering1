@@ -24,11 +24,16 @@ public class ShopSystem : MonoBehaviour
     public TMP_Text damageText;
     public TMP_Text levelText;
     public TMP_Text priceText;
+    public Image UnitImage;
     public Button buyButton;
     public Button closeButton;
 
     private UnitData selectedUnit;
     private bool isPopupOpen = false;
+
+    [Header("스테이지 정보")]
+    private StageGroup nextStageGroup;
+    private string nextSceneName;
 
     void Start()
     {
@@ -116,6 +121,9 @@ public class ShopSystem : MonoBehaviour
         else
             Debug.LogError("ShopSystem: levelText가 할당되지 않음");
 
+        if (UnitImage != null)
+            UnitImage.sprite = selectedUnit.UnitImage;
+
         // Price
         int price = (currLv == 0)
             ? selectedUnit.OpenPrice
@@ -155,10 +163,16 @@ public class ShopSystem : MonoBehaviour
         }
     }
 
+    public void OpenShopFor(StageGroup group, string sceneName)
+    {
+        nextStageGroup = group;
+        nextSceneName = sceneName;
+    }
+
     void ClosePopup()
     {
         isPopupOpen = false;
         detailPopup.SetActive(false);
-        SceneManager.LoadScene("StageSelect");
+        StageLoadManager.Instance.SelectAndLoad(nextStageGroup, nextSceneName);
     }
 }

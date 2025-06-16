@@ -12,27 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a65181e3a5daab34bbc5f0b9a3ac6ee1, type: 3}
   m_Name: AllyTestSkill 11
   m_EditorClassIdentifier: 
-  RangeType: 0
-  Damage: 5
-  Critical_probability: 0
-  Critical_damage: 0
-  RangeAttackCheck: 1
-  RangeDiameter: 3
-  AttackCount: 5
-  UseSkillEffect: 0
-  ProcChance: 0
-  ProjectilePrefab: {fileID: 9046949950307811681, guid: 9e19f8d37e0323a4bb7a828cef4a32b3, type: 3}
-  ProjectileSpeed: 5
-  Slow: 1
+  RangeType: 1
+  ID: Skill_Unit_WindGod_2
+  Damage: 1
+  Critical_probability: 20
+  Critical_damage: 50
+  RangeAttackCheck: 0
+  RangeDiameter: 0
+  AttackCount: 1
+  UseSkillEffect: 1
+  ProcChance: 60
+  ProjectilePrefab: {fileID: 9046949950307811681, guid: 0440d84fba4bec74fbb3ac1b3c7cf662, type: 3}
+  ProjectileSpeed: 10
+  Slow: 0
   Stun: 1
   Nockback: 1
-  AtkSpeedDown: 1
-  ClearEffects: 1
-  SlowRatio: 3
-  SlowDuration: 3
-  StunDuration: 1
-  NockbackStrength: 2
-  AtkSpeedDownRatio: 10
-  AtkSpeedDownDuration: 3
-  EffectRemovalRange: 2
-  Unitcount: 1
+  AtkSpeedDown: 0
+  ClearEffects: 0
+  SlowRatio: 0
+  SlowDuration: 0
+  StunDuration: 2
+  NockbackStrength: 3
+  AtkSpeedDownRatio: 0
+  AtkSpeedDownDuration: 0
+  EffectRemovalRange: 0
+  Unitcount: 0

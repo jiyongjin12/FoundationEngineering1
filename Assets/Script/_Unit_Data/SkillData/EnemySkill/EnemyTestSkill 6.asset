@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RangeType: 1
   ID: Skill_Enemy_BagOldMan_1
-  Damage: 30
-  Critical_probability: 40
+  Damage: 1
+  Critical_probability: 30
   Critical_damage: 50
   RangeAttackCheck: 1
-  RangeDiameter: 3
+  RangeDiameter: 20
   AttackCount: 4
   UseSkillEffect: 1
   ProcChance: 60
-  ProjectilePrefab: {fileID: 9046949950307811681, guid: 9e19f8d37e0323a4bb7a828cef4a32b3, type: 3}
+  ProjectilePrefab: {fileID: 9046949950307811681, guid: 8fe5b06b1b74ff249ada3da5ae882e3b, type: 3}
   ProjectileSpeed: 10
   Slow: 0
   Stun: 1

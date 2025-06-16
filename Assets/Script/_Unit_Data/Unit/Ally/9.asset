@@ -14,18 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Faction: 0
   name: Dragon
-  Hp: 200
-  Speed: 4
-  AttackSpeed: 1
-  AttackRange: 18
-  OpenPrice: 300
+  Hp: 150
+  Speed: 2
+  AttackSpeed: 0.3
+  AttackRange: 16
+  OpenPrice: 4000
   LevelupPrice: 150
   MaxLevel: 20
+  CurrentLevel: 0
   UnitBody: {fileID: 1794864798637244818, guid: 7193edd5702bd6b4e90bf2c6a50d0802, type: 3}
-  ButtonImage: {fileID: 0}
-  UnitDefaultSkill: {fileID: 11400000, guid: a724917e39101bd449428e8aeee0331d, type: 2}
-  UnitEvolvedSkill: {fileID: 0}
-  UnitAnimation: {fileID: 0}
-  CoolDownTime: 2
+  UnitImage: {fileID: 1222804346, guid: 364af1bfd34061945b75d02bc7110ed4, type: 3}
+  UpgradeUnitImage: {fileID: 0}
+  SpawnUnitPoto: {fileID: 21300000, guid: 9135bbce480c350488f354557eab3823, type: 3}
+  UnitDefaultSkill: {fileID: 11400000, guid: a95bcbc053749624b87d27261d9be382, type: 2}
+  UnitEvolvedSkill: {fileID: 11400000, guid: 76dcb60deea560744b44bfa7b3f3a359, type: 2}
+  CoolDownTime: 13
   MinSpawnTime: 0
   MaxSpawnTime: 0

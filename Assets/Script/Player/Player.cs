@@ -1,5 +1,7 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
@@ -17,8 +19,18 @@ public class Player : MonoBehaviour
     private float chargeTime = 0f;
     public bool tier30, tier70, tier100;
 
+    [Header("Skill_Cooldown")]
+    public float skillCooldown = 2f;           // 스킬 쿨타임
+    private float currentCooldown = 0f;        // 남은 쿨타임
+    public Image CooldownSlider;               // 쿨타임 표시 슬라이더
+
     public Animator PlayerMove;
     public SpriteRenderer PlayerBody;
+
+    public Image HpSlider;
+    public Image ManaSlider;
+    public TMP_Text HpText;
+    public TMP_Text ManaText;
 
     void Awake()
     {
@@ -30,15 +42,18 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         currentMana = playerData.MaxMana;
         StartCoroutine(ManaRegeneration(playerData.ManaRegenerationTime));
+        UpdateUI();
     }
 
     void Update()
     {
         Movement();
-        if (currentMana > playerData.SpandManaCount)
+        CooldownTick();
+        if (currentCooldown <= 0f && currentMana > playerData.SpandManaCount)
         {
             HandleSkillCharge();
         }
+        UpdateUI();
     }
 
     private void Movement()
@@ -96,22 +111,18 @@ public class Player : MonoBehaviour
         {
             FireChargedSkill();
             currentMana -= playerData.SpandManaCount;
+            currentCooldown = skillCooldown;
             isCharging = false;
         }
     }
 
     private void FireChargedSkill()
     {
-        // 1) 마나 소모 (있다면)
-        // TODO: playerData.MaxMana, SpandManaCount 사용
-
-        // 2) 데미지 계산
         float baseDmg = playerData.SkillDamage;
         float finalDmg = baseDmg;
         if (tier100) finalDmg = baseDmg * 2f;
         else if (tier70) finalDmg = baseDmg * 1.5f;
 
-        // 3) 투사체 생성
         if (skillProjectilePrefab != null && skillSpawnPoint != null)
         {
             var proj = Instantiate(
@@ -128,8 +139,16 @@ public class Player : MonoBehaviour
             }
         }
 
-        // 디버그
         Debug.Log(finalDmg);
+    }
+
+    private void CooldownTick()
+    {
+        if (currentCooldown > 0f)
+        {
+            currentCooldown -= Time.deltaTime;
+            if (currentCooldown < 0f) currentCooldown = 0f;
+        }
     }
 
     public IEnumerator ManaRegeneration(float time)
@@ -138,7 +157,27 @@ public class Player : MonoBehaviour
         {
             yield return new WaitForSeconds(time);
             currentMana = Mathf.Min(currentMana + 1f, playerData.MaxMana);
+            UpdateUI();
             //Debug.Log($"Mana regenerated: {currentMana}/{playerData.MaxMana}");
+        }
+    }
+
+    // UI
+    private void UpdateUI()
+    {
+        // HP
+        float hpNorm = PlayerHp.currentHP / playerData.MaxHealth;
+        HpSlider.fillAmount = Mathf.Clamp01(hpNorm);
+        HpText.text = $"{PlayerHp.currentHP:0}/{playerData.MaxHealth:0}";
+
+        // Mana
+        float manaNorm = currentMana / playerData.MaxMana;
+        ManaSlider.fillAmount = Mathf.Clamp01(manaNorm);
+        ManaText.text = $"{currentMana:0}/{playerData.MaxMana:0}";
+
+        if (CooldownSlider != null)
+        {
+            CooldownSlider.fillAmount = currentCooldown / skillCooldown;
         }
     }
 }
