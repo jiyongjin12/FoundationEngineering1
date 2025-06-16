@@ -88,7 +88,7 @@ MonoBehaviour:
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 3000
+    Hp: 1000
     AttackSpeed: 0.5
     AttackRange: 13
     Speed: 2
@@ -98,7 +98,7 @@ MonoBehaviour:
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 3500
+    Hp: 1500
     AttackSpeed: 1.7
     AttackRange: 3
     Speed: 5
@@ -108,7 +108,7 @@ MonoBehaviour:
     Faction: 1
     StartLevel: 1
     MaxLevel: 20
-    Hp: 5000
+    Hp: 3000
     AttackSpeed: 0.7
     AttackRange: 3
     Speed: 2

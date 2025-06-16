@@ -21,10 +21,9 @@ MonoBehaviour:
       StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 0100000001000000
-      MinSpawnTime: 4
-      MaxSpawnTime: 6
+      EnemyLevel: 01000000
+      MinSpawnTime: 3
+      MaxSpawnTime: 5
     - ID: Stage_1_2
       StageSeries: 1
       SubStageIndex: 2
@@ -44,7 +43,7 @@ MonoBehaviour:
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
-      MinSpawnTime: 3
+      MinSpawnTime: 2
       MaxSpawnTime: 5
   - StageSeries: 2
     Waves:
@@ -113,14 +112,14 @@ MonoBehaviour:
       - Enemy_GhostWoman
       - Enemy_Guseunsae
       EnemyLevel: 01000000010000000100000001000000
-      MinSpawnTime: 3
-      MaxSpawnTime: 5
+      MinSpawnTime: 4
+      MaxSpawnTime: 6
   - StageSeries: 4
     Waves:
     - ID: Stage_4_1
       StageSeries: 4
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 1500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
@@ -131,9 +130,9 @@ MonoBehaviour:
     - ID: Stage_4_2
       StageSeries: 4
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 1000
       EnemyType:
-      - BeastMonster
+      - Enemy_BeastMonster
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
@@ -142,12 +141,13 @@ MonoBehaviour:
     - ID: Stage_4_3
       StageSeries: 4
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 700
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_BeastMonster
       - Enemy_ChildGhost
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_Guseunsae
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 5
@@ -155,9 +155,9 @@ MonoBehaviour:
     - ID: Stage_5_1
       StageSeries: 5
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 1500
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
       - Enemy_GhostWoman
       EnemyLevel: 010000000100000001000000
@@ -166,23 +166,26 @@ MonoBehaviour:
     - ID: Stage_5_2
       StageSeries: 5
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_GoldPig
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_5_3
       StageSeries: 5
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 700
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 6
@@ -190,34 +193,37 @@ MonoBehaviour:
     - ID: Stage_6_1
       StageSeries: 6
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 2000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
+      - Enemy_BagOldMan
       EnemyLevel: 010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_6_2
       StageSeries: 6
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 1500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_6_3
       StageSeries: 6
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 7
@@ -225,34 +231,38 @@ MonoBehaviour:
     - ID: Stage_7_1
       StageSeries: 7
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 2000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_7_2
       StageSeries: 7
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 1500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_7_3
       StageSeries: 7
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 8
@@ -260,34 +270,38 @@ MonoBehaviour:
     - ID: Stage_8_1
       StageSeries: 8
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 3000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_8_2
       StageSeries: 8
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 2000
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_8_3
       StageSeries: 8
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 9
@@ -295,34 +309,38 @@ MonoBehaviour:
     - ID: Stage_9_1
       StageSeries: 9
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 3000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_9_2
       StageSeries: 9
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 2000
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_9_3
       StageSeries: 9
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 10
@@ -330,34 +348,39 @@ MonoBehaviour:
     - ID: Stage_10_1
       StageSeries: 10
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_10_2
       StageSeries: 10
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_10_3
       StageSeries: 10
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_Fox
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 11
@@ -365,34 +388,38 @@ MonoBehaviour:
     - ID: Stage_11_1
       StageSeries: 11
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_11_2
       StageSeries: 11
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_11_3
       StageSeries: 11
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 12
@@ -400,34 +427,38 @@ MonoBehaviour:
     - ID: Stage_12_1
       StageSeries: 12
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_12_2
       StageSeries: 12
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_12_3
       StageSeries: 12
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 13
@@ -435,34 +466,38 @@ MonoBehaviour:
     - ID: Stage_13_1
       StageSeries: 13
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_13_2
       StageSeries: 13
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_13_3
       StageSeries: 13
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 14
@@ -470,34 +505,38 @@ MonoBehaviour:
     - ID: Stage_14_1
       StageSeries: 14
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_14_2
       StageSeries: 14
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_14_3
       StageSeries: 14
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 15
@@ -505,34 +544,38 @@ MonoBehaviour:
     - ID: Stage_15_1
       StageSeries: 15
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_15_2
       StageSeries: 15
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_15_3
       StageSeries: 15
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 16
@@ -540,34 +583,38 @@ MonoBehaviour:
     - ID: Stage_16_1
       StageSeries: 16
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_16_2
       StageSeries: 16
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_16_3
       StageSeries: 16
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 17
@@ -575,34 +622,38 @@ MonoBehaviour:
     - ID: Stage_17_1
       StageSeries: 17
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_17_2
       StageSeries: 17
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_17_3
       StageSeries: 17
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 18
@@ -610,34 +661,38 @@ MonoBehaviour:
     - ID: Stage_18_1
       StageSeries: 18
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_18_2
       StageSeries: 18
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_18_3
       StageSeries: 18
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 19
@@ -645,34 +700,38 @@ MonoBehaviour:
     - ID: Stage_19_1
       StageSeries: 19
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_19_2
       StageSeries: 19
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_19_3
       StageSeries: 19
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 20
@@ -680,34 +739,38 @@ MonoBehaviour:
     - ID: Stage_20_1
       StageSeries: 20
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_20_2
       StageSeries: 20
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_20_3
       StageSeries: 20
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_Jangsanbeom
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 21
@@ -715,34 +778,38 @@ MonoBehaviour:
     - ID: Stage_21_1
       StageSeries: 21
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_21_2
       StageSeries: 21
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_21_3
       StageSeries: 21
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 22
@@ -750,34 +817,38 @@ MonoBehaviour:
     - ID: Stage_22_1
       StageSeries: 22
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_22_2
       StageSeries: 22
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_22_3
       StageSeries: 22
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 23
@@ -785,34 +856,38 @@ MonoBehaviour:
     - ID: Stage_23_1
       StageSeries: 23
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_23_2
       StageSeries: 23
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_23_3
       StageSeries: 23
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 24
@@ -820,34 +895,38 @@ MonoBehaviour:
     - ID: Stage_24_1
       StageSeries: 24
       SubStageIndex: 1
-      StageHealth: 1000
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_24_2
       StageSeries: 24
       SubStageIndex: 2
-      StageHealth: 700
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_24_3
       StageSeries: 24
       SubStageIndex: 3
-      StageHealth: 500
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 25
@@ -855,34 +934,38 @@ MonoBehaviour:
     - ID: Stage_25_1
       StageSeries: 25
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_25_2
       StageSeries: 25
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_25_3
       StageSeries: 25
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 26
@@ -890,34 +973,38 @@ MonoBehaviour:
     - ID: Stage_26_1
       StageSeries: 26
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_26_2
       StageSeries: 26
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_26_3
       StageSeries: 26
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 27
@@ -925,34 +1012,38 @@ MonoBehaviour:
     - ID: Stage_27_1
       StageSeries: 27
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_27_2
       StageSeries: 27
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_27_3
       StageSeries: 27
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 28
@@ -960,34 +1051,38 @@ MonoBehaviour:
     - ID: Stage_28_1
       StageSeries: 28
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_28_2
       StageSeries: 28
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_28_3
       StageSeries: 28
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 29
@@ -995,34 +1090,38 @@ MonoBehaviour:
     - ID: Stage_29_1
       StageSeries: 29
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_29_2
       StageSeries: 29
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_29_3
       StageSeries: 29
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 30
@@ -1030,34 +1129,38 @@ MonoBehaviour:
     - ID: Stage_30_1
       StageSeries: 30
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_30_2
       StageSeries: 30
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_30_3
       StageSeries: 30
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_Bulgasari
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 31
@@ -1065,34 +1168,39 @@ MonoBehaviour:
     - ID: Stage_31_1
       StageSeries: 31
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_31_2
       StageSeries: 31
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_31_3
       StageSeries: 31
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_Fox
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 32
@@ -1100,34 +1208,38 @@ MonoBehaviour:
     - ID: Stage_32_1
       StageSeries: 32
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_32_2
       StageSeries: 32
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_32_3
       StageSeries: 32
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 33
@@ -1135,34 +1247,38 @@ MonoBehaviour:
     - ID: Stage_33_1
       StageSeries: 33
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_33_2
       StageSeries: 33
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_33_3
       StageSeries: 33
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 34
@@ -1170,34 +1286,38 @@ MonoBehaviour:
     - ID: Stage_34_1
       StageSeries: 34
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_34_2
       StageSeries: 34
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_34_3
       StageSeries: 34
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 35
@@ -1205,34 +1325,38 @@ MonoBehaviour:
     - ID: Stage_35_1
       StageSeries: 35
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_35_2
       StageSeries: 35
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_35_3
       StageSeries: 35
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 36
@@ -1240,34 +1364,38 @@ MonoBehaviour:
     - ID: Stage_36_1
       StageSeries: 36
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 4
       MaxSpawnTime: 6
     - ID: Stage_36_2
       StageSeries: 36
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_36_3
       StageSeries: 36
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 37
@@ -1275,34 +1403,38 @@ MonoBehaviour:
     - ID: Stage_37_1
       StageSeries: 37
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_37_2
       StageSeries: 37
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_37_3
       StageSeries: 37
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 38
@@ -1310,34 +1442,38 @@ MonoBehaviour:
     - ID: Stage_38_1
       StageSeries: 38
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_38_2
       StageSeries: 38
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_38_3
       StageSeries: 38
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 39
@@ -1345,34 +1481,38 @@ MonoBehaviour:
     - ID: Stage_39_1
       StageSeries: 39
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_39_2
       StageSeries: 39
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_39_3
       StageSeries: 39
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 40
@@ -1380,34 +1520,38 @@ MonoBehaviour:
     - ID: Stage_40_1
       StageSeries: 40
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_40_2
       StageSeries: 40
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_40_3
       StageSeries: 40
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 41
@@ -1415,34 +1559,38 @@ MonoBehaviour:
     - ID: Stage_41_1
       StageSeries: 41
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_41_2
       StageSeries: 41
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_41_3
       StageSeries: 41
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_Jangsanbeom
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 42
@@ -1450,34 +1598,38 @@ MonoBehaviour:
     - ID: Stage_42_1
       StageSeries: 42
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_42_2
       StageSeries: 42
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_42_3
       StageSeries: 42
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 43
@@ -1485,34 +1637,38 @@ MonoBehaviour:
     - ID: Stage_43_1
       StageSeries: 43
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_43_2
       StageSeries: 43
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_43_3
       StageSeries: 43
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 44
@@ -1520,34 +1676,38 @@ MonoBehaviour:
     - ID: Stage_44_1
       StageSeries: 44
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_44_2
       StageSeries: 44
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_44_3
       StageSeries: 44
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 45
@@ -1555,34 +1715,38 @@ MonoBehaviour:
     - ID: Stage_45_1
       StageSeries: 45
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_45_2
       StageSeries: 45
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_45_3
       StageSeries: 45
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 46
@@ -1590,34 +1754,38 @@ MonoBehaviour:
     - ID: Stage_46_1
       StageSeries: 46
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_46_2
       StageSeries: 46
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_46_3
       StageSeries: 46
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 47
@@ -1625,34 +1793,38 @@ MonoBehaviour:
     - ID: Stage_47_1
       StageSeries: 47
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_47_2
       StageSeries: 47
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_47_3
       StageSeries: 47
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 48
@@ -1660,34 +1832,38 @@ MonoBehaviour:
     - ID: Stage_48_1
       StageSeries: 48
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_48_2
       StageSeries: 48
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_48_3
       StageSeries: 48
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 49
@@ -1695,34 +1871,38 @@ MonoBehaviour:
     - ID: Stage_49_1
       StageSeries: 49
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_49_2
       StageSeries: 49
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_49_3
       StageSeries: 49
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 50
@@ -1730,34 +1910,38 @@ MonoBehaviour:
     - ID: Stage_50_1
       StageSeries: 50
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_50_2
       StageSeries: 50
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_50_3
       StageSeries: 50
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 51
@@ -1765,34 +1949,38 @@ MonoBehaviour:
     - ID: Stage_51_1
       StageSeries: 51
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_51_2
       StageSeries: 51
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_51_3
       StageSeries: 51
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_Bulgasari
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 52
@@ -1800,34 +1988,39 @@ MonoBehaviour:
     - ID: Stage_52_1
       StageSeries: 52
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_52_2
       StageSeries: 52
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_52_3
       StageSeries: 52
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_Fox
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 53
@@ -1835,34 +2028,38 @@ MonoBehaviour:
     - ID: Stage_53_1
       StageSeries: 53
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_53_2
       StageSeries: 53
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_53_3
       StageSeries: 53
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 54
@@ -1870,34 +2067,38 @@ MonoBehaviour:
     - ID: Stage_54_1
       StageSeries: 54
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_54_2
       StageSeries: 54
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_54_3
       StageSeries: 54
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 55
@@ -1905,34 +2106,38 @@ MonoBehaviour:
     - ID: Stage_55_1
       StageSeries: 55
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_55_2
       StageSeries: 55
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_55_3
       StageSeries: 55
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 56
@@ -1940,34 +2145,38 @@ MonoBehaviour:
     - ID: Stage_56_1
       StageSeries: 56
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_56_2
       StageSeries: 56
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_56_3
       StageSeries: 56
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 57
@@ -1975,34 +2184,38 @@ MonoBehaviour:
     - ID: Stage_57_1
       StageSeries: 57
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_57_2
       StageSeries: 57
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_57_3
       StageSeries: 57
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 58
@@ -2010,34 +2223,38 @@ MonoBehaviour:
     - ID: Stage_58_1
       StageSeries: 58
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_58_2
       StageSeries: 58
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_58_3
       StageSeries: 58
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 59
@@ -2045,34 +2262,38 @@ MonoBehaviour:
     - ID: Stage_59_1
       StageSeries: 59
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_59_2
       StageSeries: 59
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_59_3
       StageSeries: 59
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 60
@@ -2080,34 +2301,38 @@ MonoBehaviour:
     - ID: Stage_60_1
       StageSeries: 60
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_60_2
       StageSeries: 60
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_60_3
       StageSeries: 60
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 61
@@ -2115,34 +2340,38 @@ MonoBehaviour:
     - ID: Stage_61_1
       StageSeries: 61
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_61_2
       StageSeries: 61
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_61_3
       StageSeries: 61
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 62
@@ -2150,34 +2379,38 @@ MonoBehaviour:
     - ID: Stage_62_1
       StageSeries: 62
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_62_2
       StageSeries: 62
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_62_3
       StageSeries: 62
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_Jangsanbeom
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 63
@@ -2185,34 +2418,38 @@ MonoBehaviour:
     - ID: Stage_63_1
       StageSeries: 63
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_63_2
       StageSeries: 63
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_63_3
       StageSeries: 63
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 64
@@ -2220,34 +2457,38 @@ MonoBehaviour:
     - ID: Stage_64_1
       StageSeries: 64
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_64_2
       StageSeries: 64
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_64_3
       StageSeries: 64
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 65
@@ -2255,34 +2496,38 @@ MonoBehaviour:
     - ID: Stage_65_1
       StageSeries: 65
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_65_2
       StageSeries: 65
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_65_3
       StageSeries: 65
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 66
@@ -2290,34 +2535,38 @@ MonoBehaviour:
     - ID: Stage_66_1
       StageSeries: 66
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_66_2
       StageSeries: 66
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_66_3
       StageSeries: 66
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 67
@@ -2325,34 +2574,38 @@ MonoBehaviour:
     - ID: Stage_67_1
       StageSeries: 67
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_67_2
       StageSeries: 67
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_67_3
       StageSeries: 67
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 68
@@ -2360,34 +2613,38 @@ MonoBehaviour:
     - ID: Stage_68_1
       StageSeries: 68
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_68_2
       StageSeries: 68
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_68_3
       StageSeries: 68
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 69
@@ -2395,34 +2652,38 @@ MonoBehaviour:
     - ID: Stage_69_1
       StageSeries: 69
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_69_2
       StageSeries: 69
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_69_3
       StageSeries: 69
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 70
@@ -2430,34 +2691,38 @@ MonoBehaviour:
     - ID: Stage_70_1
       StageSeries: 70
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_70_2
       StageSeries: 70
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_70_3
       StageSeries: 70
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 71
@@ -2465,34 +2730,38 @@ MonoBehaviour:
     - ID: Stage_71_1
       StageSeries: 71
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_71_2
       StageSeries: 71
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_71_3
       StageSeries: 71
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 72
@@ -2500,34 +2769,38 @@ MonoBehaviour:
     - ID: Stage_72_1
       StageSeries: 72
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_72_2
       StageSeries: 72
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_72_3
       StageSeries: 72
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_Bulgasari
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 73
@@ -2535,34 +2808,39 @@ MonoBehaviour:
     - ID: Stage_73_1
       StageSeries: 73
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_73_2
       StageSeries: 73
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_73_3
       StageSeries: 73
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_Fox
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 74
@@ -2570,34 +2848,38 @@ MonoBehaviour:
     - ID: Stage_74_1
       StageSeries: 74
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_74_2
       StageSeries: 74
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_74_3
       StageSeries: 74
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 75
@@ -2605,34 +2887,38 @@ MonoBehaviour:
     - ID: Stage_75_1
       StageSeries: 75
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_75_2
       StageSeries: 75
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_75_3
       StageSeries: 75
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 76
@@ -2640,34 +2926,38 @@ MonoBehaviour:
     - ID: Stage_76_1
       StageSeries: 76
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_76_2
       StageSeries: 76
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_76_3
       StageSeries: 76
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 77
@@ -2675,34 +2965,38 @@ MonoBehaviour:
     - ID: Stage_77_1
       StageSeries: 77
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_77_2
       StageSeries: 77
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_77_3
       StageSeries: 77
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 78
@@ -2710,34 +3004,38 @@ MonoBehaviour:
     - ID: Stage_78_1
       StageSeries: 78
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_78_2
       StageSeries: 78
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_78_3
       StageSeries: 78
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 79
@@ -2745,34 +3043,38 @@ MonoBehaviour:
     - ID: Stage_79_1
       StageSeries: 79
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_79_2
       StageSeries: 79
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_79_3
       StageSeries: 79
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 80
@@ -2780,34 +3082,38 @@ MonoBehaviour:
     - ID: Stage_80_1
       StageSeries: 80
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_80_2
       StageSeries: 80
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_80_3
       StageSeries: 80
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 81
@@ -2815,34 +3121,38 @@ MonoBehaviour:
     - ID: Stage_81_1
       StageSeries: 81
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_81_2
       StageSeries: 81
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_81_3
       StageSeries: 81
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 82
@@ -2850,34 +3160,38 @@ MonoBehaviour:
     - ID: Stage_82_1
       StageSeries: 82
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_82_2
       StageSeries: 82
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_82_3
       StageSeries: 82
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 83
@@ -2885,34 +3199,38 @@ MonoBehaviour:
     - ID: Stage_83_1
       StageSeries: 83
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_83_2
       StageSeries: 83
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_83_3
       StageSeries: 83
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_Jangsanbeom
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 84
@@ -2920,34 +3238,38 @@ MonoBehaviour:
     - ID: Stage_84_1
       StageSeries: 84
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_84_2
       StageSeries: 84
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_84_3
       StageSeries: 84
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 85
@@ -2955,34 +3277,38 @@ MonoBehaviour:
     - ID: Stage_85_1
       StageSeries: 85
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_85_2
       StageSeries: 85
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_85_3
       StageSeries: 85
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 86
@@ -2990,34 +3316,38 @@ MonoBehaviour:
     - ID: Stage_86_1
       StageSeries: 86
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_86_2
       StageSeries: 86
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_86_3
       StageSeries: 86
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 87
@@ -3025,34 +3355,38 @@ MonoBehaviour:
     - ID: Stage_87_1
       StageSeries: 87
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_87_2
       StageSeries: 87
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_87_3
       StageSeries: 87
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 88
@@ -3060,34 +3394,38 @@ MonoBehaviour:
     - ID: Stage_88_1
       StageSeries: 88
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_88_2
       StageSeries: 88
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_88_3
       StageSeries: 88
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 89
@@ -3095,34 +3433,38 @@ MonoBehaviour:
     - ID: Stage_89_1
       StageSeries: 89
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_89_2
       StageSeries: 89
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_89_3
       StageSeries: 89
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 90
@@ -3130,34 +3472,38 @@ MonoBehaviour:
     - ID: Stage_90_1
       StageSeries: 90
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_90_2
       StageSeries: 90
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_90_3
       StageSeries: 90
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 91
@@ -3165,34 +3511,38 @@ MonoBehaviour:
     - ID: Stage_91_1
       StageSeries: 91
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_91_2
       StageSeries: 91
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_91_3
       StageSeries: 91
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 92
@@ -3200,34 +3550,38 @@ MonoBehaviour:
     - ID: Stage_92_1
       StageSeries: 92
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_92_2
       StageSeries: 92
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_92_3
       StageSeries: 92
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 93
@@ -3235,34 +3589,38 @@ MonoBehaviour:
     - ID: Stage_93_1
       StageSeries: 93
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_93_2
       StageSeries: 93
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_93_3
       StageSeries: 93
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_Bulgasari
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 94
@@ -3270,34 +3628,39 @@ MonoBehaviour:
     - ID: Stage_94_1
       StageSeries: 94
       SubStageIndex: 1
-      StageHealth: 500
+      StageHealth: 4000
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_94_2
       StageSeries: 94
       SubStageIndex: 2
-      StageHealth: 300
+      StageHealth: 2500
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_94_3
       StageSeries: 94
       SubStageIndex: 3
-      StageHealth: 100
+      StageHealth: 1000
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_Fox
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 95
@@ -3307,10 +3670,11 @@ MonoBehaviour:
       SubStageIndex: 1
       StageHealth: 500
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_95_2
@@ -3319,9 +3683,10 @@ MonoBehaviour:
       StageHealth: 300
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_95_3
@@ -3331,8 +3696,10 @@ MonoBehaviour:
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 96
@@ -3342,10 +3709,11 @@ MonoBehaviour:
       SubStageIndex: 1
       StageHealth: 500
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_96_2
@@ -3354,9 +3722,10 @@ MonoBehaviour:
       StageHealth: 300
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_96_3
@@ -3366,8 +3735,10 @@ MonoBehaviour:
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 97
@@ -3377,10 +3748,11 @@ MonoBehaviour:
       SubStageIndex: 1
       StageHealth: 500
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_97_2
@@ -3389,9 +3761,10 @@ MonoBehaviour:
       StageHealth: 300
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_97_3
@@ -3401,8 +3774,10 @@ MonoBehaviour:
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 98
@@ -3412,10 +3787,11 @@ MonoBehaviour:
       SubStageIndex: 1
       StageHealth: 500
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_98_2
@@ -3424,9 +3800,10 @@ MonoBehaviour:
       StageHealth: 300
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_98_3
@@ -3436,8 +3813,10 @@ MonoBehaviour:
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 99
@@ -3447,10 +3826,11 @@ MonoBehaviour:
       SubStageIndex: 1
       StageHealth: 500
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_99_2
@@ -3459,9 +3839,10 @@ MonoBehaviour:
       StageHealth: 300
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_99_3
@@ -3471,8 +3852,10 @@ MonoBehaviour:
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
   - StageSeries: 100
@@ -3482,10 +3865,11 @@ MonoBehaviour:
       SubStageIndex: 1
       StageHealth: 500
       EnemyType:
-      - Enemy_HungryGhost
+      - Enemy_GoldPig
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_HungryGhost
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_100_2
@@ -3494,9 +3878,10 @@ MonoBehaviour:
       StageHealth: 300
       EnemyType:
       - Enemy_HungryGhost
-      - Enemy_ChildGhost
+      - Enemy_BeastMonster
+      - Enemy_Guseunsae
       - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      EnemyLevel: 01000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5
     - ID: Stage_100_3
@@ -3506,7 +3891,9 @@ MonoBehaviour:
       EnemyType:
       - Enemy_HungryGhost
       - Enemy_ChildGhost
-      - Enemy_GhostWoman
-      EnemyLevel: 010000000100000001000000
+      - Enemy_BagOldMan
+      - Enemy_GoldPig
+      - Enemy_BeastMonster
+      EnemyLevel: 0100000001000000010000000100000001000000
       MinSpawnTime: 3
       MaxSpawnTime: 5

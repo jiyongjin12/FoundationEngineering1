@@ -31,7 +31,7 @@ MonoBehaviour:
     Name: Cat
     Faction: 0
     OpenPrice: 300
-    LevelupPrice: 150
+    LevelupPrice: 250
     MaxLevel: 20
     NeedMana: 80
     Hp: 70
@@ -45,7 +45,7 @@ MonoBehaviour:
     Name: Rabbit
     Faction: 0
     OpenPrice: 1000
-    LevelupPrice: 150
+    LevelupPrice: 500
     MaxLevel: 20
     NeedMana: 100
     Hp: 90
@@ -59,7 +59,7 @@ MonoBehaviour:
     Name: Monkey
     Faction: 0
     OpenPrice: 1500
-    LevelupPrice: 150
+    LevelupPrice: 700
     MaxLevel: 20
     NeedMana: 130
     Hp: 100
@@ -73,7 +73,7 @@ MonoBehaviour:
     Name: Jangseung
     Faction: 0
     OpenPrice: 2000
-    LevelupPrice: 150
+    LevelupPrice: 800
     MaxLevel: 20
     NeedMana: 150
     Hp: 300
@@ -87,7 +87,7 @@ MonoBehaviour:
     Name: Dokkaebi
     Faction: 0
     OpenPrice: 2500
-    LevelupPrice: 150
+    LevelupPrice: 1000
     MaxLevel: 20
     NeedMana: 200
     Hp: 200
@@ -101,7 +101,7 @@ MonoBehaviour:
     Name: WindGod
     Faction: 0
     OpenPrice: 3000
-    LevelupPrice: 150
+    LevelupPrice: 1500
     MaxLevel: 20
     NeedMana: 220
     Hp: 80
@@ -115,7 +115,7 @@ MonoBehaviour:
     Name: Haetae
     Faction: 0
     OpenPrice: 3500
-    LevelupPrice: 150
+    LevelupPrice: 2000
     MaxLevel: 20
     NeedMana: 250
     Hp: 350
@@ -129,7 +129,7 @@ MonoBehaviour:
     Name: Dragon
     Faction: 0
     OpenPrice: 4000
-    LevelupPrice: 150
+    LevelupPrice: 2500
     MaxLevel: 20
     NeedMana: 350
     Hp: 150
@@ -143,7 +143,7 @@ MonoBehaviour:
     Name: RedBird
     Faction: 0
     OpenPrice: 5000
-    LevelupPrice: 150
+    LevelupPrice: 3000
     MaxLevel: 20
     NeedMana: 500
     Hp: 180
